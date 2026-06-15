@@ -1,10 +1,10 @@
 {
   "meta": {"lang": "en", "source_pdf": "sample", "seed_export": "examples/seed_minimal.xml"},
   "degrees": [
-    {"degree_type": "Doctorate", "degree_name": "PhD", "specialization": "Geophysics",
-     "thesis_title": "A study of meteors", "organization": "University of Western Ontario",
+    {"degree_type": "Doctorate", "degree_name": "PhD", "specialization": "Astronomy",
+     "thesis_title": "A study of small bodies", "organization": "University of Western Ontario",
      "degree_status": "Completed", "start": "2016/09", "received": "2020/04",
-     "supervisors": [{"name": "Peter G. Brown", "start": "2016/09", "end": "2020/04"}],
+     "supervisors": [{"name": "Alex Mentor", "start": "2016/09", "end": "2020/04"}],
      "research_disciplines": ["Astronomy and Astrophysics"]},
     {"degree_type": "Bachelor's", "degree_name": "BEng", "specialization": "Computer Engineering",
      "organization": "University of Osijek", "other_organization_type": "Academic",
@@ -15,20 +15,20 @@
      "organization": "University of Western Ontario", "start": "2024/07"}
   ],
   "research_funding": [
-    {"funding_type": "Grant", "funding_title": "Catalyst Grant", "role": "Principal Investigator",
+    {"funding_type": "Grant", "funding_title": "Sample Catalyst Grant", "role": "Principal Investigator",
      "status": "Awarded", "start": "2025/02", "description": "Value: 24000 CAD."},
-    {"funding_type": "Contract", "funding_title": "Boeing Canada contract", "role": "Co-investigator",
+    {"funding_type": "Contract", "funding_title": "Sample industry contract", "role": "Co-investigator",
      "status": "Awarded", "start": "2026/03", "description": "Value: 339093 CAD."}
   ],
   "supervision": [
-    {"role": "Principal Supervisor", "student_name": "Maximilian Vovk", "institution": "University of Western Ontario",
-     "degree_name": "PhD", "start": "2023/01", "thesis_title": "ML inversion of meteoroid properties"},
-    {"role": "Co-Supervisor", "student_name": "Ricky Bassom", "institution": "University of Exeter, UK",
+    {"role": "Principal Supervisor", "student_name": "Sam Student", "institution": "University of Western Ontario",
+     "degree_name": "PhD", "start": "2023/01", "thesis_title": "A modelling project"},
+    {"role": "Co-Supervisor", "student_name": "Jamie Intern", "institution": "University of Exeter, UK",
      "degree_name": "Undergraduate final year project", "start": "2021/09", "end": "2022/05",
-     "thesis_title": "GMN data UI"}
+     "thesis_title": "A data-visualisation project"}
   ],
   "recognitions": [
-    {"recognition_type": "Prize / Award", "name": "First Prize Winner, Research Showcase",
+    {"recognition_type": "Prize / Award", "name": "First Prize, Research Showcase",
      "other_organization": "University of Western Ontario", "other_organization_type": "Academic",
      "effective_date": "2018/04", "amount": 1500, "currency": "Canadian dollar",
      "description": "Best poster award."}
@@ -38,36 +38,36 @@
     {"role": "Reviewer", "journal": "Planetary and Space Science"}
   ],
   "presentations": [
-    {"title": "Global meteor camera networks", "event": "Meteoroids 2022", "city": "Virtual", "invited": "Yes", "year": "2022"}
+    {"title": "An example conference talk", "event": "Sample Conference 2022", "city": "Virtual", "invited": "Yes", "year": "2022"}
   ],
   "journal_articles": [
-    {"title": "Generating realistic synthetic meteoroid orbits", "journal": "Icarus", "volume": "296",
+    {"title": "An example published paper on orbits", "journal": "Icarus", "volume": "296",
      "pages": "197-215", "year": "2017", "status": "Published", "refereed": "Yes",
-     "authors": "Vida, D; Brown, P. G.; Campbell-Brown, M", "doi": "10.1016/j.icarus.2017.04.022", "contribution": "31-40"},
-    {"title": "A brand new in-review paper about meteors", "journal": "Nature Astronomy", "year": "2025",
-     "status": "In review", "refereed": "Yes", "authors": "Smith, J; Vida, D", "contribution": "11-20"}
+     "authors": "Doe, J; Roe, R; Poe, P", "doi": "", "contribution": "31-40"},
+    {"title": "An example paper currently in review", "journal": "Nature Astronomy", "year": "2025",
+     "status": "In review", "refereed": "Yes", "authors": "Smith, J; Doe, J", "contribution": "11-20"}
   ],
   "reports": [
-    {"title": "Supernova 2010ax (CBET 2219)", "other_organization": "Central Bureau Electronic Telegrams",
-     "year": "2010", "authors": "Novoselnik, F., Vida, D., et al."}
+    {"title": "Example Technical Report 1 (REF 0001)", "other_organization": "Example Reporting Bureau",
+     "year": "2010", "authors": "Roe, R., Doe, J., et al."}
   ],
   "other_memberships": [
     {"role": "Member", "other_organization": "American Astronomical Society", "description": "Member since 2020."}
   ],
   "credentials": [
-    {"title": "Software testing", "other_organization": "Udacity", "other_organization_type": "Academic",
+    {"title": "Software testing", "other_organization": "Example Online Academy", "other_organization_type": "Academic",
      "effective_date": "2014/03", "description": "High Distinction."}
   ],
   "ktt": [
-    {"role": "Project lead", "outcome": "Global Meteor Network (GMN)",
-     "url": "https://globalmeteornetwork.org/", "description": "Worldwide low-cost meteor camera network."}
+    {"role": "Project lead", "outcome": "Example Open-Source Research Tool",
+     "url": "https://example.org/tool", "description": "An example open-source research software project."}
   ],
   "international_collaboration": [
     {"role": "Co-PI, multiwavelength survey", "location": "United States of America",
-     "start": "2020/01", "description": "Joint observing program with US collaborators."}
+     "start": "2020/01", "description": "Joint observing program with international collaborators."}
   ],
   "event_administration": [
-    {"role": "Primary Organizer", "event_type": "Conference", "event_name": "Meteoroids 2025",
+    {"role": "Primary Organizer", "event_type": "Conference", "event_name": "Sample Symposium 2025",
      "start": "2024/06", "event_start": "2025/06", "event_end": "2025/06"}
   ],
   "organizational_review": [
@@ -76,6 +76,6 @@
   ],
   "leaves_of_absence": [
     {"leave_type": "Other Circumstances", "start": "2020/09", "end": "2021/09",
-     "description": "Pandemic-related research disruption."}
+     "description": "Research disruption during this period."}
   ]
 }

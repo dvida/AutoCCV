@@ -21,13 +21,6 @@ def _query(biblio, rows=3):
         return json.load(r)
 
 
-def _first_surname(authors):
-    if not authors:
-        return ""
-    first = authors.replace(";", ",").split(",")[0].strip()
-    return first.split()[0].lower() if first else ""
-
-
 def _candidate(item):
     return {
         "doi": item.get("DOI", ""),
@@ -61,8 +54,8 @@ def enrich(cv_data, sleep=1.0, log=print):
             for c in cands:
                 tsim = difflib.SequenceMatcher(None, title.lower(), c["title"].lower()).ratio()
                 year_ok = (not rec.get("year")) or (c["year"] == str(rec.get("year")))
-                au_ok = (not rec.get("authors")) or (_first_surname(rec["authors"]) in c["title"].lower()
-                                                     or _first_surname(rec["authors"]) != "")
+                # high title similarity + matching year is the confidence gate for silent auto-accept;
+                # everything else is surfaced to the user as a candidate to confirm.
                 if tsim >= 0.92 and year_ok:
                     picked = c
                     break

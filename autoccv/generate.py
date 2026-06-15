@@ -99,10 +99,12 @@ def _build_subsections(record, data, spec, catalog, unresolved, section):
 def build_section(base_tree, skeleton, section_name, records, spec, catalog, section_paths, unresolved):
     label = spec["ccv_section_label"]
     template = ccvgen.find_template(skeleton, label)
-    key_src = spec.get("dedup_key")
+    # dedup only on keys that map to an actual CCV field (so existing records can be read back)
+    src_to_ccv = {fs["src"]: fs["ccv"] for fs in spec["fields"]}
+    key_src = [s for s in (spec.get("dedup_key") or []) if s in src_to_ccv]
     seen = set()
     if key_src:
-        key_ccv = [next(fs["ccv"] for fs in spec["fields"] if fs["src"] == s) for s in key_src]
+        key_ccv = [src_to_ccv[s] for s in key_src]
         seen = _existing_keys(base_tree.getroot(), label, key_ccv)
     built = []
     for data in records:
@@ -126,6 +128,8 @@ def build_section(base_tree, skeleton, section_name, records, spec, catalog, sec
 
 
 def generate(cv_data, seed_path, out_path, data_dir=DATA):
+    if not isinstance(cv_data, dict):
+        raise TypeError("cv_data must be a JSON object (got %s) — check cv_data.json" % type(cv_data).__name__)
     with open(os.path.join(data_dir, "section_map.json")) as f:
         section_map = json.load(f)
     with open(os.path.join(data_dir, "section_paths.json")) as f:

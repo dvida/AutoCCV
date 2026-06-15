@@ -72,18 +72,32 @@ AI coding assistant that runs in your terminal (or VS Code / JetBrains). You tal
 English; it reads files, runs commands, and edits code for you. For AutoCCV, it reads your PDF CV,
 asks you a few questions, and runs the conversion — **you don't have to write any code**.
 
+Works on **Windows, macOS, and Linux**. The official
+[setup guide](https://docs.claude.com/en/docs/claude-code/setup) has per-OS instructions and is the
+authoritative source if anything below differs — start there if you get stuck.
+
 ### 1. Install the prerequisites
-- **Node.js 18+** — required by Claude Code. Get it from <https://nodejs.org> (the "LTS" version).
-- **Python 3.9+** — required by AutoCCV's pipeline. Most Macs/Linux already have it; on Windows get
-  it from <https://www.python.org/downloads/> (tick "Add Python to PATH").
-- **Git** — to download this repo. <https://git-scm.com/downloads>
+- **Node.js 18+** — required by Claude Code. Download the **LTS** installer for your OS from
+  <https://nodejs.org> (Windows `.msi`, macOS `.pkg`, or your package manager).
+- **Python 3.9+** — required by AutoCCV's pipeline.
+  - **Windows:** install from <https://www.python.org/downloads/> and **tick "Add python.exe to
+    PATH"** in the installer. (Or `winget install Python.Python.3.12`.)
+  - **macOS:** `brew install python` (or python.org). **Linux:** usually preinstalled, else
+    `sudo apt install python3 python3-pip`.
+- **Git** — to download this repo: <https://git-scm.com/downloads> (Windows: this also gives you
+  "Git Bash", a handy terminal).
+
+> **Terminal to use:** **Windows** → *Windows Terminal* or *PowerShell* (or *Git Bash*); **macOS** →
+> *Terminal*; **Linux** → your shell. On Windows, type `python` (not `python3`) — substitute that in
+> any `python3 …` command below. Claude Code itself handles this for you when it runs the pipeline.
 
 ### 2. Install Claude Code
+In your terminal (same on every OS):
 ```bash
 npm install -g @anthropic-ai/claude-code
 ```
-(See the official [setup guide](https://docs.claude.com/en/docs/claude-code/setup) if you hit
-snags. There are also native installers and IDE extensions.)
+(See the official [setup guide](https://docs.claude.com/en/docs/claude-code/setup) for native
+installers, IDE extensions, and Windows-specific notes if you hit snags.)
 
 ### 3. Get a subscription / sign in
 Run `claude` once and it will walk you through signing in. Two ways to pay for usage:
@@ -126,7 +140,8 @@ see `autoccv`), and `/exit` to quit. New to the interface? The
 ## Manual / scripted usage (no Claude Code)
 
 If you write `cv_data.json` yourself (see `schema/cv_data.schema.json` and
-`examples/sample_cv_data.json`), you can run the pipeline directly:
+`examples/sample_cv_data.json`), you can run the pipeline directly (on Windows use `python` instead
+of `python3`):
 
 ```bash
 # 1. (optional) enrich publications with DOIs/volume/issue from Crossref
