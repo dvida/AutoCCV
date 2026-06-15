@@ -45,7 +45,7 @@ shipped catalog + your seed are all that's needed — no manual code lookups.
    (e.g. `my-seed.xml`).
 2. **Clone and open in Claude Code.**
    ```bash
-   git clone https://github.com/<you>/AutoCCV.git
+   git clone https://github.com/dvida/AutoCCV.git
    cd AutoCCV
    pip install -r requirements.txt
    claude            # open Claude Code in this directory
