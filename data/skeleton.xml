@@ -1,0 +1,1545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<generic-cv:generic-cv xmlns:generic-cv="http://www.cihr-irsc.gc.ca/generic-cv/1.0.0" lang="en">
+  <section id="94b1e26073ae476da13ede5baf1f1cc0" label="Employment">
+    <section id="b857f61b33484cb093068bd2da764f99" label="Academic Work Experience" recordId="ffb0acfd85224a9ba72d1c1d129c1217">
+      <field id="9510a03a308f43ceb8cd046aeffa9499" label="Position Type"/>
+      <field id="886807b87b624978bc8ca9045ff56e47" label="Position Title">
+        <value type="String"/>
+      </field>
+      <field id="ef7bd6fa8dd040449fa181f0ca4530e4" label="Position Status"/>
+      <field id="500e1360abd14972bc1ef844a8b98087" label="Academic Rank"/>
+      <field id="c7e85d10d10249c68b28c71fc80ec570" label="Start Date">
+        <value format="yyyy/MM" type="YearMonth"/>
+      </field>
+      <field id="b4681f52d85440829faa3160ba3bb31f" label="End Date">
+        <value format="yyyy/MM" type="YearMonth"/>
+      </field>
+      <field id="07b27665db314c2da1fe3ea060e95264" label="Work Description">
+        <value type="Bilingual"/>
+        <bilingual>
+          <french/>
+          <english/>
+        </bilingual>
+      </field>
+      <field id="5dd34f14c1ea47c09e8ddcd202653814" label="Organization"/>
+      <field id="69b0f4fab5e64d7da044e0f8cbd70e52" label="Other Organization">
+        <value type="String"/>
+      </field>
+      <field id="e2965cf383a6480487995eca532a41e9" label="Other Organization Type"/>
+      <field id="cd6e5e97994e42f893bd5c9e7212c94b" label="Department">
+        <value type="String"/>
+      </field>
+      <field id="58cf7001d283421b91f5da21f0ef2188" label="Faculty / School / Campus">
+        <value type="String"/>
+      </field>
+      <field id="b0eca39ad77346648180dec948d13432" label="Tenure Status"/>
+      <field id="0f9de0cffcaf4270a6eb69c62e6a3b70" label="Tenure Start Date">
+        <value format="yyyy/MM" type="YearMonth"/>
+      </field>
+      <field id="ac542fa52c3c4c6b927044fabb3eff9c" label="Tenure End Date">
+        <value format="yyyy/MM" type="YearMonth"/>
+      </field>
+      <section id="8bff7ba1d1f34a98a6cb8a5e6d9ef4b6" label="Research Disciplines" recordId="43c890963cab4f20a2c7ca60907d03f5">
+        <field id="39b8e7cd2e6f4d39a0328397195f4650" label="Order">
+          <value type="Number"/>
+        </field>
+        <field id="a2831f6effb64d2c8412f0ca980c0c7b" label="Research Discipline"/>
+      </section>
+    </section>
+    <section id="f612675840ef4ae0965c815ac1574623" label="Affiliations" recordId="2ba765aa89d2450db912055b534c67c9">
+      <field id="796ed81a4c894d7da2317ee28fd0eed1" label="Position Title">
+        <value type="Bilingual"/>
+        <bilingual>
+          <english/>
+        </bilingual>
+      </field>
+      <field id="5fa20174fd394fb5badc36bda226d891" label="Organization"/>
+      <field id="8855219961924a539cede68f7ffd78c2" label="Other Organization">
+        <value type="String"/>
+      </field>
+      <field id="23aaffeeaeb44c4eaafb2610df0504af" label="Other Organization Type"/>
+      <field id="0d00497918e04604b74e961a673a4d4f" label="Department">
+        <value type="String"/>
+      </field>
+      <field id="1e9ae12d59e54b94a8d97463b285a73c" label="Activity Description">
+        <value type="String"/>
+      </field>
+      <field id="97cd0667343d465ab587b8da69c98f5e" label="Start Date">
+        <value format="yyyy/MM" type="YearMonth"/>
+      </field>
+      <field id="62cd3926bb21473e9128254bc1ac2879" label="End Date">
+        <value format="yyyy/MM" type="YearMonth"/>
+      </field>
+    </section>
+    <section id="4c5d725b1b654966acf50d48934beefc" label="Leaves of Absence and Impact on Research" recordId="ee6c7dd5ddea45948e0bb6a56f3f6220">
+      <field id="64cbd0916c0f4b4eb0424115626b2f1a" label="Leave Type"/>
+      <field id="fc1fb6a84f844798840202fe0d3f3031" label="Start Date">
+        <value format="yyyy/MM" type="YearMonth"/>
+      </field>
+      <field id="b7ac5b1b1f2743f783559d7fe0b486c6" label="End Date">
+        <value format="yyyy/MM" type="YearMonth"/>
+      </field>
+      <field id="bd46b97e1de54126ac742bf3ac6d6bf2" label="Organization"/>
+      <field id="9a7b900af93e443aba9122bd5233296f" label="Other Organization">
+        <value type="String"/>
+      </field>
+      <field id="162412c2de4d4ef7a03e27176cb86a77" label="Other Organization Type"/>
+      <field id="037a5e8bcbce44d58212d00215596ff9" label="Absence and Impact Description">
+        <value type="Bilingual"/>
+        <bilingual>
+          <french/>
+          <english/>
+        </bilingual>
+      </field>
+    </section>
+    <section id="848ac4ef704e4c59950408045ac637cf" label="Non-academic Work Experience" recordId="85fa84f1cd6548f98db5909dfbf2261c">
+      <field id="d9c7aaec0d874822bfd759b47d51b516" label="Position Title">
+        <value type="String"/>
+      </field>
+      <field id="ca16affe34154686bc880d34ae29f2a9" label="Position Status"/>
+      <field id="a67f2256e11a462ba18139de2dc388d8" label="Start Date">
+        <value format="yyyy/MM" type="YearMonth"/>
+      </field>
+      <field id="883c7d5b30c0428ca50537d1118a1e54" label="End Date">
+        <value format="yyyy/MM" type="YearMonth"/>
+      </field>
+      <field id="73737d458a7f484db9f6b36eb0b3647d" label="Work Description">
+        <value type="Bilingual"/>
+        <bilingual>
+          <french/>
+          <english/>
+        </bilingual>
+      </field>
+      <field id="7b644a2ccb9a4ae2a1c4a5cc0bc51e04" label="Organization"/>
+      <field id="d9606d07427841d1b0e1d5c861292f24" label="Other Organization">
+        <value type="String"/>
+      </field>
+      <field id="49363320bc474eb68894865d5b739adc" label="Other Organization Type"/>
+      <field id="b3455a3ec6234e2887e5be9647c3fb8a" label="Unit / Division">
+        <value type="String"/>
+      </field>
+    </section>
+  </section>
+  <section id="f589cbc028c64fdaa783da01647e5e3c" label="Personal Information">
+    <section id="b92721f0510a4ef4b0d1cf7f5ea3f01e" label="Address" primaryIndicator="true" recordId="939eee7984994768bdec64de3d44bab5">
+      <field id="35c302c36fe9479287206171087fb185" label="Address Type"/>
+      <field id="2de0fe4994f546c695a060d68e8e03ca" label="Address - Line 1">
+        <value type="String"/>
+      </field>
+      <field id="dafdb980e181416abc5e26c0770df662" label="Line 2">
+        <value type="String"/>
+      </field>
+      <field id="fc390eae1fbc45c89789f2ecbb5bed8e" label="Line 3">
+        <value type="String"/>
+      </field>
+      <field id="d51e2de9122744489ac2231d85995617" label="Line 4">
+        <value type="String"/>
+      </field>
+      <field id="5365d87b9ff145d3a8d0d4fc21af57bb" label="Line 5">
+        <value type="String"/>
+      </field>
+      <field id="499d69637b4148d0a49463a2881e9d09" label="City">
+        <value type="String"/>
+      </field>
+      <field id="b1071063df03484ebec65cd1a3464438" label="Location"/>
+      <field id="a41f1e118e61482eb3cdde4aaeb783e8" label="Postal / Zip Code">
+        <value type="String"/>
+      </field>
+      <field id="b77ff4a2c49247e0af668be52704da91" label="Address Start Date">
+        <value format="yyyy-MM-dd" type="Date"/>
+      </field>
+      <field id="4ab2497d7a0f471ebc6a50e32dd4f22d" label="Address End Date">
+        <value format="yyyy-MM-dd" type="Date"/>
+      </field>
+    </section>
+    <section id="f8e3a3a0d3cf4c76bfde7aba6c82fc25" label="Email" recordId="fc8ccd233f4b4746b29a7d209e659e23">
+      <field id="fa6ec0ff1fdb4472897ece080504744f" label="Email Type"/>
+      <field id="de93245673a54fa8bf7bfc032c7f8717" label="Email Address">
+        <value type="String"/>
+      </field>
+      <field id="8c7dcf3ac68544509bd303b7624d42cc" label="Email Start Date">
+        <value format="yyyy-MM-dd" type="Date"/>
+      </field>
+      <field id="87784054a201415d94cbf31c93210ab5" label="Email End Date">
+        <value format="yyyy-MM-dd" type="Date"/>
+      </field>
+    </section>
+    <section id="2687e70e5d45487c93a8a02626543f64" label="Identification" recordId="bc9baed7be3e4799bc1c846e4d906ad5">
+      <field id="ee8beaea41f049d8bcfadfbfa89ac09e" label="Title"/>
+      <field id="5c6f17e8a67241e19667815a9e95d9d0" label="Family Name">
+        <value type="String"/>
+      </field>
+      <field id="98ad36fee26a4d6b8953ea764f4fed04" label="First Name">
+        <value type="String"/>
+      </field>
+      <field id="4ca83c1aaa6a42a78eac0290368e70f3" label="Middle Name">
+        <value type="String"/>
+      </field>
+      <field id="84e9fa08f7334db79ed5310e5f7a961b" label="Previous Family Name">
+        <value type="String"/>
+      </field>
+      <field id="0fb359a7d809457d9392bb1ca577f1b3" label="Previous First Name">
+        <value type="String"/>
+      </field>
+      <field id="41ed5ea3ae974428b3fcb592161b6423" label="Date of Birth">
+        <value format="MM/dd" type="MonthDay"/>
+      </field>
+      <field id="3d258d8ceb174d3eb2ae1258a780d91b" label="Sex"/>
+      <field id="d51292265505483b9424e0e3dc9878a0" label="Designated Group"/>
+      <field id="2b72a344523c467da0c896656b5290c0" label="Correspondence language"/>
+      <field id="3432b76fe25844b4a9cb993256c6b61b" label="Canadian Residency Status"/>
+      <field id="d61c6d30955b46af84b73cdc43f3ecdf" label="Applied for Permanent Residency?"/>
+      <field id="f5d3c8bea17f45af976e596a6a6e78c8" label="Permanent Residency Start Date">
+        <value format="yyyy-MM-dd" type="Date"/>
+      </field>
+    </section>
+    <section id="c1f614961342429c86397e81cd6f50f5" label="Language Skills" recordId="5374ba0f824f44048a904034ca55fd39">
+      <field id="ee161805b4f941e48f05e050e364e585" label="Language"/>
+      <field id="a9d0f0666e5b47dcb9acb30bd5cab407" label="Read"/>
+      <field id="12173f36422446479799578ba07d96c8" label="Write"/>
+      <field id="e670ac0f2c3e48a3b13d487e66ea7889" label="Speak"/>
+      <field id="aa02c54f1e5b4672a0b96def14e5b02e" label="Understand"/>
+      <field id="fc6ac63e9ec04129aec7b26e5a729920" label="Peer Review"/>
+    </section>
+    <section id="2a3366209cf8477f82556b045188f131" label="Telephone" primaryIndicator="true" recordId="2e240b1cdbdd480ea8307846e0777bc8">
+      <field id="ccef121ae875427f829024aabb39fa8c" label="Phone Type"/>
+      <field id="63dedd46a5204cda8257227bbb3b6675" label="Country Code">
+        <value type="String"/>
+      </field>
+      <field id="13cdf3a5e13643f5bc74566bf075253c" label="Area Code">
+        <value type="String"/>
+      </field>
+      <field id="1ca756fe70964371a2b9f57bdf567a5d" label="Telephone Number">
+        <value type="String"/>
+      </field>
+      <field id="afe0657785084098bb718345280eb840" label="Extension">
+        <value type="String"/>
+      </field>
+      <field id="69c67fae5d4849d08f4f9799ae0a2335" label="Telephone Start Date">
+        <value format="yyyy-MM-dd" type="Date"/>
+      </field>
+      <field id="a90e95e1d278467eaf1847464f09f39f" label="Telephone End Date">
+        <value format="yyyy-MM-dd" type="Date"/>
+      </field>
+    </section>
+    <section id="69084a96fc764965a8d4687dcb886504" label="Website" recordId="fcd570cb83ab4d66b80639f35f4e094b">
+      <field id="a4a7235b57e54c3da40de44b44af4d77" label="Website Type"/>
+      <field id="3d368ce1ce0c4f92a473091888ab9445" label="URL">
+        <value type="String"/>
+      </field>
+    </section>
+  </section>
+  <section id="047ec63e32fe450e943cb678339e8102" label="Contributions">
+    <section id="46e8f57e67db48b29d84dda77cf0ef51" label="Publications">
+      <section id="fd8f2ffe3f5c43db8b5c3f72d8ffd994" label="Book Chapters" recordId="da1082879f994a3b8bf0183bd5a8475f">
+        <field id="52a699a6b0fe42a4851a7d5ae355360b" label="Chapter Title">
+          <value type="String"/>
+        </field>
+        <field id="b864a9512e89482487f83ed22c454e9d" label="Book Title">
+          <value type="String"/>
+        </field>
+        <field id="7bd402d81ca24cd090b392fcf618d8e2" label="Edition">
+          <value type="String"/>
+        </field>
+        <field id="c250eee732d34fd9831f858c39785624" label="Volume">
+          <value type="String"/>
+        </field>
+        <field id="45b9d02a4bb04ec782357741b53dc135" label="Page Range">
+          <value type="String"/>
+        </field>
+        <field id="cf36bbd2e16c45cba9768a84ac2d6729" label="Publishing Status"/>
+        <field id="c114eabcd4674f3c9467b2bf6820cbd6" label="Year">
+          <value format="yyyy" type="Year"/>
+        </field>
+        <field id="51a088349c1442238d5d0331d95f3205" label="Publisher">
+          <value type="String"/>
+        </field>
+        <field id="1581a489c30d46f1b5a8c2f2863eaf45" label="Publication Location"/>
+        <field id="03138234db4149bfa300a595fc0efed3" label="Publication City">
+          <value type="String"/>
+        </field>
+        <field id="959146d3ae8d4e4f9747bc0697adb5f5" label="Description / Contribution Value">
+          <value type="Bilingual"/>
+          <bilingual>
+            <french/>
+            <english/>
+          </bilingual>
+        </field>
+        <field id="6f1c66fc402d4b0db3d9987e2c5d49e8" label="URL">
+          <value type="String"/>
+        </field>
+        <field id="51bd72e89f85442a9ae199e75fe5e765" label="Refereed?"/>
+        <field id="5d2f8073935a4e66b39fb99366889ded" label="Contribution Role"/>
+        <field id="aea26d37a8e449aea1da8da9c2b37fb2" label="Number of Contributors">
+          <value type="Number"/>
+        </field>
+        <field id="5bc7b0b361f843d296e0e035b4b87176" label="Authors">
+          <value type="String"/>
+        </field>
+        <field id="dcb27492e1554fc9838992ba7c70f416" label="Editors">
+          <value type="String"/>
+        </field>
+        <field id="3ec2cafffd764171a325a26dd707b819" label="DOI">
+          <value type="String"/>
+        </field>
+        <field id="23abe2286ff7411badeadfa661dc678d" label="Contribution Percentage"/>
+        <field id="a6452d277ddf4bb2a6bd8ed75da72a58" label="Description of Contribution Role">
+          <value type="Bilingual"/>
+          <bilingual>
+            <french/>
+            <english/>
+          </bilingual>
+        </field>
+      </section>
+      <section id="4ef4df71a505469788b587f1a509eadf" label="Books" recordId="2932f95cbbeb476eb0fad3453425569b">
+        <field id="ef406ccb1fcc45d1b096380119649200" label="Book Title">
+          <value type="String"/>
+        </field>
+        <field id="adb6baaa90c84529b4bc2736f56c605d" label="Edition">
+          <value type="String"/>
+        </field>
+        <field id="a097e5436cf04e4c8737f7871561c67c" label="Volume">
+          <value type="String"/>
+        </field>
+        <field id="c1c428527abf441eade5de08575af4f8" label="Number of Pages">
+          <value type="Number"/>
+        </field>
+        <field id="92114e550d1c40028e44dbebbc97d05e" label="Publishing Status"/>
+        <field id="b9156e483a5a42a3b49d5ee599c73aee" label="Year">
+          <value format="yyyy" type="Year"/>
+        </field>
+        <field id="5dbf3f3754c74f96bbf056939513eb8c" label="Publisher">
+          <value type="String"/>
+        </field>
+        <field id="6c72ec3263264af2a82f6ba5f562ddeb" label="Publication Location"/>
+        <field id="6ad3792980d04a9abd7320cb2ac34af7" label="Publication City">
+          <value type="String"/>
+        </field>
+        <field id="6480fa19889345619e778b394ad1445e" label="Description / Contribution Value">
+          <value type="Bilingual"/>
+          <bilingual>
+            <french/>
+            <english/>
+          </bilingual>
+        </field>
+        <field id="6cb3f8ab7d7a435bb0b12847756a635d" label="URL">
+          <value type="String"/>
+        </field>
+        <field id="ecd4abd985ec4e9ab590f0ecb86811a7" label="Refereed?"/>
+        <field id="5ed734b4d7f94a55b8b7686f02b239e2" label="Contribution Role"/>
+        <field id="5b70ce45176c407aa64fb6c2a69b4720" label="Number of Contributors">
+          <value type="Number"/>
+        </field>
+        <field id="e555fb44aaf14740b880693b01603a35" label="Authors">
+          <value type="String"/>
+        </field>
+        <field id="9caab9a65f6a4fe6a9d3c9b9dd9568c9" label="Editors">
+          <value type="String"/>
+        </field>
+        <field id="56ce280509da462588a17b188388c6dd" label="DOI">
+          <value type="String"/>
+        </field>
+        <field id="2559bf8bd302487483e72d831d6cced0" label="Contribution Percentage"/>
+        <field id="e15681cfb3374b1fbffcf6b86780bd60" label="Description of Contribution Role">
+          <value type="Bilingual"/>
+          <bilingual>
+            <french/>
+            <english/>
+          </bilingual>
+        </field>
+      </section>
+      <section id="4b9f909503cd4c8aa8d826c87d6d874d" label="Conference Publications" recordId="97188bcf3e654130a1e073002e0226fe">
+        <field id="81ef87c09ded47ae8880b8d79e83406f" label="Conference Publication Type"/>
+        <field id="8e6ee535c95e42ec866b777c7472bafb" label="Publication Title">
+          <value type="String"/>
+        </field>
+        <field id="b3c8a60c053a405597b92899d95765a3" label="Conference Name">
+          <value type="String"/>
+        </field>
+        <field id="5813833859a64bb58ee55e4f55aff29b" label="Conference Location"/>
+        <field id="c2efd9725588489b8df73467c5597c32" label="City">
+          <value type="String"/>
+        </field>
+        <field id="99b57db653a841ccbd5f8e52079745c0" label="Conference Date">
+          <value format="yyyy/MM" type="YearMonth"/>
+        </field>
+        <field id="1a1b39e861054ee59d270e66271a4ead" label="Published In">
+          <value type="String"/>
+        </field>
+        <field id="684ccb1fcdd7421f89b304ff5c40579d" label="Page Range">
+          <value type="String"/>
+        </field>
+        <field id="080301b1f1c0464bba7fcfa1fa8fe182" label="Publishing Status"/>
+        <field id="0318d139f3e0479083188ff8319a97b2" label="Year">
+          <value format="yyyy" type="Year"/>
+        </field>
+        <field id="0c357193a93f4137a87394401ac81958" label="Publisher">
+          <value type="String"/>
+        </field>
+        <field id="2fc69f4076f149bda1f0bb3e0ef9d79f" label="Publication Location"/>
+        <field id="a6e901e5f0cf48a3a7d674bf1e6fcd7f" label="Description / Contribution Value">
+          <value type="Bilingual"/>
+          <bilingual>
+            <french/>
+            <english/>
+          </bilingual>
+        </field>
+        <field id="61690b466fb748d99ed29b340c0ee60b" label="URL">
+          <value type="String"/>
+        </field>
+        <field id="560a2ce08e14497ba575af760eb12ba9" label="Refereed?"/>
+        <field id="06295e65f66b4c6aa286d08bd9fac59b" label="Invited?"/>
+        <field id="b101f8f057db434ba4fdee3a86c387cc" label="Contribution Role"/>
+        <field id="1a66ad40654a45c9a0119b19d7cf20a6" label="Number of Contributors">
+          <value type="Number"/>
+        </field>
+        <field id="3cc54d9bb92d421da46548979048396f" label="Authors">
+          <value type="String"/>
+        </field>
+        <field id="018e656a0f824b1f91a6a2cb33ac61dd" label="Editors">
+          <value type="String"/>
+        </field>
+        <field id="49e5507889954743b104959e62d9e496" label="DOI">
+          <value type="String"/>
+        </field>
+        <field id="575eaa1383ac49ed9d78b5a970a76eb8" label="Contribution Percentage"/>
+        <field id="890336779db441d8a38e7709f6866d15" label="Description of Contribution Role">
+          <value type="Bilingual"/>
+          <bilingual>
+            <french/>
+            <english/>
+          </bilingual>
+        </field>
+      </section>
+      <section id="9a34d6b273914f18b2273e8de7c48fd6" label="Journal Articles" recordId="10087490d1524560955262e608759539">
+        <field id="f3fd4878d47c4e83aef6959620ba4870" label="Article Title">
+          <value type="String"/>
+        </field>
+        <field id="5c04ea4dae464499807d0b40b4cad049" label="Journal">
+          <value type="String"/>
+        </field>
+        <field id="0a826c656ff34e579dfcbfb373771260" label="Volume">
+          <value type="String"/>
+        </field>
+        <field id="cc1d9e14945b4e8496641dbe22b3448a" label="Issue">
+          <value type="String"/>
+        </field>
+        <field id="00ba1799ece344dc8d0779a3f05a4df8" label="Page Range">
+          <value type="String"/>
+        </field>
+        <field id="3b56e4362d6a495aa5d22a1de5914741" label="Publishing Status"/>
+        <field id="6fafe258e19e49a7884428cb49d75424" label="Year">
+          <value format="yyyy" type="Year"/>
+        </field>
+        <field id="4ad593960aba4a21bf154fa8daf37f9f" label="Publisher">
+          <value type="String"/>
+        </field>
+        <field id="4c3bc805ceaa42259f014514fc4905f8" label="Publication Location"/>
+        <field id="1167905d079c4400ae7a4a76a203a445" label="Description / Contribution Value">
+          <value type="Bilingual"/>
+          <bilingual>
+            <french/>
+            <english/>
+          </bilingual>
+        </field>
+        <field id="478545acac5340c0a73b7e0d2a4bee06" label="URL">
+          <value type="String"/>
+        </field>
+        <field id="2089ff1a86844b6c9a10fc63469f9a9d" label="Refereed?"/>
+        <field id="51b7eaff05444990af823b9d80924f5b" label="Open Access?"/>
+        <field id="b779cc6478bd4b09b516c6d55e938583" label="Synthesis?"/>
+        <field id="289c8814fff141d89b12569d49aa2cb3" label="Contribution Role"/>
+        <field id="dc7922dfa04348a3a83c9afb5bbaa24a" label="Number of Contributors">
+          <value type="Number"/>
+        </field>
+        <field id="bc3b428d99384b04bb749311bb804e1d" label="Authors">
+          <value type="String"/>
+        </field>
+        <field id="707a6e0ca58341a5a82fb923b2842530" label="Editors">
+          <value type="String"/>
+        </field>
+        <field id="375a0e2ea0914291b05b0529c4755aa7" label="DOI">
+          <value type="String"/>
+        </field>
+        <field id="9afd9e28df47464faf3f9ee2c4809e25" label="Contribution Percentage"/>
+        <field id="9f2e163dfcbf4abdb73e9d5c4daf03c4" label="Description of Contribution Role">
+          <value type="Bilingual"/>
+          <bilingual>
+            <french/>
+            <english/>
+          </bilingual>
+        </field>
+      </section>
+      <section id="7e57525337d5498a9506fdadee098b10" label="Reports" recordId="5da88c48612b49479c6be2c37dab6747">
+        <field id="dd692787647b495fbadb038b6937950d" label="Report Title">
+          <value type="String"/>
+        </field>
+        <field id="916975e25205410a81832725aef52824" label="Organization"/>
+        <field id="e36ad9761bc94ec48350d86b87489dc2" label="Other Organization Type"/>
+        <field id="212fa7b750264e6496a9e4a4c4968810" label="Other Organization">
+          <value type="String"/>
+        </field>
+        <field id="c90158ebf7f648b1b2e4945fef6948c4" label="Number of Pages">
+          <value type="Number"/>
+        </field>
+        <field id="a1f619a230b5452b9f0c8337b23f43af" label="Year Submitted">
+          <value format="yyyy" type="Year"/>
+        </field>
+        <field id="2c74544e67264402825fa6e52154b8c0" label="Synthesis?"/>
+        <field id="694c4c7bf6ad47309ab6f77f4fee1869" label="Description / Contribution Value">
+          <value type="Bilingual"/>
+          <bilingual>
+            <french/>
+            <english/>
+          </bilingual>
+        </field>
+        <field id="d570e2086e0e4e7d911cbb631a631af5" label="URL">
+          <value type="String"/>
+        </field>
+        <field id="3117e1b94d5b405d818abecf74dce59e" label="Contribution Role"/>
+        <field id="67a5ad87e91e4f92bca8d1a988d8cbe2" label="Number of Contributors">
+          <value type="Number"/>
+        </field>
+        <field id="0cf4ffe90f0b496483a8937b96a0224c" label="Authors">
+          <value type="String"/>
+        </field>
+        <field id="e3264fc9e17442e492bc8d5dca60e165" label="Editors">
+          <value type="String"/>
+        </field>
+        <field id="5ec4fa552175415a9b45c4e20504007f" label="DOI">
+          <value type="String"/>
+        </field>
+        <field id="0c53b4b8715d4ab9bdd595b6e539936e" label="Contribution Percentage"/>
+        <field id="939eaf56249248d896d3a27abc6338f0" label="Description of Contribution Role">
+          <value type="Bilingual"/>
+          <bilingual>
+            <french/>
+            <english/>
+          </bilingual>
+        </field>
+      </section>
+    </section>
+    <section id="ec6a032c4286497fbc2c7e5c64f02fbf" label="Interviews and Media Relations">
+      <section id="6ba8ed9d1b11499d82fc8b52ea7f2ed5" label="Broadcast Interviews" recordId="80fa96b934df44b685cebfcc4bc5f191">
+        <field id="d0e9097280af4f048bc398909b477f8b" label="Topic">
+          <value type="String"/>
+        </field>
+        <field id="898358dcbee5490da57b47af27c5ae26" label="Interviewer">
+          <value type="String"/>
+        </field>
+        <field id="11eb1e9afc9d4b3c95790cda2ee8d871" label="Program">
+          <value type="String"/>
+        </field>
+        <field id="e8df27af502a46b891a79136e4003337" label="Network">
+          <value type="String"/>
+        </field>
+        <field id="9baaf4ce38c64d1a93a17e9234b0b07a" label="First Broadcast Date">
+          <value format="yyyy-MM-dd" type="Date"/>
+        </field>
+        <field id="bc273dd80df9430cbb20db0d12c33886" label="End Date">
+          <value format="yyyy-MM-dd" type="Date"/>
+        </field>
+        <field id="dde1b903850846218394146592c11aa4" label="Description / Contribution Value">
+          <value type="Bilingual"/>
+          <bilingual>
+            <french/>
+            <english/>
+          </bilingual>
+        </field>
+        <field id="fcb9542bff0e45e2a0fe5eacd56b86a3" label="URL">
+          <value type="String"/>
+        </field>
+      </section>
+      <section id="d8ed6dffd5c1463980ecd309ced3e024" label="Text Interviews" recordId="cc86188f8e45435abca3042fb92a2d12">
+        <field id="d816e4b744e24b0ca906072bd49c5391" label="Topic">
+          <value type="String"/>
+        </field>
+        <field id="4af334bdcbe8400c8b97574d50df3b0f" label="Interviewer">
+          <value type="String"/>
+        </field>
+        <field id="da23968a8f5c49709dbcd7358fbd4ecc" label="Forum">
+          <value type="String"/>
+        </field>
+        <field id="c5b7a33140f54342a2349e5d46d65f3e" label="Publication Date">
+          <value format="yyyy-MM-dd" type="Date"/>
+        </field>
+        <field id="44efe9b9105f4bb8a47ad51296383db1" label="Description / Contribution Value">
+          <value type="Bilingual"/>
+          <bilingual>
+            <french/>
+            <english/>
+          </bilingual>
+        </field>
+        <field id="91f8566539884e6b971d6a5cc572861a" label="URL">
+          <value type="String"/>
+        </field>
+      </section>
+    </section>
+    <section id="c7ce6f054e0941ea8b27127dbd4a26d0" label="Presentations" recordId="0e115f1a05c542a180c3456fdeffc9f4">
+      <field id="3f6a7ac56ee64b7dbd84dba9d6e3302d" label="Presentation Title">
+        <value type="String"/>
+      </field>
+      <field id="8d882e55b0a54d0b8eec347f5502a19b" label="Conference / Event Name">
+        <value type="String"/>
+      </field>
+      <field id="f4b5f1a1d181404ca9c0fea81f9a7e79" label="Location"/>
+      <field id="de6f8e0d7a714b07a4671af86405c6c9" label="City">
+        <value type="String"/>
+      </field>
+      <field id="5f01d3af96d54a7ca3926b467dc946b7" label="Main Audience"/>
+      <field id="720d2f02feaf4aacb06ce60be0c6f603" label="Invited?"/>
+      <field id="9b6d317fd53e4b6a9e2e1d9e2001f3f5" label="Keynote?"/>
+      <field id="9caf21634d984fc597f069f6e4a0a351" label="Competitive?"/>
+      <field id="725e4c54320b474680feaf530567fdd3" label="Presentation Year">
+        <value format="yyyy" type="Year"/>
+      </field>
+      <field id="cc257bd89e6341a6bd53cc1cf05935c9" label="Description / Contribution Value">
+        <value type="Bilingual"/>
+        <bilingual>
+          <french/>
+          <english/>
+        </bilingual>
+      </field>
+      <field id="8f612e2d2b23458fa114d8a790c38e13" label="URL">
+        <value type="String"/>
+      </field>
+      <field id="d1dde22650bf4c508cf997beee12ef50" label="Co-Presenters">
+        <value type="String"/>
+      </field>
+    </section>
+    <section id="f89bc79337e442108d8c75f0703e9794" label="Artistic Contributions">
+      <section id="1e336853ecb44b7a81b08c8cab2657b2" label="Radio and TV Programs" recordId="3c12755217ec4322adb8aa5d90b3914a">
+        <field id="329e14e1c1e34276b0328a265e3cf0b4" label="Program Title">
+          <value type="String"/>
+        </field>
+        <field id="bf5b5d0da20548859f1ee2e0433aa5ee" label="Episode Title">
+          <value type="String"/>
+        </field>
+        <field id="8c9fe0e3a6a24bd99dc611f059b996c2" label="Number of Episodes">
+          <value type="Number"/>
+        </field>
+        <field id="83c154bc6d5b496992c221335b208670" label="Series Title">
+          <value type="String"/>
+        </field>
+        <field id="f1534fcff7d8457d8c7eb998aeee1967" label="Publisher">
+          <value type="String"/>
+        </field>
+        <field id="eaf35ffbee524d04992118d850aae4ad" label="Publication Location"/>
+        <field id="21ca3432b55249ddad33a6b1cc8ea623" label="Description / Contribution Value">
+          <value type="Bilingual"/>
+          <bilingual>
+            <french/>
+            <english/>
+          </bilingual>
+        </field>
+        <field id="706baef6fca04f95a122882dbaa89a8f" label="URL">
+          <value type="String"/>
+        </field>
+        <field id="fce2acbaf5a04cf88aedb9972007b8bc" label="Contribution Role">
+          <value type="String"/>
+        </field>
+        <field id="be0f34c9805944799ca184f4a6d463bb" label="Number of Contributors">
+          <value type="Number"/>
+        </field>
+        <field id="318db83da998409fad6892767917c55c" label="Contributors">
+          <value type="String"/>
+        </field>
+      </section>
+    </section>
+  </section>
+  <section id="ee130288917f4e23adcc800a94ae355c" label="Memberships">
+    <section id="6c3b449732a84ac9af45d6935b8323d9" label="Committee Memberships" recordId="543e1c3f486c4bce84861515493e946b">
+      <field id="da89e8800c6641be91b0b21a61118c09" label="Role"/>
+      <field id="b3c21a20aeee49cea5c1c33029da4c4c" label="Committee Name">
+        <value type="String"/>
+      </field>
+      <field id="e1f84da9b6df40fe9db972af2f85e5eb" label="Organization"/>
+      <field id="2ef5054449c44bbeba1cd30cd9a63549" label="Other Organization Type"/>
+      <field id="99aa9de868c442f281a0ba67a3d3116d" label="Other Organization">
+        <value type="String"/>
+      </field>
+      <field id="4c1a9700923d4bf9b541e479f4f32a66" label="Membership Start Date">
+        <value format="yyyy/MM" type="YearMonth"/>
+      </field>
+      <field id="acf1a91ab6cd43bfbdc3ee3df5cb7af7" label="Description">
+        <value type="Bilingual"/>
+        <bilingual>
+          <french/>
+          <english/>
+        </bilingual>
+      </field>
+      <field id="1db804cbb6f04c64b57e60c306557d91" label="Membership End Date">
+        <value format="yyyy/MM" type="YearMonth"/>
+      </field>
+    </section>
+    <section id="cbc6f120ec5e49c79d1c50fac0e92359" label="Other Memberships" recordId="460eeb1691dc426a9183b8581664310b">
+      <field id="ee344aa665f948dc9358e8016e6caca4" label="Role">
+        <value type="String"/>
+      </field>
+      <field id="879331c5513b4991ac80f92f25dc0cce" label="Organization"/>
+      <field id="cebfba23f38c49029eac7ccda10dc1bb" label="Other Organization Type"/>
+      <field id="11f1c7611fbb4dd89401643bf7bd7d31" label="Other Organization">
+        <value type="String"/>
+      </field>
+      <field id="d5887f3620a541f6a99dde3bea9cd932" label="Membership Start Date">
+        <value format="yyyy/MM" type="YearMonth"/>
+      </field>
+      <field id="5d7500f47693421b899203e9a22ec860" label="Membership End Date">
+        <value format="yyyy/MM" type="YearMonth"/>
+      </field>
+      <field id="09d50e81ecc44f4ab7b7434903b00055" label="Description">
+        <value type="Bilingual"/>
+        <bilingual>
+          <french/>
+          <english/>
+        </bilingual>
+      </field>
+    </section>
+  </section>
+  <section id="95c29504d0aa4b51b84659cafaf2b38d" label="Activities">
+    <section id="e1185e17fcbc4b5aae650296632735db" label="Teaching Activities">
+      <section id="9dc74140d0ff4b26a2d4a559bc9b5a2b" label="Courses Taught" recordId="d49e209ecb774f8790f718c7fdeae0fd">
+        <field id="cefdb78ecd9e43fb8554d21e7d454132" label="Role">
+          <value type="String"/>
+        </field>
+        <field id="8280ef884eec43938a1aa4f7173a501e" label="Organization"/>
+        <field id="9db14283713a49ebb7bd5eb4b35ebcc0" label="Other Organization Type"/>
+        <field id="842163f3dbf547bbafba3e1230628fc6" label="Other Organization">
+          <value type="String"/>
+        </field>
+        <field id="b532bb9be90e4a93a879f23e79cfd652" label="Department">
+          <value type="String"/>
+        </field>
+        <field id="bab7abad3efb404897984bee6ed33692" label="Academic Session"/>
+        <field id="d62dd205bef0463a8a23436c75f83f41" label="Course Code">
+          <value type="String"/>
+        </field>
+        <field id="95728285a48242a896b5727c98a7c0c5" label="Course Title">
+          <value type="String"/>
+        </field>
+        <field id="cbc3b0766a004d17af19823c3929827d" label="Course Topic">
+          <value type="String"/>
+        </field>
+        <field id="6db7aff8daf74420abcca56f8e6d6cc3" label="Course Level"/>
+        <field id="8b0cb490ebc947709a742fcedf619036" label="Section">
+          <value type="String"/>
+        </field>
+        <field id="c2b79aa4e9e0431db8f3c4e2c32db3b0" label="Number of Students">
+          <value type="Number"/>
+        </field>
+        <field id="05b1c7c941194144b786690d89ba7c8c" label="Number of Credits">
+          <value type="Number"/>
+        </field>
+        <field id="76f08a7bda38475bb15660d4fc57745f" label="Start Date">
+          <value format="yyyy-MM-dd" type="Date"/>
+        </field>
+        <field id="c87587a998c04d3bbb23e853516d2f94" label="End Date">
+          <value format="yyyy-MM-dd" type="Date"/>
+        </field>
+        <field id="d8df0762aab441ccaee17177810bca8d" label="Lecture Hours Per Week">
+          <value type="Number"/>
+        </field>
+        <field id="54509104b76d453294153a2c84fcdf35" label="Tutorial Hours Per Week">
+          <value type="Number"/>
+        </field>
+        <field id="693bc4334346483b820ffa65283c5a20" label="Lab Hours Per Week">
+          <value type="Number"/>
+        </field>
+        <field id="b7900bd448a84eb797c0255eabf1013a" label="Guest Lecture?"/>
+      </section>
+    </section>
+    <section id="9fa2e1cd0274429f9fde16616bf3939f" label="Administrative Activities">
+      <section id="95433781426f45749b05ff6bc0062dd9" label="Editorial Activities" recordId="fb923a2dc99a4a808cf28c5b6482e610">
+        <field id="bca52391a28840879ef185c41ae728e3" label="Role">
+          <value type="String"/>
+        </field>
+        <field id="024515508fd2498f99516cb71a109da1" label="Publication Type"/>
+        <field id="42711a8af574435f82b02c5f455d96fb" label="Publication Name">
+          <value type="String"/>
+        </field>
+        <field id="cbe5defb3e804adbb0e7cdc581b55fd0" label="Start Date">
+          <value format="yyyy/MM" type="YearMonth"/>
+        </field>
+        <field id="c4c319cffb764895bb4b98c360275978" label="End Date">
+          <value format="yyyy/MM" type="YearMonth"/>
+        </field>
+        <field id="a95eb3c02b964746ab3c30ad0bd60a27" label="Activity Description">
+          <value type="Bilingual"/>
+          <bilingual>
+            <french/>
+            <english/>
+          </bilingual>
+        </field>
+      </section>
+      <section id="7564fc922478441c97c9857809028895" label="Event Administration" recordId="8443b6a223764e118f52a5e77a69121b">
+        <field id="31cdeb30328e410cb6b78fa48435be08" label="Role">
+          <value type="String"/>
+        </field>
+        <field id="7878a016f370434a8364beca1a47ea20" label="Event Type"/>
+        <field id="f5389531adca4f54a4e9bee39532323c" label="Event Name">
+          <value type="String"/>
+        </field>
+        <field id="9def30776da74a1597de4fd0d9a0e74b" label="Activity Start Date">
+          <value format="yyyy/MM" type="YearMonth"/>
+        </field>
+        <field id="0dc7af4aa5ff4bb880bb6a5db48a9b55" label="Activity End Date">
+          <value format="yyyy/MM" type="YearMonth"/>
+        </field>
+        <field id="7cf2f82472bd4d7086f58b43c488b39e" label="Primary Event Organizer">
+          <value type="String"/>
+        </field>
+        <field id="cf11be8d0fa94624b80a11ad83a911e8" label="Event Start Date">
+          <value format="yyyy/MM" type="YearMonth"/>
+        </field>
+        <field id="aabcc98da2b348ea9502c35177096674" label="Event End Date">
+          <value format="yyyy/MM" type="YearMonth"/>
+        </field>
+        <field id="32a0b4e43c8147cdae1ad306b4cb3353" label="Activity Description">
+          <value type="Bilingual"/>
+          <bilingual>
+            <french/>
+            <english/>
+          </bilingual>
+        </field>
+      </section>
+    </section>
+    <section id="42b12f4fc72e4ccab5f05a07383a4a3d" label="Participation Activities">
+      <section id="e4c83c62880c4db28c8dd91f572ff923" label="Event Participation" recordId="c6aa61b44f6542a190be0ebf9eb0347a">
+        <field id="8171fde7270f48108d3fcbdf674dacbe" label="Role">
+          <value type="String"/>
+        </field>
+        <field id="5375d6ecd533422c8506812193185afc" label="Event Type"/>
+        <field id="f0ac796a53204436bc42bd1f090e3103" label="Event Name">
+          <value type="String"/>
+        </field>
+        <field id="990e0e4ac2fb4740b8a17a8271f76966" label="Start Date">
+          <value format="yyyy/MM" type="YearMonth"/>
+        </field>
+        <field id="c735a919b0484543aa5e4913ccb4fadd" label="End Date">
+          <value format="yyyy/MM" type="YearMonth"/>
+        </field>
+        <field id="bb21062baabb4b6eb0991e21fd33c5d7" label="Event Start Date">
+          <value format="yyyy/MM" type="YearMonth"/>
+        </field>
+        <field id="5c29f04e7a1c4f3e956d3bf6b79a798d" label="Event End Date">
+          <value format="yyyy/MM" type="YearMonth"/>
+        </field>
+        <field id="e34fa0d134d34ed3811c3600812fdb07" label="Activity Description">
+          <value type="Bilingual"/>
+          <bilingual>
+            <french/>
+            <english/>
+          </bilingual>
+        </field>
+      </section>
+    </section>
+    <section id="ba0553fb52024e94adff3100f8ad6b0e" label="International Collaboration Activities" recordId="276d24edfab8453f8a644fe0d8025b6a">
+      <field id="fafb6f312c1b4f11b0e5261fd11c6c43" label="Role">
+        <value type="String"/>
+      </field>
+      <field id="d32f2d1cdd354271af560fb3472b0e17" label="Location"/>
+      <field id="6add476ea0ca4a1bbb65e5e6969f0e03" label="Start Date">
+        <value format="yyyy/MM" type="YearMonth"/>
+      </field>
+      <field id="1fca9a154da1410fba879ed661dbf477" label="End Date">
+        <value format="yyyy/MM" type="YearMonth"/>
+      </field>
+      <field id="ffaf2249da2b4e528ea044c40e4b1da2" label="Activity Description">
+        <value type="Bilingual"/>
+        <bilingual>
+          <french/>
+          <english/>
+        </bilingual>
+      </field>
+    </section>
+    <section id="99613195a04f4e3a9fdd129cb2242550" label="Assessment and Review Activities">
+      <section id="3f4e029fb3a141958126bcbc9d086acd" label="Journal Review Activities" recordId="179d3b581f3740e2a9397bf5a231795d">
+        <field id="ddc01053231c442d89dc9d18199c8495" label="Role">
+          <value type="String"/>
+        </field>
+        <field id="59990065210f4bc084270ef862602cc4" label="Review Type"/>
+        <field id="e206eee3330a41c6ada624c29265fde7" label="Journal">
+          <value type="String"/>
+        </field>
+        <field id="9b9aaa304dcf4bd78e20c211ba3b0bee" label="Press">
+          <value type="String"/>
+        </field>
+        <field id="0c8f14842ab04c8daa4749b864f46a6c" label="Number of Works Reviewed / Refereed">
+          <value type="Number"/>
+        </field>
+        <field id="0d2099f8e48d458c95452f1051670d44" label="Start Date">
+          <value format="yyyy/MM" type="YearMonth"/>
+        </field>
+        <field id="075e5d8f38624311a1f2bd0a0a7b69e3" label="End Date">
+          <value format="yyyy/MM" type="YearMonth"/>
+        </field>
+      </section>
+      <section id="d936ced236a14d59a24fad5f41befd94" label="Organizational Review Activities" recordId="3ccee89378e9494e9c21fb783e75c8a6">
+        <field id="c030139006a74969a4d191711ba0557b" label="Role">
+          <value type="String"/>
+        </field>
+        <field id="2bd6e279a13944f5b63938fc8169768c" label="Organization"/>
+        <field id="731da824622d460ab1490435169f2a04" label="Other Organization Type"/>
+        <field id="025f3819c6af4ac19eb5a64eb64e1f3e" label="Other Organization">
+          <value type="String"/>
+        </field>
+        <field id="2786302e3cfc47ee8bd9248acb9754a6" label="Start Date">
+          <value format="yyyy/MM" type="YearMonth"/>
+        </field>
+        <field id="70e06bb0787f468aa41d36991f663984" label="End Date">
+          <value format="yyyy/MM" type="YearMonth"/>
+        </field>
+        <field id="fddf414852db46dbbb1a9f93674216c1" label="Activity Description">
+          <value type="Bilingual"/>
+          <bilingual>
+            <french/>
+            <english/>
+          </bilingual>
+        </field>
+      </section>
+      <section id="379d746b713646b5b7073d552bf25e39" label="Promotion Tenure Assessment Activities" recordId="4abcca9e573b42bc8dffced502e2d989">
+        <field id="fe88cc360e8a4a8c8b42a425cef39f25" label="Role">
+          <value type="String"/>
+        </field>
+        <field id="240ee9a9744543bca9ec47db6343c7ff" label="Organization"/>
+        <field id="9559d66817f34364af74a2870844eb5e" label="Other Organization Type"/>
+        <field id="1d6c24101d3c4a0a9929bd5dc01e067f" label="Other Organization">
+          <value type="String"/>
+        </field>
+        <field id="3dd187c9d3f34c06b7b2c13b8cacf4b1" label="Department">
+          <value type="String"/>
+        </field>
+        <field id="454ae31508e5476b9edbfeefdb093777" label="Number of Assessments">
+          <value type="Number"/>
+        </field>
+        <field id="49919f1edf8e45e0bd5c1a37ddc603da" label="Start Date">
+          <value format="yyyy/MM" type="YearMonth"/>
+        </field>
+        <field id="f30fece99a60402c8dd6b5b2b352be1a" label="End Date">
+          <value format="yyyy/MM" type="YearMonth"/>
+        </field>
+        <field id="a21da6e76c3c437aaa6653f924a1660d" label="Activity Description">
+          <value type="Bilingual"/>
+          <bilingual>
+            <french/>
+            <english/>
+          </bilingual>
+        </field>
+      </section>
+      <section id="af9a2a51e320436d97170bc90b5180e6" label="Research Funding Application Assessment Activities" recordId="08581932f3bd4d84874bd48f2304fdd1">
+        <field id="bbb05266b3d64fb39c57c05632856418" label="Funding Reviewer Role"/>
+        <field id="f40cfa94bedc4f6a872f3976f9547207" label="Assessment Type"/>
+        <field id="f29cc450d9d24d59aa263273af90aba3" label="Reviewer Type"/>
+        <field id="dc14b30de4f243b5811d7467de88a6bf" label="Committee Name">
+          <value type="String"/>
+        </field>
+        <field id="c7749851b7fa4b83a00c86aa84e20826" label="Organization"/>
+        <field id="44c19ff17a3349e8a8429a9ec46a34bb" label="Other Organization Type"/>
+        <field id="beb18622dffa468f94340432904a6c7b" label="Other Organization">
+          <value type="String"/>
+        </field>
+        <field id="ad9fec09dbfb4f8ebfe39587292bb100" label="Funding Organization">
+          <value type="String"/>
+        </field>
+        <field id="dfaca41b6eda4b0e9f3af7090bc719d5" label="Number of Applications Assessed">
+          <value type="Number"/>
+        </field>
+        <field id="bc820a00b99d400c9468c1b4924a4f51" label="Start Date">
+          <value format="yyyy/MM" type="YearMonth"/>
+        </field>
+        <field id="cd2f1341e17342ef8b464e3f939ee977" label="End Date">
+          <value format="yyyy/MM" type="YearMonth"/>
+        </field>
+      </section>
+    </section>
+    <section id="f40c6da02dec468095a8c9270d50e1b1" label="Knowledge and Technology Translation" recordId="2125b8b5748b4c618847388ce1d1f6cb">
+      <field id="048600ee91d442e780766a6f87259665" label="Role">
+        <value type="String"/>
+      </field>
+      <field id="9473edf5c6144141b7108138e1b6da07" label="Knowledge and Technology Translation Activity Type"/>
+      <field id="5d6f6f2fbd88436882ec3be8ad275b75" label="Group/Organization/Business Serviced">
+        <value type="String"/>
+      </field>
+      <field id="36e2a751042d436c81fc21aa801d3d2b" label="Target Stakeholder"/>
+      <field id="2b26a4da9f47402e885df5af64016142" label="Outcome / Deliverable">
+        <value type="Bilingual"/>
+        <bilingual>
+          <french/>
+          <english/>
+        </bilingual>
+      </field>
+      <field id="41d53de101804a28a6d57a09b330cc74" label="Evidence of Uptake/Impact">
+        <value type="Bilingual"/>
+        <bilingual>
+          <french/>
+          <english/>
+        </bilingual>
+      </field>
+      <field id="8aee82642f6b4a19af367e71e7c26e3e" label="References / Citations / Web Sites">
+        <value type="String"/>
+      </field>
+      <field id="2be0f915ae1e4b429f2f0e04c349a3bb" label="Start Date">
+        <value format="yyyy/MM" type="YearMonth"/>
+      </field>
+      <field id="692f423a32624edf92371825b1a7e59d" label="End Date">
+        <value format="yyyy/MM" type="YearMonth"/>
+      </field>
+      <field id="7b54fc4f54ee436fb0786c63defbdd79" label="Activity Description">
+        <value type="Bilingual"/>
+        <bilingual>
+          <french/>
+          <english/>
+        </bilingual>
+      </field>
+    </section>
+    <section id="90cc172e54904b45948d17cba24d3f25" label="Supervisory Activities">
+      <section id="1a5da72fe6ac447baaf62e6fb4a923f7" label="Staff Supervision" recordId="bae5fbf317ac414c9ae8139af3691caa">
+        <field id="d569b306fc8940d38f4b58a674e426c8" label="Number of Scientific and Technical Staff">
+          <value type="Number"/>
+        </field>
+        <field id="6ef2235894db45a990ac66337f675602" label="Number of Visiting  Researchers">
+          <value type="Number"/>
+        </field>
+        <field id="d612767481234385837b0d5f93beae1a" label="Number of Highly Qualified Personnel in Research Training">
+          <value type="Number"/>
+        </field>
+        <field id="ce01144da96442029cf88c0576d9d7a4" label="Number of Employees">
+          <value type="Number"/>
+        </field>
+        <field id="1bba63bf56624973aabc1489e8d91e1a" label="Number of Volunteers">
+          <value type="Number"/>
+        </field>
+      </section>
+      <section id="4b36fa1eef2549f6ab3a3df7c1c81e0b" label="Student/Postdoctoral Supervision" recordId="92d918bb35c14d84866c109e962ea5e9">
+        <field id="78a3e68f1ab74f31b9284c2acdb70739" label="Supervision Role"/>
+        <field id="19964df0a8524f2bb44d5eb53729f9cc" label="Supervision Start Date">
+          <value format="yyyy/MM" type="YearMonth"/>
+        </field>
+        <field id="bd3619f7970441dc83ada1d2fdbf0780" label="Supervision End Date">
+          <value format="yyyy/MM" type="YearMonth"/>
+        </field>
+        <field id="3c504aafda28418ea439d8f92c28aef0" label="Student Name">
+          <value type="String"/>
+        </field>
+        <field id="e36ccf9a00a241dc942e608df32c8c84" label="Student Institution">
+          <value type="String"/>
+        </field>
+        <field id="bb322e0195b540779bf4bdb4f1a04210" label="Student Canadian Residency Status"/>
+        <field id="5b8638e8646448dcb8edef2c21e01c87" label="Degree Type or Postdoctoral Status"/>
+        <field id="e5d331dca0fc4000992e43b695b2db21" label="Student Degree Status"/>
+        <field id="3cf3d0de12f44222b941fdbf57ad51a6" label="Student Degree Start Date">
+          <value format="yyyy/MM" type="YearMonth"/>
+        </field>
+        <field id="8284dbdd03aa4277b7fca7662bd1758c" label="Student Degree Received Date">
+          <value format="yyyy/MM" type="YearMonth"/>
+        </field>
+        <field id="ab1293e2fee8472481457d4f8493c7f1" label="Student Degree Expected Date">
+          <value format="yyyy/MM" type="YearMonth"/>
+        </field>
+        <field id="420e5bbd57104c3c9823b5e6850ee6f8" label="Thesis/Project Title">
+          <value type="String"/>
+        </field>
+        <field id="804797ed2fe54da88f326743e38e270e" label="Project Description">
+          <value type="Bilingual"/>
+          <bilingual>
+            <french/>
+            <english/>
+          </bilingual>
+        </field>
+        <field id="0f2f1601c24144308e0966d75b781db9" label="Present Position">
+          <value type="String"/>
+        </field>
+        <field id="8789e49ef39b4249aa53d414045ebfd2" label="Degree Name">
+          <value type="Bilingual"/>
+          <bilingual>
+            <english/>
+          </bilingual>
+        </field>
+        <field id="17957ada91964db18a3b0526f5b4e341" label="Specialization">
+          <value type="Bilingual"/>
+          <bilingual>
+            <english/>
+          </bilingual>
+        </field>
+        <field id="c20e3ae276a2429d888ae8e16216182f" label="Present Organization">
+          <value type="String"/>
+        </field>
+        <section id="2f5d211c5adf4400809eff1e8ab60376" label="Student Country of Citizenship" recordId="d5ef4aa1121f41e3a229ad5369986689">
+          <field id="3be64ade337f4019b4752713c49224f1" label="Student Country of Citizenship"/>
+        </section>
+        <section id="c6f47d5afaad4d26b868f430bd8a2c59" label="Student Recognitions" recordId="43877d97e83049b9ab9ebc071d04ec8b">
+          <field id="ea93c32cf83d4d54b21a3aeef042eac1" label="Recognition Type"/>
+          <field id="f49ada682bba42c68cdabdd79013d86b" label="Recognition Name">
+            <value type="String"/>
+          </field>
+          <field id="15d46c4a7f9f478ca76c38e45b357021" label="Year Started">
+            <value format="yyyy" type="Year"/>
+          </field>
+          <field id="966ed29b24144b36888af2c32776247d" label="Year Completed">
+            <value format="yyyy" type="Year"/>
+          </field>
+          <field id="c016782cc72a4cd29fefd89281c3ce96" label="Organization"/>
+          <field id="0fc03a5e5cdc442d83a55101d2fadcc2" label="Other Organization Type"/>
+          <field id="a8519584753946e9adc3b2839546794b" label="Other Organization">
+            <value type="String"/>
+          </field>
+          <field id="5afe2b22e4bb492b9cb0ce5dfc775180" label="Amount">
+            <value type="Number"/>
+          </field>
+          <field id="d1e2bbc7e631495ab95609656261907f" label="Currency"/>
+        </section>
+        <section id="c6f47d5afaad4d26b868f430bd8a2c59" label="Student Recognitions" recordId="bb63081584264fbf9618bfcae941172b">
+          <field id="ea93c32cf83d4d54b21a3aeef042eac1" label="Recognition Type"/>
+          <field id="f49ada682bba42c68cdabdd79013d86b" label="Recognition Name">
+            <value type="String"/>
+          </field>
+          <field id="15d46c4a7f9f478ca76c38e45b357021" label="Year Started">
+            <value format="yyyy" type="Year"/>
+          </field>
+          <field id="966ed29b24144b36888af2c32776247d" label="Year Completed">
+            <value format="yyyy" type="Year"/>
+          </field>
+          <field id="c016782cc72a4cd29fefd89281c3ce96" label="Organization"/>
+          <field id="0fc03a5e5cdc442d83a55101d2fadcc2" label="Other Organization Type"/>
+          <field id="a8519584753946e9adc3b2839546794b" label="Other Organization">
+            <value type="String"/>
+          </field>
+          <field id="5afe2b22e4bb492b9cb0ce5dfc775180" label="Amount">
+            <value type="Number"/>
+          </field>
+          <field id="d1e2bbc7e631495ab95609656261907f" label="Currency"/>
+        </section>
+      </section>
+    </section>
+  </section>
+  <section id="0d82220f95f043e0bc9608bbb6bf413a" label="Education">
+    <section id="06f7b2dd9c774b73857605091745b661" label="Credentials" recordId="a14b09d9c9d849689c15bfdf75ef830d">
+      <field id="0b4742c6471d44788742cb9165cb9478" label="Title">
+        <value type="String"/>
+      </field>
+      <field id="d2fecfe2aaec46f3b9f9e829dcef1d9d" label="Organization"/>
+      <field id="ea642ee18ee54714ba6cacd8878c5d4a" label="Other Organization">
+        <value type="String"/>
+      </field>
+      <field id="9eb4c6ff960a4fcd956dd203ce199a10" label="Other Organization Type"/>
+      <field id="b982633fb220490381a2e0a694d6254e" label="Effective Date">
+        <value format="yyyy/MM" type="YearMonth"/>
+      </field>
+      <field id="33c3442168f940b8a9ecbbbfd54cd2b1" label="Description">
+        <value type="Bilingual"/>
+        <bilingual/>
+      </field>
+      <field id="378d49283ec04e2e97a591f9aa49ee81" label="End Date">
+        <value format="yyyy/MM" type="YearMonth"/>
+      </field>
+    </section>
+    <section id="aee5a225a504442fb83f716235cfb587" label="Degrees" recordId="8e57136c190b4de0b4ff0642dfeb432e">
+      <field id="a83a0af883924c57bb66107cc32b6d5e" label="Degree Type"/>
+      <field id="7df537009941493789a32bcae3499909" label="Degree Name">
+        <value type="Bilingual"/>
+        <bilingual>
+          <english/>
+        </bilingual>
+      </field>
+      <field id="35696972e69541dd86a80521d3737b26" label="Specialization">
+        <value type="Bilingual"/>
+        <bilingual>
+          <english/>
+        </bilingual>
+      </field>
+      <field id="ca55badff5c1483cbb1c69495a22d0af" label="Thesis Title">
+        <value type="String"/>
+      </field>
+      <field id="6e225f28f003427aa79aa68ff0aa3865" label="Organization"/>
+      <field id="020ec1f40f3d4065bf5424f77209b8e4" label="Other Organization">
+        <value type="String"/>
+      </field>
+      <field id="f1a127d96eb64b1e8776023106ac4a00" label="Other Organization Type"/>
+      <field id="c42a1deb6fe046dfa5502169032760de" label="Degree Status"/>
+      <field id="337ee6b2606c4c899f0e0c4ec3bd6ec2" label="Degree Start Date">
+        <value format="yyyy/MM" type="YearMonth"/>
+      </field>
+      <field id="4b818aef68a84743b19149d376032afb" label="Degree Received Date">
+        <value format="yyyy/MM" type="YearMonth"/>
+      </field>
+      <field id="91b70ad64b6843fdaae1e94282bc77f0" label="Degree Expected Date">
+        <value format="yyyy/MM" type="YearMonth"/>
+      </field>
+      <field id="b04a491dc6ea4fc99e2453dbfb834965" label="Transferred to PhD without completing Masters?"/>
+      <section id="447d27e319c94c2dbb661959c7c40c97" label="Areas of Research" recordId="69367ad0f7ad455f8d1e869b34954734">
+        <field id="a8b0b7584b454b3c96fc34882a7bae12" label="Order">
+          <value type="Number"/>
+        </field>
+        <field id="e7677e7cec974b3d81196938648b731f" label="Area of Research"/>
+      </section>
+      <section id="42e0ec8b7946411f9b2a0f2093ce2f1e" label="Research Disciplines" recordId="b8e7eebe66ff439488d5e8face5f9dd4">
+        <field id="7f0f0c79f847413cbdefbd52dee958dd" label="Order">
+          <value type="Number"/>
+        </field>
+        <field id="c437657271cf457fa2b516dbd1d57efc" label="Research Discipline"/>
+      </section>
+      <section id="42e0ec8b7946411f9b2a0f2093ce2f1e" label="Research Disciplines" recordId="dda52e20070346ecb2e745f6dbf59bf7">
+        <field id="7f0f0c79f847413cbdefbd52dee958dd" label="Order">
+          <value type="Number"/>
+        </field>
+        <field id="c437657271cf457fa2b516dbd1d57efc" label="Research Discipline"/>
+      </section>
+      <section id="42e0ec8b7946411f9b2a0f2093ce2f1e" label="Research Disciplines" recordId="ec38a4fd92ea4f00a4c27bc3d165e0d2">
+        <field id="7f0f0c79f847413cbdefbd52dee958dd" label="Order">
+          <value type="Number"/>
+        </field>
+        <field id="c437657271cf457fa2b516dbd1d57efc" label="Research Discipline"/>
+      </section>
+      <section id="49eb8b6f4d0c4e3aa68dbe242bdecfb4" label="Supervisors" recordId="69f714e17c55465295dcdfbcba36ddf9">
+        <field id="c5d78ee68528412d892acc849851dbe6" label="Supervisor Name">
+          <value type="String"/>
+        </field>
+        <field id="93f1886a6ace43659d519b628e9f026e" label="Start Date">
+          <value format="yyyy/MM" type="YearMonth"/>
+        </field>
+        <field id="7dd6df1257ef461f806b5e644741e1a2" label="End Date">
+          <value format="yyyy/MM" type="YearMonth"/>
+        </field>
+      </section>
+      <section id="14f15c08598c4baa911697a16157d75a" label="Fields of Application" recordId="e3a8e039ab0b4c92a6563ee212872e41">
+        <field id="4e269294415249079731231561dfec8b" label="Order">
+          <value type="Number"/>
+        </field>
+        <field id="99e0bcb3d8344827915f282ec3ca7e3a" label="Field of Application"/>
+      </section>
+    </section>
+  </section>
+  <section id="a0bae97397f448a2833de3e3406d8aa0" label="Most Significant Contributions" recordId="28bd214240f045ba89a9b3e6eec2221b">
+    <field id="9aa7938358d145bfb32e306c690a263e" label="Title">
+      <value type="Bilingual"/>
+      <bilingual>
+        <french/>
+        <english/>
+      </bilingual>
+    </field>
+    <field id="6a3c33e9496944d7acf81ce53abe7319" label="Contribution Date">
+      <value format="yyyy/MM" type="YearMonth"/>
+    </field>
+    <field id="dd3429e281f948dcbf492a29d5dcf8ed" label="Description / Contribution Value/Impact">
+      <value type="Bilingual"/>
+      <bilingual>
+        <english/>
+      </bilingual>
+    </field>
+  </section>
+  <section id="47c6295f7c2743c08d2db3fa6f6f0f52" label="Recognitions" recordId="f50aba4863414627918895e10f77bcfa">
+    <field id="050ab4129d8f4cfc9e1366b92e5f22af" label="Recognition Type"/>
+    <field id="949d898a29c7416a811b1995f9e50590" label="Recognition Name">
+      <value type="String"/>
+    </field>
+    <field id="067fe957590c469e85aa7e473ed8c03d" label="Other Organization">
+      <value type="String"/>
+    </field>
+    <field id="43517b4fd422423382baab1e916e7f63" label="Other Organization Type"/>
+    <field id="acaa1fcd28204023958eb4b67e8ccaef" label="Effective Date">
+      <value format="yyyy/MM" type="YearMonth"/>
+    </field>
+    <field id="cc9dd31221c942deb720bc40f89bcb3d" label="End Date">
+      <value format="yyyy/MM" type="YearMonth"/>
+    </field>
+    <field id="c9bbee3c0fd64230b59afc3bcc276079" label="Amount">
+      <value type="Number"/>
+    </field>
+    <field id="b855d3bfed254655997ad5a17ebc34fc" label="Description">
+      <value type="Bilingual"/>
+      <bilingual>
+        <english/>
+      </bilingual>
+    </field>
+    <field id="b79c15516c144b4092e3147e56d247b3" label="Currency"/>
+    <section id="03dce651e0e346ad9a56bf8d181b05a0" label="Research Disciplines" recordId="8c4ca0eccaca4b259bca13357900a6ff">
+      <field id="09a1b28e393e4da4a072456561bc4d55" label="Order">
+        <value type="Number"/>
+      </field>
+      <field id="e72baca2312e4d65bef6b42cb8914599" label="Research Discipline"/>
+    </section>
+  </section>
+  <section id="aaedc5454412483d9131f7619d10279e" label="Research Funding History" recordId="5661b6c75e1241d88543e8d559cf6955">
+    <field id="931b92a5ffed4e5aa9c7b3a0afd5f8ba" label="Funding Type"/>
+    <field id="9c1db4674334436ca891b7b8a9e114bd" label="Funding Start Date">
+      <value format="yyyy/MM" type="YearMonth"/>
+    </field>
+    <field id="b63179ab0f0e4c9eaa7e9a8130d60ee3" label="Funding End Date">
+      <value format="yyyy/MM" type="YearMonth"/>
+    </field>
+    <field id="735545eb499e4cc6a949b4b375a804e8" label="Funding Title">
+      <value type="String"/>
+    </field>
+    <field id="c8e3451d1e3a405bb1e8aa0ebeb66c8d" label="Grant Type"/>
+    <field id="0674312de78f4647aba3bf202a41d58e" label="Project Description">
+      <value type="Bilingual"/>
+      <bilingual>
+        <french/>
+        <english/>
+      </bilingual>
+    </field>
+    <field id="f7bfa6e647fd48cf8d404263df5843b1" label="Clinical Research Project?"/>
+    <field id="0991ead151e3445ca7537aa15acbec57" label="Funding Status"/>
+    <field id="7496de092dc84038a1881e8f9d77e713" label="Funding Role"/>
+    <field id="32ce1c0c194447c19c6847b1915d35f1" label="Research Uptake">
+      <value type="Bilingual"/>
+      <bilingual>
+        <french/>
+        <english/>
+      </bilingual>
+    </field>
+    <section id="8e2fb2810141436189c030b18d35085c" label="Funding by Year" recordId="bf3e536b54aa4c8184df47e496e93850">
+      <field id="c8dec2620d6d454d9cbd4e15018864af" label="Start Date">
+        <value format="yyyy/MM" type="YearMonth"/>
+      </field>
+      <field id="b8a26c08286e4f919921979bbfc47d5d" label="End Date">
+        <value format="yyyy/MM" type="YearMonth"/>
+      </field>
+      <field id="664f2b989b4b4aafa28be877d6e83123" label="Total Funding">
+        <value type="Number"/>
+      </field>
+      <field id="c5472a9c4e4140d38cbda92406c7952b" label="Currency of Total Funding"/>
+      <field id="8c9aa0a42b9b450c8e0386065609eb79" label="Portion of Funding Received">
+        <value type="Number"/>
+      </field>
+      <field id="06703047af894f44acb81777a9bb5a42" label="Currency of Portion of Funding Received"/>
+      <field id="3b3d4329241c4dc6bf1e6947be5857c9" label="Time Commitment">
+        <value type="Number"/>
+      </field>
+    </section>
+    <section id="8e2fb2810141436189c030b18d35085c" label="Funding by Year" recordId="5d10ba1005804ea49b70c41e8c01f396">
+      <field id="c8dec2620d6d454d9cbd4e15018864af" label="Start Date">
+        <value format="yyyy/MM" type="YearMonth"/>
+      </field>
+      <field id="b8a26c08286e4f919921979bbfc47d5d" label="End Date">
+        <value format="yyyy/MM" type="YearMonth"/>
+      </field>
+      <field id="664f2b989b4b4aafa28be877d6e83123" label="Total Funding">
+        <value type="Number"/>
+      </field>
+      <field id="c5472a9c4e4140d38cbda92406c7952b" label="Currency of Total Funding"/>
+      <field id="8c9aa0a42b9b450c8e0386065609eb79" label="Portion of Funding Received">
+        <value type="Number"/>
+      </field>
+      <field id="06703047af894f44acb81777a9bb5a42" label="Currency of Portion of Funding Received"/>
+      <field id="3b3d4329241c4dc6bf1e6947be5857c9" label="Time Commitment">
+        <value type="Number"/>
+      </field>
+    </section>
+    <section id="8e2fb2810141436189c030b18d35085c" label="Funding by Year" recordId="defad2226d3343bbaebd0d95b57aacfc">
+      <field id="c8dec2620d6d454d9cbd4e15018864af" label="Start Date">
+        <value format="yyyy/MM" type="YearMonth"/>
+      </field>
+      <field id="b8a26c08286e4f919921979bbfc47d5d" label="End Date">
+        <value format="yyyy/MM" type="YearMonth"/>
+      </field>
+      <field id="664f2b989b4b4aafa28be877d6e83123" label="Total Funding">
+        <value type="Number"/>
+      </field>
+      <field id="c5472a9c4e4140d38cbda92406c7952b" label="Currency of Total Funding"/>
+      <field id="8c9aa0a42b9b450c8e0386065609eb79" label="Portion of Funding Received">
+        <value type="Number"/>
+      </field>
+      <field id="06703047af894f44acb81777a9bb5a42" label="Currency of Portion of Funding Received"/>
+      <field id="3b3d4329241c4dc6bf1e6947be5857c9" label="Time Commitment">
+        <value type="Number"/>
+      </field>
+    </section>
+    <section id="8e2fb2810141436189c030b18d35085c" label="Funding by Year" recordId="c216cb33d0f449a8863c2dd2cbead17e">
+      <field id="c8dec2620d6d454d9cbd4e15018864af" label="Start Date">
+        <value format="yyyy/MM" type="YearMonth"/>
+      </field>
+      <field id="b8a26c08286e4f919921979bbfc47d5d" label="End Date">
+        <value format="yyyy/MM" type="YearMonth"/>
+      </field>
+      <field id="664f2b989b4b4aafa28be877d6e83123" label="Total Funding">
+        <value type="Number"/>
+      </field>
+      <field id="c5472a9c4e4140d38cbda92406c7952b" label="Currency of Total Funding"/>
+      <field id="8c9aa0a42b9b450c8e0386065609eb79" label="Portion of Funding Received">
+        <value type="Number"/>
+      </field>
+      <field id="06703047af894f44acb81777a9bb5a42" label="Currency of Portion of Funding Received"/>
+      <field id="3b3d4329241c4dc6bf1e6947be5857c9" label="Time Commitment">
+        <value type="Number"/>
+      </field>
+    </section>
+    <section id="8e2fb2810141436189c030b18d35085c" label="Funding by Year" recordId="e0bd7d2f9410432dbf7b849b6cd43774">
+      <field id="c8dec2620d6d454d9cbd4e15018864af" label="Start Date">
+        <value format="yyyy/MM" type="YearMonth"/>
+      </field>
+      <field id="b8a26c08286e4f919921979bbfc47d5d" label="End Date">
+        <value format="yyyy/MM" type="YearMonth"/>
+      </field>
+      <field id="664f2b989b4b4aafa28be877d6e83123" label="Total Funding">
+        <value type="Number"/>
+      </field>
+      <field id="c5472a9c4e4140d38cbda92406c7952b" label="Currency of Total Funding"/>
+      <field id="8c9aa0a42b9b450c8e0386065609eb79" label="Portion of Funding Received">
+        <value type="Number"/>
+      </field>
+      <field id="06703047af894f44acb81777a9bb5a42" label="Currency of Portion of Funding Received"/>
+      <field id="3b3d4329241c4dc6bf1e6947be5857c9" label="Time Commitment">
+        <value type="Number"/>
+      </field>
+    </section>
+    <section id="376b8991609f46059a3d66028f005360" label="Funding Sources" recordId="d3d661aa8af84a299f75b61badbb48c6">
+      <field id="67e083b070954e91bcbb1cc70131145a" label="Funding Organization"/>
+      <field id="1bdead14642545f3971a59997d82da67" label="Other Funding Organization">
+        <value type="String"/>
+      </field>
+      <field id="97231512141a452a82151cc162e9a59c" label="Program Name">
+        <value type="String"/>
+      </field>
+      <field id="3fb9015d879f435d937ae9aa7ccd2973" label="Funding Reference Number">
+        <value type="String"/>
+      </field>
+      <field id="dfe6a0b34347486aaa677f07306a141e" label="Total Funding">
+        <value type="Number"/>
+      </field>
+      <field id="4775aa8f2a3f4f5083dd1c816462f260" label="Currency of Total Funding"/>
+      <field id="882a94c7548744ca992e2647346d2e14" label="Portion of Funding Received">
+        <value type="Number"/>
+      </field>
+      <field id="b8ea355ed5ad4970bf1367fe0281b724" label="Currency of Portion of Funding Received"/>
+      <field id="a445f692a0d54760bcf2ed9c8a829eff" label="Funding Renewable?"/>
+      <field id="00efdc7e790a48ac8675696c66afc3ad" label="Funding Competitive?"/>
+      <field id="d62313c1cdb9419caf79014f07e1cfe0" label="Funding Start Date">
+        <value format="yyyy/MM" type="YearMonth"/>
+      </field>
+      <field id="efc68e7d74f849eebb59f9a3bb85e5db" label="Funding End Date">
+        <value format="yyyy/MM" type="YearMonth"/>
+      </field>
+    </section>
+    <section id="c7c473d1237b432fb7f2abd831130fb7" label="Other Investigators" recordId="ee4264e0ef9a4a648baaa063d1dbcd29">
+      <field id="ddd551dfb26344fbb17f07afcffc94ed" label="Investigator Name">
+        <value type="String"/>
+      </field>
+      <field id="13806a6772d248158619261afaab2fe0" label="Role"/>
+    </section>
+    <section id="c7c473d1237b432fb7f2abd831130fb7" label="Other Investigators" recordId="2de696a7d3434b599b0cffcaf23576be">
+      <field id="ddd551dfb26344fbb17f07afcffc94ed" label="Investigator Name">
+        <value type="String"/>
+      </field>
+      <field id="13806a6772d248158619261afaab2fe0" label="Role"/>
+    </section>
+  </section>
+  <section id="5c6aca5ad9da4e3d90e5a4d4d876d2b8" label="User Profile" recordId="91cc8b75e7374d9687b92b607ad2753d">
+    <field id="96a283c7cf354879867a0787e0c1ead1" label="Researcher Status"/>
+    <field id="77d7b0b6cf934ced8978232a31822c09" label="Research Career Start Date">
+      <value format="yyyy-MM-dd" type="Date"/>
+    </field>
+    <field id="ac002a7a135b47e0b9f8d6f5dab2cc29" label="Engaged in Clinical Research?"/>
+    <field id="8e84fb494085423d9f7a28067db57207" label="Key Theory / Methodology">
+      <value type="Bilingual"/>
+      <bilingual>
+        <french/>
+        <english/>
+      </bilingual>
+    </field>
+    <field id="16d79ecde08240c4a275ae8628f153d2" label="Research Interests">
+      <value type="Bilingual"/>
+      <bilingual>
+        <french/>
+        <english/>
+      </bilingual>
+    </field>
+    <field id="cd49146744cd4a648435cfc645b7df41" label="Research Experience Summary">
+      <value type="Bilingual"/>
+      <bilingual>
+        <french/>
+        <english/>
+      </bilingual>
+    </field>
+    <section id="6062975bede54fd59fcfe0785e7451a3" label="Fields of Application" recordId="de0322a3963f431a91d4d8a9e9401234">
+      <field id="9ec242f5d282450ca1dd8ff883b9f6a9" label="Order">
+        <value type="Number"/>
+      </field>
+      <field id="595ef6787363411fa14f245f161a132e" label="Field of Application"/>
+    </section>
+    <section id="f911b371f6134dfc99600e15675d5885" label="Areas of Research" recordId="dea18c094bce4229960be4d36624504f">
+      <field id="f7b450cd341c49d786d13246b8a6c616" label="Order">
+        <value type="Number"/>
+      </field>
+      <field id="bd32ebd68bc346b1a20de641e26be765" label="Area of Research"/>
+    </section>
+    <section id="53099556bdac4ac8813be6fd62a356b1" label="Research Specialization Keywords" recordId="2da3aa2f559b4394a9299a641d43cea0">
+      <field id="1e0ff4e40d544b4b87a17fed4c4c22d3" label="Order">
+        <value type="Number"/>
+      </field>
+      <field id="6351fbc0f45f4266b29f292fd521c67a" label="Research Specialization Keywords">
+        <value type="Bilingual"/>
+        <bilingual>
+          <english/>
+        </bilingual>
+      </field>
+    </section>
+    <section id="53099556bdac4ac8813be6fd62a356b1" label="Research Specialization Keywords" recordId="f9faf2e79c4246389a45d655d5f64489">
+      <field id="1e0ff4e40d544b4b87a17fed4c4c22d3" label="Order">
+        <value type="Number"/>
+      </field>
+      <field id="6351fbc0f45f4266b29f292fd521c67a" label="Research Specialization Keywords">
+        <value type="Bilingual"/>
+        <bilingual>
+          <english/>
+        </bilingual>
+      </field>
+    </section>
+    <section id="53099556bdac4ac8813be6fd62a356b1" label="Research Specialization Keywords" recordId="6f38635d7beb454591708d8a3f4a49ec">
+      <field id="1e0ff4e40d544b4b87a17fed4c4c22d3" label="Order">
+        <value type="Number"/>
+      </field>
+      <field id="6351fbc0f45f4266b29f292fd521c67a" label="Research Specialization Keywords">
+        <value type="Bilingual"/>
+        <bilingual>
+          <english/>
+        </bilingual>
+      </field>
+    </section>
+    <section id="53099556bdac4ac8813be6fd62a356b1" label="Research Specialization Keywords" recordId="4f1c8b0a649243b298db85455bc1bbea">
+      <field id="1e0ff4e40d544b4b87a17fed4c4c22d3" label="Order">
+        <value type="Number"/>
+      </field>
+      <field id="6351fbc0f45f4266b29f292fd521c67a" label="Research Specialization Keywords">
+        <value type="Bilingual"/>
+        <bilingual>
+          <english/>
+        </bilingual>
+      </field>
+    </section>
+    <section id="53099556bdac4ac8813be6fd62a356b1" label="Research Specialization Keywords" recordId="c8fae5c680bf424ba966d3baa054a6b6">
+      <field id="1e0ff4e40d544b4b87a17fed4c4c22d3" label="Order">
+        <value type="Number"/>
+      </field>
+      <field id="6351fbc0f45f4266b29f292fd521c67a" label="Research Specialization Keywords">
+        <value type="Bilingual"/>
+        <bilingual>
+          <english/>
+        </bilingual>
+      </field>
+    </section>
+    <section id="53099556bdac4ac8813be6fd62a356b1" label="Research Specialization Keywords" recordId="c295fe9e641e4c5ba19f42d95cc9d107">
+      <field id="1e0ff4e40d544b4b87a17fed4c4c22d3" label="Order">
+        <value type="Number"/>
+      </field>
+      <field id="6351fbc0f45f4266b29f292fd521c67a" label="Research Specialization Keywords">
+        <value type="Bilingual"/>
+        <bilingual>
+          <english/>
+        </bilingual>
+      </field>
+    </section>
+    <section id="ffd3d352a4234f5e9b57db596c0b1d4e" label="Research Disciplines" recordId="b69686a8be044865befa1b02720b92d8">
+      <field id="5fec8904baea45608172b57cab09ddef" label="Order">
+        <value type="Number"/>
+      </field>
+      <field id="c7f852f101e64d9cbd595a7058975c73" label="Research Discipline"/>
+    </section>
+    <section id="ffd3d352a4234f5e9b57db596c0b1d4e" label="Research Disciplines" recordId="37874ff7f8234262b589709246d01637">
+      <field id="5fec8904baea45608172b57cab09ddef" label="Order">
+        <value type="Number"/>
+      </field>
+      <field id="c7f852f101e64d9cbd595a7058975c73" label="Research Discipline"/>
+    </section>
+  </section>
+</generic-cv:generic-cv>

@@ -1,0 +1,307 @@
+{
+  "degrees": {
+    "ccv_section_label": "Degrees",
+    "dedup_key": ["degree_name", "organization"],
+    "fields": [
+      {"src": "degree_type", "ccv": "Degree Type", "kind": "lov", "omit_if_empty": true},
+      {"src": "degree_name", "ccv": "Degree Name", "kind": "bilingual"},
+      {"src": "specialization", "ccv": "Specialization", "kind": "bilingual", "omit_if_empty": true},
+      {"src": "thesis_title", "ccv": "Thesis Title", "kind": "string", "omit_if_empty": true},
+      {"src": "organization", "ccv": "Organization", "kind": "reftable", "reftable": "Organization", "fallback_field": "Other Organization", "omit_if_empty": true},
+      {"src": "other_organization_type", "ccv": "Other Organization Type", "kind": "lov", "omit_if_empty": true},
+      {"src": "degree_status", "ccv": "Degree Status", "kind": "lov", "omit_if_empty": true},
+      {"src": "start", "ccv": "Degree Start Date", "kind": "yearmonth", "omit_if_empty": true},
+      {"src": "received", "ccv": "Degree Received Date", "kind": "yearmonth", "omit_if_empty": true},
+      {"src": "expected", "ccv": "Degree Expected Date", "kind": "yearmonth", "omit_if_empty": true},
+      {"src": "transferred_to_phd", "ccv": "Transferred to PhD without completing Masters?", "kind": "lov", "omit_if_empty": true}
+    ],
+    "subsections": [
+      {"src": "supervisors", "ccv": "Supervisors", "fields": [
+        {"src": "name", "ccv": "Supervisor Name", "kind": "string"},
+        {"src": "start", "ccv": "Start Date", "kind": "yearmonth", "omit_if_empty": true},
+        {"src": "end", "ccv": "End Date", "kind": "yearmonth", "omit_if_empty": true}
+      ]},
+      {"src": "research_disciplines", "ccv": "Research Disciplines", "repeat_scalar": true, "fields": [
+        {"src": "_value", "ccv": "Research Discipline", "kind": "reftable", "reftable": "Research Discipline", "omit_if_empty": true}
+      ]},
+      {"src": "areas_of_research", "ccv": "Areas of Research", "repeat_scalar": true, "fields": [
+        {"src": "_value", "ccv": "Area of Research", "kind": "reftable", "reftable": "Area of Research", "omit_if_empty": true}
+      ]}
+    ]
+  },
+  "academic_work_experience": {
+    "ccv_section_label": "Academic Work Experience",
+    "dedup_key": ["position", "start"],
+    "fields": [
+      {"src": "position_type", "ccv": "Position Type", "kind": "lov", "omit_if_empty": true},
+      {"src": "position", "ccv": "Position Title", "kind": "string"},
+      {"src": "start", "ccv": "Start Date", "kind": "yearmonth", "omit_if_empty": true},
+      {"src": "end", "ccv": "End Date", "kind": "yearmonth", "omit_if_empty": true},
+      {"src": "description", "ccv": "Work Description", "kind": "bilingual", "omit_if_empty": true},
+      {"src": "organization", "ccv": "Organization", "kind": "reftable", "reftable": "Organization", "fallback_field": "Other Organization", "omit_if_empty": true},
+      {"src": "department", "ccv": "Department", "kind": "string", "omit_if_empty": true}
+    ],
+    "subsections": []
+  },
+  "nonacademic_work_experience": {
+    "ccv_section_label": "Non-academic Work Experience",
+    "dedup_key": ["position", "start"],
+    "fields": [
+      {"src": "position", "ccv": "Position Title", "kind": "string"},
+      {"src": "position_status", "ccv": "Position Status", "kind": "lov", "omit_if_empty": true},
+      {"src": "start", "ccv": "Start Date", "kind": "yearmonth", "omit_if_empty": true},
+      {"src": "end", "ccv": "End Date", "kind": "yearmonth", "omit_if_empty": true},
+      {"src": "description", "ccv": "Work Description", "kind": "bilingual", "omit_if_empty": true},
+      {"src": "organization", "ccv": "Organization", "kind": "reftable", "reftable": "Organization", "fallback_field": "Other Organization", "omit_if_empty": true}
+    ],
+    "subsections": []
+  },
+  "research_funding": {
+    "ccv_section_label": "Research Funding History",
+    "dedup_key": ["funding_title", "start"],
+    "fields": [
+      {"src": "funding_type", "ccv": "Funding Type", "kind": "lov", "omit_if_empty": true},
+      {"src": "start", "ccv": "Funding Start Date", "kind": "yearmonth", "omit_if_empty": true},
+      {"src": "end", "ccv": "Funding End Date", "kind": "yearmonth", "omit_if_empty": true},
+      {"src": "funding_title", "ccv": "Funding Title", "kind": "string"},
+      {"src": "grant_type", "ccv": "Grant Type", "kind": "lov", "omit_if_empty": true},
+      {"src": "description", "ccv": "Project Description", "kind": "bilingual", "omit_if_empty": true},
+      {"src": "clinical", "ccv": "Clinical Research Project?", "kind": "lov", "omit_if_empty": true},
+      {"src": "status", "ccv": "Funding Status", "kind": "lov", "omit_if_empty": true},
+      {"src": "role", "ccv": "Funding Role", "kind": "lov", "omit_if_empty": true}
+    ],
+    "subsections": []
+  },
+  "courses_taught": {
+    "ccv_section_label": "Courses Taught",
+    "dedup_key": ["course_title", "session_year"],
+    "fields": [
+      {"src": "role", "ccv": "Role", "kind": "string", "omit_if_empty": true},
+      {"src": "organization", "ccv": "Organization", "kind": "reftable", "reftable": "Organization", "fallback_field": "Other Organization", "omit_if_empty": true},
+      {"src": "department", "ccv": "Department", "kind": "string", "omit_if_empty": true},
+      {"src": "session", "ccv": "Academic Session", "kind": "lov", "omit_if_empty": true},
+      {"src": "course_code", "ccv": "Course Code", "kind": "string", "omit_if_empty": true},
+      {"src": "course_title", "ccv": "Course Title", "kind": "string"},
+      {"src": "level", "ccv": "Course Level", "kind": "lov", "omit_if_empty": true},
+      {"src": "num_students", "ccv": "Number of Students", "kind": "number", "omit_if_empty": true}
+    ],
+    "subsections": []
+  },
+  "supervision": {
+    "ccv_section_label": "Student/Postdoctoral Supervision",
+    "dedup_key": ["student_name", "start"],
+    "fields": [
+      {"src": "role", "ccv": "Supervision Role", "kind": "lov", "omit_if_empty": true},
+      {"src": "start", "ccv": "Supervision Start Date", "kind": "yearmonth", "omit_if_empty": true},
+      {"src": "end", "ccv": "Supervision End Date", "kind": "yearmonth", "omit_if_empty": true},
+      {"src": "student_name", "ccv": "Student Name", "kind": "string"},
+      {"src": "institution", "ccv": "Student Institution", "kind": "string", "omit_if_empty": true},
+      {"src": "degree_name", "ccv": "Degree Name", "kind": "bilingual", "omit_if_empty": true},
+      {"src": "thesis_title", "ccv": "Thesis/Project Title", "kind": "string", "omit_if_empty": true}
+    ],
+    "subsections": []
+  },
+  "committee_memberships": {
+    "ccv_section_label": "Committee Memberships",
+    "dedup_key": ["committee_name", "start"],
+    "fields": [
+      {"src": "role", "ccv": "Role", "kind": "lov", "omit_if_empty": true},
+      {"src": "committee_name", "ccv": "Committee Name", "kind": "string"},
+      {"src": "other_organization", "ccv": "Other Organization", "kind": "string", "omit_if_empty": true},
+      {"src": "other_organization_type", "ccv": "Other Organization Type", "kind": "lov", "omit_if_empty": true},
+      {"src": "start", "ccv": "Membership Start Date", "kind": "yearmonth", "omit_if_empty": true},
+      {"src": "end", "ccv": "Membership End Date", "kind": "yearmonth", "omit_if_empty": true},
+      {"src": "description", "ccv": "Description", "kind": "bilingual", "omit_if_empty": true}
+    ],
+    "subsections": []
+  },
+  "other_memberships": {
+    "ccv_section_label": "Other Memberships",
+    "dedup_key": ["other_organization"],
+    "fields": [
+      {"src": "role", "ccv": "Role", "kind": "string", "omit_if_empty": true},
+      {"src": "other_organization", "ccv": "Other Organization", "kind": "string"},
+      {"src": "start", "ccv": "Membership Start Date", "kind": "yearmonth", "omit_if_empty": true},
+      {"src": "end", "ccv": "Membership End Date", "kind": "yearmonth", "omit_if_empty": true},
+      {"src": "description", "ccv": "Description", "kind": "bilingual", "omit_if_empty": true}
+    ],
+    "subsections": []
+  },
+  "recognitions": {
+    "ccv_section_label": "Recognitions",
+    "dedup_key": ["name"],
+    "fields": [
+      {"src": "recognition_type", "ccv": "Recognition Type", "kind": "lov", "omit_if_empty": true},
+      {"src": "name", "ccv": "Recognition Name", "kind": "string"},
+      {"src": "other_organization", "ccv": "Other Organization", "kind": "string", "omit_if_empty": true},
+      {"src": "other_organization_type", "ccv": "Other Organization Type", "kind": "lov", "omit_if_empty": true},
+      {"src": "effective_date", "ccv": "Effective Date", "kind": "yearmonth", "omit_if_empty": true},
+      {"src": "amount", "ccv": "Amount", "kind": "number", "omit_if_empty": true},
+      {"src": "currency", "ccv": "Currency", "kind": "lov", "omit_if_empty": true},
+      {"src": "description", "ccv": "Description", "kind": "bilingual", "omit_if_empty": true}
+    ],
+    "subsections": []
+  },
+  "editorial_activities": {
+    "ccv_section_label": "Editorial Activities",
+    "dedup_key": ["publication_name", "role"],
+    "fields": [
+      {"src": "role", "ccv": "Role", "kind": "string"},
+      {"src": "publication_type", "ccv": "Publication Type", "kind": "lov", "omit_if_empty": true},
+      {"src": "publication_name", "ccv": "Publication Name", "kind": "string"},
+      {"src": "start", "ccv": "Start Date", "kind": "yearmonth", "omit_if_empty": true},
+      {"src": "end", "ccv": "End Date", "kind": "yearmonth", "omit_if_empty": true},
+      {"src": "description", "ccv": "Activity Description", "kind": "bilingual", "omit_if_empty": true}
+    ],
+    "subsections": []
+  },
+  "journal_reviews": {
+    "ccv_section_label": "Journal Review Activities",
+    "dedup_key": ["journal"],
+    "fields": [
+      {"src": "role", "ccv": "Role", "kind": "string"},
+      {"src": "journal", "ccv": "Journal", "kind": "string"}
+    ],
+    "subsections": []
+  },
+  "credentials": {
+    "ccv_section_label": "Credentials",
+    "dedup_key": ["title", "other_organization"],
+    "fields": [
+      {"src": "title", "ccv": "Title", "kind": "string"},
+      {"src": "other_organization", "ccv": "Other Organization", "kind": "string", "omit_if_empty": true},
+      {"src": "other_organization_type", "ccv": "Other Organization Type", "kind": "lov", "omit_if_empty": true},
+      {"src": "effective_date", "ccv": "Effective Date", "kind": "yearmonth", "omit_if_empty": true},
+      {"src": "description", "ccv": "Description", "kind": "bilingual", "omit_if_empty": true}
+    ],
+    "subsections": []
+  },
+  "presentations": {
+    "ccv_section_label": "Presentations",
+    "dedup_key": ["title", "year"],
+    "fields": [
+      {"src": "title", "ccv": "Presentation Title", "kind": "string"},
+      {"src": "event", "ccv": "Conference / Event Name", "kind": "string", "omit_if_empty": true},
+      {"src": "city", "ccv": "City", "kind": "string", "omit_if_empty": true},
+      {"src": "invited", "ccv": "Invited?", "kind": "lov", "omit_if_empty": true},
+      {"src": "year", "ccv": "Presentation Year", "kind": "year", "omit_if_empty": true}
+    ],
+    "subsections": []
+  },
+  "journal_articles": {
+    "ccv_section_label": "Journal Articles",
+    "dedup_key": ["title", "year"],
+    "fields": [
+      {"src": "title", "ccv": "Article Title", "kind": "string"},
+      {"src": "journal", "ccv": "Journal", "kind": "string"},
+      {"src": "volume", "ccv": "Volume", "kind": "string", "omit_if_empty": true},
+      {"src": "issue", "ccv": "Issue", "kind": "string", "omit_if_empty": true},
+      {"src": "pages", "ccv": "Page Range", "kind": "string", "omit_if_empty": true},
+      {"src": "status", "ccv": "Publishing Status", "kind": "lov", "omit_if_empty": true},
+      {"src": "year", "ccv": "Year", "kind": "year"},
+      {"src": "refereed", "ccv": "Refereed?", "kind": "lov", "omit_if_empty": true},
+      {"src": "authors", "ccv": "Authors", "kind": "string", "omit_if_empty": true},
+      {"src": "doi", "ccv": "DOI", "kind": "string", "omit_if_empty": true},
+      {"src": "contribution", "ccv": "Contribution Percentage", "kind": "lov", "omit_if_empty": true}
+    ],
+    "subsections": []
+  },
+  "conference_publications": {
+    "ccv_section_label": "Conference Publications",
+    "dedup_key": ["title", "year"],
+    "fields": [
+      {"src": "title", "ccv": "Publication Title", "kind": "string"},
+      {"src": "conference", "ccv": "Conference Name", "kind": "string", "omit_if_empty": true},
+      {"src": "city", "ccv": "City", "kind": "string", "omit_if_empty": true},
+      {"src": "published_in", "ccv": "Published In", "kind": "string", "omit_if_empty": true},
+      {"src": "pages", "ccv": "Page Range", "kind": "string", "omit_if_empty": true},
+      {"src": "status", "ccv": "Publishing Status", "kind": "lov", "omit_if_empty": true},
+      {"src": "year", "ccv": "Year", "kind": "year", "omit_if_empty": true},
+      {"src": "refereed", "ccv": "Refereed?", "kind": "lov", "omit_if_empty": true},
+      {"src": "authors", "ccv": "Authors", "kind": "string", "omit_if_empty": true},
+      {"src": "doi", "ccv": "DOI", "kind": "string", "omit_if_empty": true}
+    ],
+    "subsections": []
+  },
+  "reports": {
+    "ccv_section_label": "Reports",
+    "dedup_key": ["title", "year"],
+    "fields": [
+      {"src": "title", "ccv": "Report Title", "kind": "string"},
+      {"src": "other_organization", "ccv": "Other Organization", "kind": "string", "omit_if_empty": true},
+      {"src": "year", "ccv": "Year Submitted", "kind": "year", "omit_if_empty": true},
+      {"src": "authors", "ccv": "Authors", "kind": "string", "omit_if_empty": true}
+    ],
+    "subsections": []
+  },
+  "books": {
+    "ccv_section_label": "Books",
+    "dedup_key": ["title", "year"],
+    "fields": [
+      {"src": "title", "ccv": "Book Title", "kind": "string"},
+      {"src": "volume", "ccv": "Volume", "kind": "string", "omit_if_empty": true},
+      {"src": "status", "ccv": "Publishing Status", "kind": "lov", "omit_if_empty": true},
+      {"src": "year", "ccv": "Year", "kind": "year", "omit_if_empty": true},
+      {"src": "publisher", "ccv": "Publisher", "kind": "string", "omit_if_empty": true},
+      {"src": "refereed", "ccv": "Refereed?", "kind": "lov", "omit_if_empty": true},
+      {"src": "authors", "ccv": "Authors", "kind": "string", "omit_if_empty": true},
+      {"src": "doi", "ccv": "DOI", "kind": "string", "omit_if_empty": true}
+    ],
+    "subsections": []
+  },
+  "book_chapters": {
+    "ccv_section_label": "Book Chapters",
+    "dedup_key": ["title", "year"],
+    "fields": [
+      {"src": "title", "ccv": "Chapter Title", "kind": "string"},
+      {"src": "book_title", "ccv": "Book Title", "kind": "string", "omit_if_empty": true},
+      {"src": "volume", "ccv": "Volume", "kind": "string", "omit_if_empty": true},
+      {"src": "pages", "ccv": "Page Range", "kind": "string", "omit_if_empty": true},
+      {"src": "status", "ccv": "Publishing Status", "kind": "lov", "omit_if_empty": true},
+      {"src": "year", "ccv": "Year", "kind": "year", "omit_if_empty": true},
+      {"src": "publisher", "ccv": "Publisher", "kind": "string", "omit_if_empty": true},
+      {"src": "refereed", "ccv": "Refereed?", "kind": "lov", "omit_if_empty": true},
+      {"src": "authors", "ccv": "Authors", "kind": "string", "omit_if_empty": true},
+      {"src": "doi", "ccv": "DOI", "kind": "string", "omit_if_empty": true}
+    ],
+    "subsections": []
+  },
+  "text_interviews": {
+    "ccv_section_label": "Text Interviews",
+    "dedup_key": ["topic", "date"],
+    "fields": [
+      {"src": "topic", "ccv": "Topic", "kind": "string"},
+      {"src": "interviewer", "ccv": "Interviewer", "kind": "string", "omit_if_empty": true},
+      {"src": "forum", "ccv": "Forum", "kind": "string", "omit_if_empty": true},
+      {"src": "date", "ccv": "Publication Date", "kind": "date", "omit_if_empty": true},
+      {"src": "url", "ccv": "URL", "kind": "string", "omit_if_empty": true}
+    ],
+    "subsections": []
+  },
+  "broadcast_interviews": {
+    "ccv_section_label": "Broadcast Interviews",
+    "dedup_key": ["topic", "date"],
+    "fields": [
+      {"src": "topic", "ccv": "Topic", "kind": "string"},
+      {"src": "interviewer", "ccv": "Interviewer", "kind": "string", "omit_if_empty": true},
+      {"src": "program", "ccv": "Program", "kind": "string", "omit_if_empty": true},
+      {"src": "network", "ccv": "Network", "kind": "string", "omit_if_empty": true},
+      {"src": "date", "ccv": "First Broadcast Date", "kind": "date", "omit_if_empty": true},
+      {"src": "url", "ccv": "URL", "kind": "string", "omit_if_empty": true}
+    ],
+    "subsections": []
+  },
+  "ktt": {
+    "ccv_section_label": "Knowledge and Technology Translation",
+    "dedup_key": ["outcome"],
+    "fields": [
+      {"src": "role", "ccv": "Role", "kind": "string", "omit_if_empty": true},
+      {"src": "activity_type", "ccv": "Knowledge and Technology Translation Activity Type", "kind": "lov", "omit_if_empty": true},
+      {"src": "target_stakeholder", "ccv": "Target Stakeholder", "kind": "lov", "omit_if_empty": true},
+      {"src": "outcome", "ccv": "Outcome / Deliverable", "kind": "bilingual"},
+      {"src": "url", "ccv": "References / Citations / Web Sites", "kind": "string", "omit_if_empty": true},
+      {"src": "description", "ccv": "Activity Description", "kind": "bilingual", "omit_if_empty": true}
+    ],
+    "subsections": []
+  }
+}

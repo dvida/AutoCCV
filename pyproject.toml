@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autoccv"
+version = "0.1.0"
+description = "Convert a PDF academic CV into an import-ready Canadian Common CV (CCV) XML."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+dependencies = ["lxml>=4.6"]
+
+[project.scripts]
+autoccv-build = "autoccv.generate:main"
+autoccv-clean = "autoccv.clean:main"
+autoccv-validate = "autoccv.validate:main"
+autoccv-doi = "autoccv.doi:main"
+
+[tool.setuptools]
+packages = ["autoccv"]
+
+# NOTE: data/ (catalogs + skeleton) lives at the repo root and is resolved at runtime relative to
+# the package directory. Use a source checkout or `pip install -e .` so data/ is found.

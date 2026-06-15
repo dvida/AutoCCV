@@ -1,0 +1,578 @@
+{
+  "Area of Research": {
+    "entries": {
+      "Atmosphere (Including Chemical Aspects)": [
+        {
+          "label": "Sector of Research",
+          "refOrLovId": "00000000000000000000000100003800",
+          "value": "Natural Sciences and Engineering"
+        },
+        {
+          "label": "Field",
+          "refOrLovId": "28b7043d4ec74915a90ee44bbf5ec71f",
+          "value": "Environment"
+        },
+        {
+          "label": "Subfield",
+          "refOrLovId": "1bb709ee05854387a897b8a17cfd3f0e",
+          "value": "Air"
+        },
+        {
+          "label": "Area",
+          "refOrLovId": "75f906df893642f895b9203370e0b9a9",
+          "value": "Atmosphere (Including Chemical Aspects)"
+        }
+      ],
+      "Imagery": [
+        {
+          "label": "Sector of Research",
+          "refOrLovId": "00000000000000000000000100003800",
+          "value": "Natural Sciences and Engineering"
+        },
+        {
+          "label": "Field",
+          "refOrLovId": "28b7043d4ec74915a90ee44bbf5ec71f",
+          "value": "Techniques, Measurements and Systems"
+        },
+        {
+          "label": "Subfield",
+          "refOrLovId": "1bb709ee05854387a897b8a17cfd3f0e",
+          "value": "Characterization Tools"
+        },
+        {
+          "label": "Area",
+          "refOrLovId": "75f906df893642f895b9203370e0b9a9",
+          "value": "Imagery"
+        }
+      ],
+      "Solar and Planetary Systems": [
+        {
+          "label": "Sector of Research",
+          "refOrLovId": "00000000000000000000000100003800",
+          "value": "Natural Sciences and Engineering"
+        },
+        {
+          "label": "Field",
+          "refOrLovId": "28b7043d4ec74915a90ee44bbf5ec71f",
+          "value": "Nature and Matter Interactions"
+        },
+        {
+          "label": "Subfield",
+          "refOrLovId": "1bb709ee05854387a897b8a17cfd3f0e",
+          "value": "Planets and Universe"
+        },
+        {
+          "label": "Area",
+          "refOrLovId": "75f906df893642f895b9203370e0b9a9",
+          "value": "Solar and Planetary Systems"
+        }
+      ]
+    },
+    "refValueId": "00000000000000000000078380703830"
+  },
+  "Country-Subdivision": {
+    "entries": {
+      "Ontario": [
+        {
+          "label": "Country",
+          "refOrLovId": "00000000000000000000000000002000",
+          "value": "Canada"
+        },
+        {
+          "label": "Subdivision",
+          "refOrLovId": "00000000000000000000000000100000",
+          "value": "Ontario"
+        }
+      ]
+    },
+    "refValueId": "00000000000000000000040047474480"
+  },
+  "Field of Application": {
+    "entries": {
+      "Communication and Information Technologies": [
+        {
+          "label": "Field of Application",
+          "refOrLovId": "00000000000000000000000100003900",
+          "value": "Science and Technologies"
+        },
+        {
+          "label": "Subfield",
+          "refOrLovId": "bb37c5edd6464aa3a99abcaaf1251bed",
+          "value": "Communication and Information Technologies"
+        }
+      ],
+      "Environment": [
+        {
+          "label": "Field of Application",
+          "refOrLovId": "00000000000000000000000100003900",
+          "value": "Science and Technologies"
+        },
+        {
+          "label": "Subfield",
+          "refOrLovId": "bb37c5edd6464aa3a99abcaaf1251bed",
+          "value": "Environment"
+        }
+      ],
+      "Foundations and Knowledge Acquisition": [
+        {
+          "label": "Field of Application",
+          "refOrLovId": "00000000000000000000000100003900",
+          "value": "Science and Technologies"
+        },
+        {
+          "label": "Subfield",
+          "refOrLovId": "bb37c5edd6464aa3a99abcaaf1251bed",
+          "value": "Foundations and Knowledge Acquisition"
+        }
+      ]
+    },
+    "refValueId": "00000000000000000000000271818180"
+  },
+  "Organization": {
+    "entries": {
+      "Australian Research Council": [
+        {
+          "label": "Country",
+          "refOrLovId": "00000000000000000000000000002000",
+          "value": "Australia"
+        },
+        {
+          "label": "Subdivision",
+          "refOrLovId": "00000000000000000000000000100000",
+          "value": "Not Required"
+        },
+        {
+          "label": "Organization Type",
+          "refOrLovId": "00000000000000000000000000030000",
+          "value": "Research"
+        },
+        {
+          "label": "Organization",
+          "refOrLovId": "ee597e9073b6479b94f903ca08f81903",
+          "value": "Australian Research Council"
+        }
+      ],
+      "Canadian Space Agency": [
+        {
+          "label": "Country",
+          "refOrLovId": "00000000000000000000000000002000",
+          "value": "Canada"
+        },
+        {
+          "label": "Subdivision",
+          "refOrLovId": "00000000000000000000000000100000",
+          "value": "Quebec"
+        },
+        {
+          "label": "Organization Type",
+          "refOrLovId": "00000000000000000000000000030000",
+          "value": "Health"
+        },
+        {
+          "label": "Organization",
+          "refOrLovId": "ee597e9073b6479b94f903ca08f81903",
+          "value": "Canadian Space Agency"
+        }
+      ],
+      "Czech Academy of Sciences": [
+        {
+          "label": "Country",
+          "refOrLovId": "00000000000000000000000000002000",
+          "value": "Czechia"
+        },
+        {
+          "label": "Subdivision",
+          "refOrLovId": "00000000000000000000000000100000",
+          "value": "Not Required"
+        },
+        {
+          "label": "Organization Type",
+          "refOrLovId": "00000000000000000000000000030000",
+          "value": "Research"
+        },
+        {
+          "label": "Organization",
+          "refOrLovId": "ee597e9073b6479b94f903ca08f81903",
+          "value": "Czech Academy of Sciences"
+        }
+      ],
+      "Los Alamos National Laboratory": [
+        {
+          "label": "Country",
+          "refOrLovId": "00000000000000000000000000002000",
+          "value": "United States of America"
+        },
+        {
+          "label": "Subdivision",
+          "refOrLovId": "00000000000000000000000000100000",
+          "value": "New Mexico"
+        },
+        {
+          "label": "Organization Type",
+          "refOrLovId": "00000000000000000000000000030000",
+          "value": "Research"
+        },
+        {
+          "label": "Organization",
+          "refOrLovId": "ee597e9073b6479b94f903ca08f81903",
+          "value": "Los Alamos National Laboratory"
+        }
+      ],
+      "National Academy of Sciences": [
+        {
+          "label": "Country",
+          "refOrLovId": "00000000000000000000000000002000",
+          "value": "United States of America"
+        },
+        {
+          "label": "Subdivision",
+          "refOrLovId": "00000000000000000000000000100000",
+          "value": "District of Columbia"
+        },
+        {
+          "label": "Organization Type",
+          "refOrLovId": "00000000000000000000000000030000",
+          "value": "Research"
+        },
+        {
+          "label": "Organization",
+          "refOrLovId": "ee597e9073b6479b94f903ca08f81903",
+          "value": "National Academy of Sciences"
+        }
+      ],
+      "National Aeronautics and Space Administration (NASA)": [
+        {
+          "label": "Organization Type",
+          "refOrLovId": "00000000000000000000000000030000",
+          "value": "Research"
+        },
+        {
+          "label": "Country",
+          "refOrLovId": "00000000000000000000000000002000",
+          "value": "United States of America"
+        },
+        {
+          "label": "Subdivision",
+          "refOrLovId": "00000000000000000000000000100000",
+          "value": "Washington"
+        },
+        {
+          "label": "Organization",
+          "refOrLovId": "ee597e9073b6479b94f903ca08f81903",
+          "value": "National Aeronautics and Space Administration (NASA)"
+        }
+      ],
+      "National Research Council Canada": [
+        {
+          "label": "Organization Type",
+          "refOrLovId": "00000000000000000000000000030000",
+          "value": "Federal Government"
+        },
+        {
+          "label": "Country",
+          "refOrLovId": "00000000000000000000000000002000",
+          "value": "Canada"
+        },
+        {
+          "label": "Subdivision",
+          "refOrLovId": "00000000000000000000000000100000",
+          "value": "Ontario"
+        },
+        {
+          "label": "Organization",
+          "refOrLovId": "ee597e9073b6479b94f903ca08f81903",
+          "value": "National Research Council Canada"
+        }
+      ],
+      "Natural Resources Canada": [
+        {
+          "label": "Country",
+          "refOrLovId": "00000000000000000000000000002000",
+          "value": "Canada"
+        },
+        {
+          "label": "Subdivision",
+          "refOrLovId": "00000000000000000000000000100000",
+          "value": "Ontario"
+        },
+        {
+          "label": "Organization Type",
+          "refOrLovId": "00000000000000000000000000030000",
+          "value": "Federal Government"
+        },
+        {
+          "label": "Organization",
+          "refOrLovId": "ee597e9073b6479b94f903ca08f81903",
+          "value": "Natural Resources Canada"
+        }
+      ],
+      "Natural Sciences and Engineering Research Council of Canada (NSERC)": [
+        {
+          "label": "Country",
+          "refOrLovId": "00000000000000000000000000002000",
+          "value": "Canada"
+        },
+        {
+          "label": "Subdivision",
+          "refOrLovId": "00000000000000000000000000100000",
+          "value": "Ontario"
+        },
+        {
+          "label": "Organization Type",
+          "refOrLovId": "00000000000000000000000000030000",
+          "value": "Federal Government"
+        },
+        {
+          "label": "Organization",
+          "refOrLovId": "ee597e9073b6479b94f903ca08f81903",
+          "value": "Natural Sciences and Engineering Research Council of Canada (NSERC)"
+        }
+      ],
+      "Planetary Science Institute": [
+        {
+          "label": "Country",
+          "refOrLovId": "00000000000000000000000000002000",
+          "value": "United States of America"
+        },
+        {
+          "label": "Subdivision",
+          "refOrLovId": "00000000000000000000000000100000",
+          "value": "Arizona"
+        },
+        {
+          "label": "Organization Type",
+          "refOrLovId": "00000000000000000000000000030000",
+          "value": "Research"
+        },
+        {
+          "label": "Organization",
+          "refOrLovId": "ee597e9073b6479b94f903ca08f81903",
+          "value": "Planetary Science Institute"
+        }
+      ],
+      "Robarts Research Institute": [
+        {
+          "label": "Country",
+          "refOrLovId": "00000000000000000000000000002000",
+          "value": "Canada"
+        },
+        {
+          "label": "Subdivision",
+          "refOrLovId": "00000000000000000000000000100000",
+          "value": "Ontario"
+        },
+        {
+          "label": "Organization Type",
+          "refOrLovId": "00000000000000000000000000030000",
+          "value": "Research"
+        },
+        {
+          "label": "Organization",
+          "refOrLovId": "ee597e9073b6479b94f903ca08f81903",
+          "value": "Robarts Research Institute"
+        }
+      ],
+      "Sandia National Labs": [
+        {
+          "label": "Country",
+          "refOrLovId": "00000000000000000000000000002000",
+          "value": "United States of America"
+        },
+        {
+          "label": "Subdivision",
+          "refOrLovId": "00000000000000000000000000100000",
+          "value": "New Mexico"
+        },
+        {
+          "label": "Organization Type",
+          "refOrLovId": "00000000000000000000000000030000",
+          "value": "Research"
+        },
+        {
+          "label": "Organization",
+          "refOrLovId": "ee597e9073b6479b94f903ca08f81903",
+          "value": "Sandia National Labs"
+        }
+      ],
+      "Social Sciences and Humanities Research Council of Canada (SSHRC)": [
+        {
+          "label": "Organization Type",
+          "refOrLovId": "00000000000000000000000000030000",
+          "value": "Federal Government"
+        },
+        {
+          "label": "Country",
+          "refOrLovId": "00000000000000000000000000002000",
+          "value": "Canada"
+        },
+        {
+          "label": "Subdivision",
+          "refOrLovId": "00000000000000000000000000100000",
+          "value": "Ontario"
+        },
+        {
+          "label": "Organization",
+          "refOrLovId": "ee597e9073b6479b94f903ca08f81903",
+          "value": "Social Sciences and Humanities Research Council of Canada (SSHRC)"
+        }
+      ],
+      "The University of Calgary": [
+        {
+          "label": "Country",
+          "refOrLovId": "00000000000000000000000000002000",
+          "value": "Canada"
+        },
+        {
+          "label": "Subdivision",
+          "refOrLovId": "00000000000000000000000000100000",
+          "value": "Alberta"
+        },
+        {
+          "label": "Organization Type",
+          "refOrLovId": "00000000000000000000000000030000",
+          "value": "Academic"
+        },
+        {
+          "label": "Organization",
+          "refOrLovId": "ee597e9073b6479b94f903ca08f81903",
+          "value": "The University of Calgary"
+        }
+      ],
+      "University of Alberta": [
+        {
+          "label": "Country",
+          "refOrLovId": "00000000000000000000000000002000",
+          "value": "Canada"
+        },
+        {
+          "label": "Subdivision",
+          "refOrLovId": "00000000000000000000000000100000",
+          "value": "Alberta"
+        },
+        {
+          "label": "Organization Type",
+          "refOrLovId": "00000000000000000000000000030000",
+          "value": "Academic"
+        },
+        {
+          "label": "Organization",
+          "refOrLovId": "ee597e9073b6479b94f903ca08f81903",
+          "value": "University of Alberta"
+        }
+      ],
+      "University of Western Ontario": [
+        {
+          "label": "Country",
+          "refOrLovId": "00000000000000000000000000002000",
+          "value": "Canada"
+        },
+        {
+          "label": "Subdivision",
+          "refOrLovId": "00000000000000000000000000100000",
+          "value": "Ontario"
+        },
+        {
+          "label": "Organization Type",
+          "refOrLovId": "00000000000000000000000000030000",
+          "value": "Academic"
+        },
+        {
+          "label": "Organization",
+          "refOrLovId": "ee597e9073b6479b94f903ca08f81903",
+          "value": "University of Western Ontario"
+        }
+      ]
+    },
+    "refValueId": "00000000000000000000009673332897"
+  },
+  "Research Discipline": {
+    "entries": {
+      "Astronomy and Astrophysics": [
+        {
+          "label": "Sector of Discipline",
+          "refOrLovId": "00000000000000000000000100003700",
+          "value": "Natural Sciences and Engineering"
+        },
+        {
+          "label": "Field",
+          "refOrLovId": "1add935c1fbc44ec96e9edfe94ad6863",
+          "value": "Natural Sciences"
+        },
+        {
+          "label": "Discipline",
+          "refOrLovId": "4ac3aff1a8314560b7b7e048099e7996",
+          "value": "Astronomy and Astrophysics"
+        }
+      ],
+      "Climatology and Meteorology": [
+        {
+          "label": "Sector of Discipline",
+          "refOrLovId": "00000000000000000000000100003700",
+          "value": "Natural Sciences and Engineering"
+        },
+        {
+          "label": "Field",
+          "refOrLovId": "1add935c1fbc44ec96e9edfe94ad6863",
+          "value": "Applied Sciences"
+        },
+        {
+          "label": "Discipline",
+          "refOrLovId": "4ac3aff1a8314560b7b7e048099e7996",
+          "value": "Climatology and Meteorology"
+        }
+      ],
+      "Computer Engineering and Software Engineering": [
+        {
+          "label": "Sector of Discipline",
+          "refOrLovId": "00000000000000000000000100003700",
+          "value": "Natural Sciences and Engineering"
+        },
+        {
+          "label": "Field",
+          "refOrLovId": "1add935c1fbc44ec96e9edfe94ad6863",
+          "value": "Engineering"
+        },
+        {
+          "label": "Discipline",
+          "refOrLovId": "4ac3aff1a8314560b7b7e048099e7996",
+          "value": "Computer Engineering and Software Engineering"
+        }
+      ],
+      "Computer Science": [
+        {
+          "label": "Sector of Discipline",
+          "refOrLovId": "00000000000000000000000100003700",
+          "value": "Natural Sciences and Engineering"
+        },
+        {
+          "label": "Field",
+          "refOrLovId": "1add935c1fbc44ec96e9edfe94ad6863",
+          "value": "Mathematical Sciences"
+        },
+        {
+          "label": "Discipline",
+          "refOrLovId": "4ac3aff1a8314560b7b7e048099e7996",
+          "value": "Computer Science"
+        }
+      ],
+      "Physics": [
+        {
+          "label": "Sector of Discipline",
+          "refOrLovId": "00000000000000000000000100003700",
+          "value": "Natural Sciences and Engineering"
+        },
+        {
+          "label": "Field",
+          "refOrLovId": "1add935c1fbc44ec96e9edfe94ad6863",
+          "value": "Natural Sciences"
+        },
+        {
+          "label": "Discipline",
+          "refOrLovId": "4ac3aff1a8314560b7b7e048099e7996",
+          "value": "Physics"
+        }
+      ]
+    },
+    "refValueId": "00000000000000000000081767170900"
+  }
+}

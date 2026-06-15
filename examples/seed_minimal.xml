@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<generic-cv:generic-cv xmlns:generic-cv="http://www.cihr-irsc.gc.ca/generic-cv/1.0.0" lang="en">
+  <section id="f589cbc028c64fdaa783da01647e5e3c" label="Personal Information">
+    <section id="2687e70e5d45487c93a8a02626543f64" label="Identification" recordId="6f65e21e468341648dd2ac1845b97aa9">
+      <field id="ee8beaea41f049d8bcfadfbfa89ac09e" label="Title">
+        <lov id="00000000000000000000000000000317">Dr.</lov>
+      </field>
+      <field id="5c6f17e8a67241e19667815a9e95d9d0" label="Family Name">
+        <value type="String">Doe</value>
+      </field>
+      <field id="98ad36fee26a4d6b8953ea764f4fed04" label="First Name">
+        <value type="String">Jane</value>
+      </field>
+      <field id="4ca83c1aaa6a42a78eac0290368e70f3" label="Middle Name">
+        <value type="String"/>
+      </field>
+      <field id="41ed5ea3ae974428b3fcb592161b6423" label="Date of Birth">
+        <value format="MM/dd" type="MonthDay">01/01</value>
+      </field>
+      <field id="2b72a344523c467da0c896656b5290c0" label="Correspondence language">
+        <lov id="00000000000000000000000000000054">English</lov>
+      </field>
+    </section>
+    <section id="c1f614961342429c86397e81cd6f50f5" label="Language Skills" recordId="5374ba0f824f44048a904034ca55fd39">
+      <field id="ee161805b4f941e48f05e050e364e585" label="Language">
+        <lov id="00000000000000000000000000003103">Croatian</lov>
+      </field>
+      <field id="a9d0f0666e5b47dcb9acb30bd5cab407" label="Read">
+        <lov id="00000000000000000000000000000400">Yes</lov>
+      </field>
+      <field id="12173f36422446479799578ba07d96c8" label="Write">
+        <lov id="00000000000000000000000000000400">Yes</lov>
+      </field>
+      <field id="e670ac0f2c3e48a3b13d487e66ea7889" label="Speak">
+        <lov id="00000000000000000000000000000400">Yes</lov>
+      </field>
+      <field id="aa02c54f1e5b4672a0b96def14e5b02e" label="Understand">
+        <lov id="00000000000000000000000000000400">Yes</lov>
+      </field>
+      <field id="fc6ac63e9ec04129aec7b26e5a729920" label="Peer Review">
+        <lov id="00000000000000000000000000000400">Yes</lov>
+      </field>
+    </section>
+    <section id="c1f614961342429c86397e81cd6f50f5" label="Language Skills" recordId="4d082c470f2f4094a9c95aaa65559daa">
+      <field id="ee161805b4f941e48f05e050e364e585" label="Language">
+        <lov id="00000000000000000000000000003125">English</lov>
+      </field>
+      <field id="a9d0f0666e5b47dcb9acb30bd5cab407" label="Read">
+        <lov id="00000000000000000000000000000400">Yes</lov>
+      </field>
+      <field id="12173f36422446479799578ba07d96c8" label="Write">
+        <lov id="00000000000000000000000000000400">Yes</lov>
+      </field>
+      <field id="e670ac0f2c3e48a3b13d487e66ea7889" label="Speak">
+        <lov id="00000000000000000000000000000400">Yes</lov>
+      </field>
+      <field id="aa02c54f1e5b4672a0b96def14e5b02e" label="Understand">
+        <lov id="00000000000000000000000000000400">Yes</lov>
+      </field>
+      <field id="fc6ac63e9ec04129aec7b26e5a729920" label="Peer Review">
+        <lov id="00000000000000000000000000000400">Yes</lov>
+      </field>
+    </section>
+    <section id="b92721f0510a4ef4b0d1cf7f5ea3f01e" label="Address" primaryIndicator="true" recordId="939eee7984994768bdec64de3d44bab5">
+      <field id="35c302c36fe9479287206171087fb185" label="Address Type">
+        <lov id="00000000000000000000000000000011">Home</lov>
+      </field>
+      <field id="2de0fe4994f546c695a060d68e8e03ca" label="Address - Line 1">
+        <value type="String">123 Example St</value>
+      </field>
+      <field id="dafdb980e181416abc5e26c0770df662" label="Line 2">
+        <value type="String"/>
+      </field>
+      <field id="fc390eae1fbc45c89789f2ecbb5bed8e" label="Line 3">
+        <value type="String"/>
+      </field>
+      <field id="d51e2de9122744489ac2231d85995617" label="Line 4">
+        <value type="String"/>
+      </field>
+      <field id="5365d87b9ff145d3a8d0d4fc21af57bb" label="Line 5">
+        <value type="String"/>
+      </field>
+      <field id="499d69637b4148d0a49463a2881e9d09" label="City">
+        <value type="String">Exampletown</value>
+      </field>
+      <field id="b1071063df03484ebec65cd1a3464438" label="Location">
+        <refTable refValueId="00000000000000000000040047474480" label="Country-Subdivision">
+          <linkedWith label="Country" value="Canada" refOrLovId="00000000000000000000000000002000"/>
+          <linkedWith label="Subdivision" value="Ontario" refOrLovId="00000000000000000000000000100000"/>
+        </refTable>
+      </field>
+      <field id="a41f1e118e61482eb3cdde4aaeb783e8" label="Postal / Zip Code">
+        <value type="String">A1A 1A1</value>
+      </field>
+      <field id="b77ff4a2c49247e0af668be52704da91" label="Address Start Date">
+        <value format="yyyy-MM-dd" type="Date"/>
+      </field>
+      <field id="4ab2497d7a0f471ebc6a50e32dd4f22d" label="Address End Date">
+        <value format="yyyy-MM-dd" type="Date"/>
+      </field>
+    </section>
+    <section id="2a3366209cf8477f82556b045188f131" label="Telephone" primaryIndicator="true" recordId="2e240b1cdbdd480ea8307846e0777bc8">
+      <field id="ccef121ae875427f829024aabb39fa8c" label="Phone Type">
+        <lov id="00000000000000000000000000000209">Mobile</lov>
+      </field>
+      <field id="63dedd46a5204cda8257227bbb3b6675" label="Country Code">
+        <value type="String">+1</value>
+      </field>
+      <field id="13cdf3a5e13643f5bc74566bf075253c" label="Area Code">
+        <value type="String">555</value>
+      </field>
+      <field id="1ca756fe70964371a2b9f57bdf567a5d" label="Telephone Number">
+        <value type="String">5550100</value>
+      </field>
+      <field id="afe0657785084098bb718345280eb840" label="Extension">
+        <value type="String"/>
+      </field>
+      <field id="69c67fae5d4849d08f4f9799ae0a2335" label="Telephone Start Date">
+        <value format="yyyy-MM-dd" type="Date"/>
+      </field>
+      <field id="a90e95e1d278467eaf1847464f09f39f" label="Telephone End Date">
+        <value format="yyyy-MM-dd" type="Date"/>
+      </field>
+    </section>
+    <section id="f8e3a3a0d3cf4c76bfde7aba6c82fc25" label="Email" recordId="fc8ccd233f4b4746b29a7d209e659e23">
+      <field id="fa6ec0ff1fdb4472897ece080504744f" label="Email Type">
+        <lov id="00000000000000000000000000000127">Personal</lov>
+      </field>
+      <field id="de93245673a54fa8bf7bfc032c7f8717" label="Email Address">
+        <value type="String">jane.doe@example.org</value>
+      </field>
+      <field id="8c7dcf3ac68544509bd303b7624d42cc" label="Email Start Date">
+        <value format="yyyy-MM-dd" type="Date"/>
+      </field>
+      <field id="87784054a201415d94cbf31c93210ab5" label="Email End Date">
+        <value format="yyyy-MM-dd" type="Date"/>
+      </field>
+    </section>
+    <section id="f8e3a3a0d3cf4c76bfde7aba6c82fc25" label="Email" primaryIndicator="true" recordId="42a65efe2b024edf8ae58040d368bbf1">
+      <field id="fa6ec0ff1fdb4472897ece080504744f" label="Email Type">
+        <lov id="00000000000000000000000000000124">Work</lov>
+      </field>
+      <field id="de93245673a54fa8bf7bfc032c7f8717" label="Email Address">
+        <value type="String">jane.doe@example.org</value>
+      </field>
+      <field id="8c7dcf3ac68544509bd303b7624d42cc" label="Email Start Date">
+        <value format="yyyy-MM-dd" type="Date"/>
+      </field>
+      <field id="87784054a201415d94cbf31c93210ab5" label="Email End Date">
+        <value format="yyyy-MM-dd" type="Date"/>
+      </field>
+    </section>
+  </section>
+</generic-cv:generic-cv>

@@ -1,0 +1,98 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AutoCCV cv_data",
+  "description": "Contract between the LLM extraction step (fills this from a PDF CV) and the deterministic generator. Keys are canonical section names matching data/section_map.json. Controlled-vocab values are HUMAN LABELS (the resolver maps them to CCV lov/refTable ids). Dates: yyyy/MM (YearMonth), yyyy (Year), yyyy-MM-dd (Date), MM/dd (MonthDay). null or \"\" => field omitted on export (always valid).",
+  "type": "object",
+  "properties": {
+    "meta": {
+      "type": "object",
+      "properties": {
+        "lang": {"type": "string", "default": "en"},
+        "source_pdf": {"type": "string"},
+        "seed_export": {"type": "string", "description": "path to the user's CCV export (REQUIRED at build time)"}
+      }
+    },
+    "degrees": {"type": "array", "items": {"type": "object", "properties": {
+      "degree_type": {"type": "string", "description": "Doctorate | Master's Thesis | Bachelor's"},
+      "degree_name": {"type": "string"}, "specialization": {"type": "string"},
+      "thesis_title": {"type": "string"}, "organization": {"type": "string"},
+      "other_organization_type": {"type": "string"}, "degree_status": {"type": "string", "description": "Completed | In Progress"},
+      "start": {"type": "string"}, "received": {"type": "string"}, "expected": {"type": "string"},
+      "transferred_to_phd": {"type": "string", "description": "Yes | No"},
+      "supervisors": {"type": "array", "items": {"type": "object", "properties": {
+        "name": {"type": "string"}, "start": {"type": "string"}, "end": {"type": "string"}}}},
+      "research_disciplines": {"type": "array", "items": {"type": "string"}},
+      "areas_of_research": {"type": "array", "items": {"type": "string"}}
+    }}},
+    "academic_work_experience": {"type": "array", "items": {"type": "object", "properties": {
+      "position_type": {"type": "string"}, "position": {"type": "string"},
+      "organization": {"type": "string"}, "department": {"type": "string"},
+      "start": {"type": "string"}, "end": {"type": "string"}, "description": {"type": "string"}}}},
+    "nonacademic_work_experience": {"type": "array", "items": {"type": "object", "properties": {
+      "position": {"type": "string"}, "position_status": {"type": "string"}, "organization": {"type": "string"},
+      "start": {"type": "string"}, "end": {"type": "string"}, "description": {"type": "string"}}}},
+    "research_funding": {"type": "array", "items": {"type": "object", "properties": {
+      "funding_type": {"type": "string", "description": "Grant | Contract | Research Chair"},
+      "funding_title": {"type": "string"}, "grant_type": {"type": "string"},
+      "start": {"type": "string"}, "end": {"type": "string"},
+      "role": {"type": "string", "description": "Principal Investigator | Co-investigator"},
+      "status": {"type": "string", "description": "Awarded | Completed"},
+      "clinical": {"type": "string"}, "description": {"type": "string"}}}},
+    "courses_taught": {"type": "array", "items": {"type": "object", "properties": {
+      "role": {"type": "string"}, "organization": {"type": "string"}, "department": {"type": "string"},
+      "session": {"type": "string", "description": "Fall | Winter | Spring | Summer"}, "session_year": {"type": "string"},
+      "course_code": {"type": "string"}, "course_title": {"type": "string"},
+      "level": {"type": "string", "description": "Undergraduate | Graduate"}, "num_students": {"type": "integer"}}}},
+    "supervision": {"type": "array", "items": {"type": "object", "properties": {
+      "role": {"type": "string", "description": "Principal Supervisor | Co-Supervisor"},
+      "student_name": {"type": "string"}, "institution": {"type": "string"},
+      "degree_name": {"type": "string"}, "start": {"type": "string"}, "end": {"type": "string"},
+      "thesis_title": {"type": "string"}}}},
+    "committee_memberships": {"type": "array", "items": {"type": "object", "properties": {
+      "role": {"type": "string"}, "committee_name": {"type": "string"},
+      "other_organization": {"type": "string"}, "other_organization_type": {"type": "string"},
+      "start": {"type": "string"}, "end": {"type": "string"}, "description": {"type": "string"}}}},
+    "other_memberships": {"type": "array", "items": {"type": "object", "properties": {
+      "role": {"type": "string"}, "other_organization": {"type": "string"},
+      "start": {"type": "string"}, "end": {"type": "string"}, "description": {"type": "string"}}}},
+    "recognitions": {"type": "array", "items": {"type": "object", "properties": {
+      "recognition_type": {"type": "string", "description": "Honor | Prize / Award | Distinction | Citation"},
+      "name": {"type": "string"}, "other_organization": {"type": "string"}, "other_organization_type": {"type": "string"},
+      "effective_date": {"type": "string"}, "amount": {"type": "number"}, "currency": {"type": "string"},
+      "description": {"type": "string"}}}},
+    "editorial_activities": {"type": "array", "items": {"type": "object", "properties": {
+      "role": {"type": "string"}, "publication_type": {"type": "string"}, "publication_name": {"type": "string"},
+      "start": {"type": "string"}, "end": {"type": "string"}, "description": {"type": "string"}}}},
+    "journal_reviews": {"type": "array", "items": {"type": "object", "properties": {
+      "role": {"type": "string", "default": "Reviewer"}, "journal": {"type": "string"}}}},
+    "credentials": {"type": "array", "items": {"type": "object", "properties": {
+      "title": {"type": "string"}, "other_organization": {"type": "string"}, "other_organization_type": {"type": "string"},
+      "effective_date": {"type": "string"}, "description": {"type": "string"}}}},
+    "presentations": {"type": "array", "items": {"type": "object", "properties": {
+      "title": {"type": "string"}, "event": {"type": "string"}, "city": {"type": "string"},
+      "invited": {"type": "string", "description": "Yes | No"}, "year": {"type": "string"}}}},
+    "journal_articles": {"type": "array", "items": {"type": "object", "properties": {
+      "title": {"type": "string"}, "journal": {"type": "string"}, "volume": {"type": "string"},
+      "issue": {"type": "string"}, "pages": {"type": "string"}, "year": {"type": "string"},
+      "status": {"type": "string", "description": "Published | Accepted | (blank => in review)"},
+      "refereed": {"type": "string", "description": "Yes | No"}, "authors": {"type": "string"},
+      "doi": {"type": "string"}, "contribution": {"type": "string", "description": "0-10 | 11-20 | 21-30 | 31-40"}}}},
+    "conference_publications": {"type": "array", "items": {"type": "object", "properties": {
+      "title": {"type": "string"}, "conference": {"type": "string"}, "city": {"type": "string"},
+      "published_in": {"type": "string"}, "pages": {"type": "string"}, "year": {"type": "string"},
+      "status": {"type": "string"}, "refereed": {"type": "string"}, "authors": {"type": "string"}, "doi": {"type": "string"}}}},
+    "reports": {"type": "array", "items": {"type": "object", "properties": {
+      "title": {"type": "string"}, "other_organization": {"type": "string"}, "year": {"type": "string"}, "authors": {"type": "string"}}}},
+    "books": {"type": "array", "items": {"type": "object"}},
+    "book_chapters": {"type": "array", "items": {"type": "object"}},
+    "text_interviews": {"type": "array", "items": {"type": "object", "properties": {
+      "topic": {"type": "string"}, "interviewer": {"type": "string"}, "forum": {"type": "string"},
+      "date": {"type": "string"}, "url": {"type": "string"}}}},
+    "broadcast_interviews": {"type": "array", "items": {"type": "object", "properties": {
+      "topic": {"type": "string"}, "interviewer": {"type": "string"}, "program": {"type": "string"},
+      "network": {"type": "string"}, "date": {"type": "string"}, "url": {"type": "string"}}}},
+    "ktt": {"type": "array", "items": {"type": "object", "properties": {
+      "role": {"type": "string"}, "activity_type": {"type": "string"}, "target_stakeholder": {"type": "string"},
+      "outcome": {"type": "string"}, "url": {"type": "string"}, "description": {"type": "string"}}}}
+  }
+}

@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+# real CCV exports contain personal data — do NOT publish. The shipped data/ artifacts are
+# derived and PII-free. Maintainers keep these locally to rebuild data/ via build_tools/.
+examples/CCV-*.xml
+# working files produced during a run
+cv_data.json
+cv_data.json.*
+CCV-output*.xml
+*.unresolved.json
+*.doi_candidates.json
+NOTES.md
+
+# editor lock/temp files
+.~lock.*#
+*~
+.DS_Store

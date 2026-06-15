@@ -1,0 +1,405 @@
+{
+  "Academic Work Experience": {
+    "path": [
+      {
+        "id": "94b1e26073ae476da13ede5baf1f1cc0",
+        "label": "Employment"
+      }
+    ],
+    "section_id": "b857f61b33484cb093068bd2da764f99"
+  },
+  "Address": {
+    "path": [
+      {
+        "id": "f589cbc028c64fdaa783da01647e5e3c",
+        "label": "Personal Information"
+      }
+    ],
+    "section_id": "b92721f0510a4ef4b0d1cf7f5ea3f01e"
+  },
+  "Affiliations": {
+    "path": [
+      {
+        "id": "94b1e26073ae476da13ede5baf1f1cc0",
+        "label": "Employment"
+      }
+    ],
+    "section_id": "f612675840ef4ae0965c815ac1574623"
+  },
+  "Book Chapters": {
+    "path": [
+      {
+        "id": "047ec63e32fe450e943cb678339e8102",
+        "label": "Contributions"
+      },
+      {
+        "id": "46e8f57e67db48b29d84dda77cf0ef51",
+        "label": "Publications"
+      }
+    ],
+    "section_id": "fd8f2ffe3f5c43db8b5c3f72d8ffd994"
+  },
+  "Books": {
+    "path": [
+      {
+        "id": "047ec63e32fe450e943cb678339e8102",
+        "label": "Contributions"
+      },
+      {
+        "id": "46e8f57e67db48b29d84dda77cf0ef51",
+        "label": "Publications"
+      }
+    ],
+    "section_id": "4ef4df71a505469788b587f1a509eadf"
+  },
+  "Broadcast Interviews": {
+    "path": [
+      {
+        "id": "047ec63e32fe450e943cb678339e8102",
+        "label": "Contributions"
+      },
+      {
+        "id": "ec6a032c4286497fbc2c7e5c64f02fbf",
+        "label": "Interviews and Media Relations"
+      }
+    ],
+    "section_id": "6ba8ed9d1b11499d82fc8b52ea7f2ed5"
+  },
+  "Committee Memberships": {
+    "path": [
+      {
+        "id": "ee130288917f4e23adcc800a94ae355c",
+        "label": "Memberships"
+      }
+    ],
+    "section_id": "6c3b449732a84ac9af45d6935b8323d9"
+  },
+  "Conference Publications": {
+    "path": [
+      {
+        "id": "047ec63e32fe450e943cb678339e8102",
+        "label": "Contributions"
+      },
+      {
+        "id": "46e8f57e67db48b29d84dda77cf0ef51",
+        "label": "Publications"
+      }
+    ],
+    "section_id": "4b9f909503cd4c8aa8d826c87d6d874d"
+  },
+  "Courses Taught": {
+    "path": [
+      {
+        "id": "95c29504d0aa4b51b84659cafaf2b38d",
+        "label": "Activities"
+      },
+      {
+        "id": "e1185e17fcbc4b5aae650296632735db",
+        "label": "Teaching Activities"
+      }
+    ],
+    "section_id": "9dc74140d0ff4b26a2d4a559bc9b5a2b"
+  },
+  "Credentials": {
+    "path": [
+      {
+        "id": "0d82220f95f043e0bc9608bbb6bf413a",
+        "label": "Education"
+      }
+    ],
+    "section_id": "06f7b2dd9c774b73857605091745b661"
+  },
+  "Degrees": {
+    "path": [
+      {
+        "id": "0d82220f95f043e0bc9608bbb6bf413a",
+        "label": "Education"
+      }
+    ],
+    "section_id": "aee5a225a504442fb83f716235cfb587"
+  },
+  "Editorial Activities": {
+    "path": [
+      {
+        "id": "95c29504d0aa4b51b84659cafaf2b38d",
+        "label": "Activities"
+      },
+      {
+        "id": "9fa2e1cd0274429f9fde16616bf3939f",
+        "label": "Administrative Activities"
+      }
+    ],
+    "section_id": "95433781426f45749b05ff6bc0062dd9"
+  },
+  "Email": {
+    "path": [
+      {
+        "id": "f589cbc028c64fdaa783da01647e5e3c",
+        "label": "Personal Information"
+      }
+    ],
+    "section_id": "f8e3a3a0d3cf4c76bfde7aba6c82fc25"
+  },
+  "Event Administration": {
+    "path": [
+      {
+        "id": "95c29504d0aa4b51b84659cafaf2b38d",
+        "label": "Activities"
+      },
+      {
+        "id": "9fa2e1cd0274429f9fde16616bf3939f",
+        "label": "Administrative Activities"
+      }
+    ],
+    "section_id": "7564fc922478441c97c9857809028895"
+  },
+  "Event Participation": {
+    "path": [
+      {
+        "id": "95c29504d0aa4b51b84659cafaf2b38d",
+        "label": "Activities"
+      },
+      {
+        "id": "42b12f4fc72e4ccab5f05a07383a4a3d",
+        "label": "Participation Activities"
+      }
+    ],
+    "section_id": "e4c83c62880c4db28c8dd91f572ff923"
+  },
+  "Identification": {
+    "path": [
+      {
+        "id": "f589cbc028c64fdaa783da01647e5e3c",
+        "label": "Personal Information"
+      }
+    ],
+    "section_id": "2687e70e5d45487c93a8a02626543f64"
+  },
+  "International Collaboration Activities": {
+    "path": [
+      {
+        "id": "95c29504d0aa4b51b84659cafaf2b38d",
+        "label": "Activities"
+      }
+    ],
+    "section_id": "ba0553fb52024e94adff3100f8ad6b0e"
+  },
+  "Journal Articles": {
+    "path": [
+      {
+        "id": "047ec63e32fe450e943cb678339e8102",
+        "label": "Contributions"
+      },
+      {
+        "id": "46e8f57e67db48b29d84dda77cf0ef51",
+        "label": "Publications"
+      }
+    ],
+    "section_id": "9a34d6b273914f18b2273e8de7c48fd6"
+  },
+  "Journal Review Activities": {
+    "path": [
+      {
+        "id": "95c29504d0aa4b51b84659cafaf2b38d",
+        "label": "Activities"
+      },
+      {
+        "id": "99613195a04f4e3a9fdd129cb2242550",
+        "label": "Assessment and Review Activities"
+      }
+    ],
+    "section_id": "3f4e029fb3a141958126bcbc9d086acd"
+  },
+  "Knowledge and Technology Translation": {
+    "path": [
+      {
+        "id": "95c29504d0aa4b51b84659cafaf2b38d",
+        "label": "Activities"
+      }
+    ],
+    "section_id": "f40c6da02dec468095a8c9270d50e1b1"
+  },
+  "Language Skills": {
+    "path": [
+      {
+        "id": "f589cbc028c64fdaa783da01647e5e3c",
+        "label": "Personal Information"
+      }
+    ],
+    "section_id": "c1f614961342429c86397e81cd6f50f5"
+  },
+  "Leaves of Absence and Impact on Research": {
+    "path": [
+      {
+        "id": "94b1e26073ae476da13ede5baf1f1cc0",
+        "label": "Employment"
+      }
+    ],
+    "section_id": "4c5d725b1b654966acf50d48934beefc"
+  },
+  "Most Significant Contributions": {
+    "path": [],
+    "section_id": "a0bae97397f448a2833de3e3406d8aa0"
+  },
+  "Non-academic Work Experience": {
+    "path": [
+      {
+        "id": "94b1e26073ae476da13ede5baf1f1cc0",
+        "label": "Employment"
+      }
+    ],
+    "section_id": "848ac4ef704e4c59950408045ac637cf"
+  },
+  "Organizational Review Activities": {
+    "path": [
+      {
+        "id": "95c29504d0aa4b51b84659cafaf2b38d",
+        "label": "Activities"
+      },
+      {
+        "id": "99613195a04f4e3a9fdd129cb2242550",
+        "label": "Assessment and Review Activities"
+      }
+    ],
+    "section_id": "d936ced236a14d59a24fad5f41befd94"
+  },
+  "Other Memberships": {
+    "path": [
+      {
+        "id": "ee130288917f4e23adcc800a94ae355c",
+        "label": "Memberships"
+      }
+    ],
+    "section_id": "cbc6f120ec5e49c79d1c50fac0e92359"
+  },
+  "Presentations": {
+    "path": [
+      {
+        "id": "047ec63e32fe450e943cb678339e8102",
+        "label": "Contributions"
+      }
+    ],
+    "section_id": "c7ce6f054e0941ea8b27127dbd4a26d0"
+  },
+  "Promotion Tenure Assessment Activities": {
+    "path": [
+      {
+        "id": "95c29504d0aa4b51b84659cafaf2b38d",
+        "label": "Activities"
+      },
+      {
+        "id": "99613195a04f4e3a9fdd129cb2242550",
+        "label": "Assessment and Review Activities"
+      }
+    ],
+    "section_id": "379d746b713646b5b7073d552bf25e39"
+  },
+  "Radio and TV Programs": {
+    "path": [
+      {
+        "id": "047ec63e32fe450e943cb678339e8102",
+        "label": "Contributions"
+      },
+      {
+        "id": "f89bc79337e442108d8c75f0703e9794",
+        "label": "Artistic Contributions"
+      }
+    ],
+    "section_id": "1e336853ecb44b7a81b08c8cab2657b2"
+  },
+  "Recognitions": {
+    "path": [],
+    "section_id": "47c6295f7c2743c08d2db3fa6f6f0f52"
+  },
+  "Reports": {
+    "path": [
+      {
+        "id": "047ec63e32fe450e943cb678339e8102",
+        "label": "Contributions"
+      },
+      {
+        "id": "46e8f57e67db48b29d84dda77cf0ef51",
+        "label": "Publications"
+      }
+    ],
+    "section_id": "7e57525337d5498a9506fdadee098b10"
+  },
+  "Research Funding Application Assessment Activities": {
+    "path": [
+      {
+        "id": "95c29504d0aa4b51b84659cafaf2b38d",
+        "label": "Activities"
+      },
+      {
+        "id": "99613195a04f4e3a9fdd129cb2242550",
+        "label": "Assessment and Review Activities"
+      }
+    ],
+    "section_id": "af9a2a51e320436d97170bc90b5180e6"
+  },
+  "Research Funding History": {
+    "path": [],
+    "section_id": "aaedc5454412483d9131f7619d10279e"
+  },
+  "Staff Supervision": {
+    "path": [
+      {
+        "id": "95c29504d0aa4b51b84659cafaf2b38d",
+        "label": "Activities"
+      },
+      {
+        "id": "90cc172e54904b45948d17cba24d3f25",
+        "label": "Supervisory Activities"
+      }
+    ],
+    "section_id": "1a5da72fe6ac447baaf62e6fb4a923f7"
+  },
+  "Student/Postdoctoral Supervision": {
+    "path": [
+      {
+        "id": "95c29504d0aa4b51b84659cafaf2b38d",
+        "label": "Activities"
+      },
+      {
+        "id": "90cc172e54904b45948d17cba24d3f25",
+        "label": "Supervisory Activities"
+      }
+    ],
+    "section_id": "4b36fa1eef2549f6ab3a3df7c1c81e0b"
+  },
+  "Telephone": {
+    "path": [
+      {
+        "id": "f589cbc028c64fdaa783da01647e5e3c",
+        "label": "Personal Information"
+      }
+    ],
+    "section_id": "2a3366209cf8477f82556b045188f131"
+  },
+  "Text Interviews": {
+    "path": [
+      {
+        "id": "047ec63e32fe450e943cb678339e8102",
+        "label": "Contributions"
+      },
+      {
+        "id": "ec6a032c4286497fbc2c7e5c64f02fbf",
+        "label": "Interviews and Media Relations"
+      }
+    ],
+    "section_id": "d8ed6dffd5c1463980ecd309ced3e024"
+  },
+  "User Profile": {
+    "path": [],
+    "section_id": "5c6aca5ad9da4e3d90e5a4d4d876d2b8"
+  },
+  "Website": {
+    "path": [
+      {
+        "id": "f589cbc028c64fdaa783da01647e5e3c",
+        "label": "Personal Information"
+      }
+    ],
+    "section_id": "69084a96fc764965a8d4687dcb886504"
+  }
+}
