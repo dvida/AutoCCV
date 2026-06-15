@@ -12,6 +12,11 @@ The intelligence (reading the PDF, deciding what each line is, asking you when u
 run as deterministic, tested Python — so the output is reproducible and the importer-breaking
 gotchas (embedded line breaks, non-ASCII diacritics) are handled automatically.
 
+> **Never heard of Claude Code?** It's Anthropic's AI coding assistant that runs in your terminal and
+> can drive this whole tool for you. You don't need to be a programmer. See
+> [**New to Claude Code? (setup guide)**](#new-to-claude-code-setup-guide) below — or just skim the
+> Quick start and follow along.
+
 ---
 
 ## How it works (the short version)
@@ -55,6 +60,66 @@ shipped catalog + your seed are all that's needed — no manual code lookups.
 
 > AutoCCV **requires** the seed export — it guarantees your identity records are correct and lets it
 > reuse organization IDs you've already entered.
+
+---
+
+## New to Claude Code? (setup guide)
+
+*Experienced Claude Code users can skip this — the Quick start above is all you need.*
+
+**What is Claude Code?** [Claude Code](https://www.claude.com/product/claude-code) is Anthropic's
+AI coding assistant that runs in your terminal (or VS Code / JetBrains). You talk to it in plain
+English; it reads files, runs commands, and edits code for you. For AutoCCV, it reads your PDF CV,
+asks you a few questions, and runs the conversion — **you don't have to write any code**.
+
+### 1. Install the prerequisites
+- **Node.js 18+** — required by Claude Code. Get it from <https://nodejs.org> (the "LTS" version).
+- **Python 3.9+** — required by AutoCCV's pipeline. Most Macs/Linux already have it; on Windows get
+  it from <https://www.python.org/downloads/> (tick "Add Python to PATH").
+- **Git** — to download this repo. <https://git-scm.com/downloads>
+
+### 2. Install Claude Code
+```bash
+npm install -g @anthropic-ai/claude-code
+```
+(See the official [setup guide](https://docs.claude.com/en/docs/claude-code/setup) if you hit
+snags. There are also native installers and IDE extensions.)
+
+### 3. Get a subscription / sign in
+Run `claude` once and it will walk you through signing in. Two ways to pay for usage:
+- **A Claude subscription** (simplest, flat monthly fee) — sign in with your claude.ai account:
+  - **Pro** (~US$20/mo): fine for a one-off CV conversion.
+  - **Max** (~US$100–200/mo): more headroom; nice if you'll iterate a lot or run other Claude Code
+    work. A long CV uses a fair amount, but a single conversion is comfortably within Pro limits.
+- **API pay-as-you-go** via the [Anthropic Console](https://console.anthropic.com) — billed per
+  token; good if you only run this occasionally and don't want a subscription.
+
+  See current options on the [pricing page](https://www.claude.com/pricing) and the
+  [Claude Code overview](https://docs.claude.com/en/docs/claude-code/overview).
+
+### 4. Use it with AutoCCV
+```bash
+git clone https://github.com/dvida/AutoCCV.git
+cd AutoCCV
+pip install -r requirements.txt        # one-time: installs the Python dependency (lxml)
+claude                                  # starts Claude Code in this folder
+```
+Then type a request like:
+> Use the autoccv skill to convert `My-CV.pdf` into a CCV. My seed export is `my-seed.xml`.
+
+Put your `My-CV.pdf` and your `my-seed.xml` (see Quick start step 1) in the `AutoCCV` folder first so
+Claude Code can find them. It takes over from there — answer its questions, and you'll get
+`CCV-output.xml` + `NOTES.md`.
+
+**Handy in-session commands:** type `/help` for help, `/skills` to see available skills (you should
+see `autoccv`), and `/exit` to quit. New to the interface? The
+[quickstart](https://docs.claude.com/en/docs/claude-code/quickstart) is a 5-minute read.
+
+### Helpful links
+- Claude Code overview & docs: <https://docs.claude.com/en/docs/claude-code/overview>
+- Quickstart: <https://docs.claude.com/en/docs/claude-code/quickstart>
+- Setup / install: <https://docs.claude.com/en/docs/claude-code/setup>
+- Pricing & plans: <https://www.claude.com/pricing>
 
 ---
 
