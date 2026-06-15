@@ -303,5 +303,56 @@
       {"src": "description", "ccv": "Activity Description", "kind": "bilingual", "omit_if_empty": true}
     ],
     "subsections": []
+  },
+  "international_collaboration": {
+    "ccv_section_label": "International Collaboration Activities",
+    "dedup_key": ["role", "start"],
+    "fields": [
+      {"src": "role", "ccv": "Role", "kind": "string"},
+      {"src": "location", "ccv": "Location", "kind": "lov", "omit_if_empty": true},
+      {"src": "start", "ccv": "Start Date", "kind": "yearmonth", "omit_if_empty": true},
+      {"src": "end", "ccv": "End Date", "kind": "yearmonth", "omit_if_empty": true},
+      {"src": "description", "ccv": "Activity Description", "kind": "bilingual", "omit_if_empty": true}
+    ],
+    "subsections": []
+  },
+  "event_administration": {
+    "ccv_section_label": "Event Administration",
+    "dedup_key": ["event_name", "event_start"],
+    "fields": [
+      {"src": "role", "ccv": "Role", "kind": "string"},
+      {"src": "event_type", "ccv": "Event Type", "kind": "lov", "omit_if_empty": true},
+      {"src": "event_name", "ccv": "Event Name", "kind": "string"},
+      {"src": "start", "ccv": "Activity Start Date", "kind": "yearmonth", "omit_if_empty": true},
+      {"src": "end", "ccv": "Activity End Date", "kind": "yearmonth", "omit_if_empty": true},
+      {"src": "event_start", "ccv": "Event Start Date", "kind": "yearmonth", "omit_if_empty": true},
+      {"src": "event_end", "ccv": "Event End Date", "kind": "yearmonth", "omit_if_empty": true}
+    ],
+    "subsections": []
+  },
+  "organizational_review": {
+    "ccv_section_label": "Organizational Review Activities",
+    "dedup_key": ["role", "start"],
+    "fields": [
+      {"src": "role", "ccv": "Role", "kind": "string"},
+      {"src": "organization", "ccv": "Organization", "kind": "reftable", "reftable": "Organization", "fallback_field": "Other Organization", "omit_if_empty": true},
+      {"src": "other_organization_type", "ccv": "Other Organization Type", "kind": "lov", "omit_if_empty": true},
+      {"src": "start", "ccv": "Start Date", "kind": "yearmonth", "omit_if_empty": true},
+      {"src": "end", "ccv": "End Date", "kind": "yearmonth", "omit_if_empty": true},
+      {"src": "description", "ccv": "Activity Description", "kind": "bilingual", "omit_if_empty": true}
+    ],
+    "subsections": []
+  },
+  "leaves_of_absence": {
+    "ccv_section_label": "Leaves of Absence and Impact on Research",
+    "dedup_key": ["start", "leave_type"],
+    "fields": [
+      {"src": "leave_type", "ccv": "Leave Type", "kind": "lov", "omit_if_empty": true},
+      {"src": "organization", "ccv": "Organization", "kind": "reftable", "reftable": "Organization", "fallback_field": "Other Organization", "omit_if_empty": true},
+      {"src": "start", "ccv": "Start Date", "kind": "yearmonth", "omit_if_empty": true},
+      {"src": "end", "ccv": "End Date", "kind": "yearmonth", "omit_if_empty": true},
+      {"src": "description", "ccv": "Absence and Impact Description", "kind": "bilingual", "omit_if_empty": true}
+    ],
+    "subsections": []
   }
 }

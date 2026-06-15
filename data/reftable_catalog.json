@@ -218,6 +218,50 @@
           "value": "Los Alamos National Laboratory"
         }
       ],
+      "Massachusetts Institute of Technology": [
+        {
+          "label": "Country",
+          "refOrLovId": "00000000000000000000000000002000",
+          "value": "United States of America"
+        },
+        {
+          "label": "Subdivision",
+          "refOrLovId": "00000000000000000000000000100000",
+          "value": "Massachusetts"
+        },
+        {
+          "label": "Organization Type",
+          "refOrLovId": "00000000000000000000000000030000",
+          "value": "Academic"
+        },
+        {
+          "label": "Organization",
+          "refOrLovId": "ee597e9073b6479b94f903ca08f81903",
+          "value": "Massachusetts Institute of Technology"
+        }
+      ],
+      "McGill University": [
+        {
+          "label": "Country",
+          "refOrLovId": "00000000000000000000000000002000",
+          "value": "Canada"
+        },
+        {
+          "label": "Subdivision",
+          "refOrLovId": "00000000000000000000000000100000",
+          "value": "Quebec"
+        },
+        {
+          "label": "Organization Type",
+          "refOrLovId": "00000000000000000000000000030000",
+          "value": "Academic"
+        },
+        {
+          "label": "Organization",
+          "refOrLovId": "ee597e9073b6479b94f903ca08f81903",
+          "value": "McGill University"
+        }
+      ],
       "National Academy of Sciences": [
         {
           "label": "Country",
@@ -328,6 +372,28 @@
           "value": "Natural Sciences and Engineering Research Council of Canada (NSERC)"
         }
       ],
+      "Pennsylvania State University": [
+        {
+          "label": "Country",
+          "refOrLovId": "00000000000000000000000000002000",
+          "value": "United States of America"
+        },
+        {
+          "label": "Subdivision",
+          "refOrLovId": "00000000000000000000000000100000",
+          "value": "Pennsylvania"
+        },
+        {
+          "label": "Organization Type",
+          "refOrLovId": "00000000000000000000000000030000",
+          "value": "Academic"
+        },
+        {
+          "label": "Organization",
+          "refOrLovId": "ee597e9073b6479b94f903ca08f81903",
+          "value": "Pennsylvania State University"
+        }
+      ],
       "Planetary Science Institute": [
         {
           "label": "Country",
@@ -416,6 +482,28 @@
           "value": "Social Sciences and Humanities Research Council of Canada (SSHRC)"
         }
       ],
+      "Space Telescope Science Institute": [
+        {
+          "label": "Country",
+          "refOrLovId": "00000000000000000000000000002000",
+          "value": "United States of America"
+        },
+        {
+          "label": "Subdivision",
+          "refOrLovId": "00000000000000000000000000100000",
+          "value": "Maryland"
+        },
+        {
+          "label": "Organization Type",
+          "refOrLovId": "00000000000000000000000000030000",
+          "value": "Research"
+        },
+        {
+          "label": "Organization",
+          "refOrLovId": "ee597e9073b6479b94f903ca08f81903",
+          "value": "Space Telescope Science Institute"
+        }
+      ],
       "The University of Calgary": [
         {
           "label": "Country",
@@ -460,6 +548,50 @@
           "value": "University of Alberta"
         }
       ],
+      "University of California, Los Angeles": [
+        {
+          "label": "Country",
+          "refOrLovId": "00000000000000000000000000002000",
+          "value": "United States of America"
+        },
+        {
+          "label": "Subdivision",
+          "refOrLovId": "00000000000000000000000000100000",
+          "value": "California"
+        },
+        {
+          "label": "Organization Type",
+          "refOrLovId": "00000000000000000000000000030000",
+          "value": "Academic"
+        },
+        {
+          "label": "Organization",
+          "refOrLovId": "ee597e9073b6479b94f903ca08f81903",
+          "value": "University of California, Los Angeles"
+        }
+      ],
+      "University of Victoria": [
+        {
+          "label": "Country",
+          "refOrLovId": "00000000000000000000000000002000",
+          "value": "Canada"
+        },
+        {
+          "label": "Subdivision",
+          "refOrLovId": "00000000000000000000000000100000",
+          "value": "British Columbia"
+        },
+        {
+          "label": "Organization Type",
+          "refOrLovId": "00000000000000000000000000030000",
+          "value": "Academic"
+        },
+        {
+          "label": "Organization",
+          "refOrLovId": "ee597e9073b6479b94f903ca08f81903",
+          "value": "University of Victoria"
+        }
+      ],
       "University of Western Ontario": [
         {
           "label": "Country",
@@ -480,6 +612,28 @@
           "label": "Organization",
           "refOrLovId": "ee597e9073b6479b94f903ca08f81903",
           "value": "University of Western Ontario"
+        }
+      ],
+      "Yale University": [
+        {
+          "label": "Country",
+          "refOrLovId": "00000000000000000000000000002000",
+          "value": "United States of America"
+        },
+        {
+          "label": "Subdivision",
+          "refOrLovId": "00000000000000000000000000100000",
+          "value": "Connecticut"
+        },
+        {
+          "label": "Organization Type",
+          "refOrLovId": "00000000000000000000000000030000",
+          "value": "Academic"
+        },
+        {
+          "label": "Organization",
+          "refOrLovId": "ee597e9073b6479b94f903ca08f81903",
+          "value": "Yale University"
         }
       ]
     },

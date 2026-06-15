@@ -1,13 +1,12 @@
 """Shared helpers for the build-time extractors."""
+import glob
 import os
 from lxml import etree
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
-EXAMPLES = [
-    os.path.join(REPO, "examples", "CCV-Denis_Vida.xml"),     # primary (rich, recent)
-    os.path.join(REPO, "examples", "CCV-Peter_Brown.xml"),    # supplemental coverage
-]
+# auto-discover every real CCV export dropped into examples/ — more examples => richer catalog
+EXAMPLES = sorted(glob.glob(os.path.join(REPO, "examples", "CCV-*.xml")))
 DATA = os.path.join(REPO, "data")
 
 

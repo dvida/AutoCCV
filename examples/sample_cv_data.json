@@ -61,5 +61,21 @@
   "ktt": [
     {"role": "Project lead", "outcome": "Global Meteor Network (GMN)",
      "url": "https://globalmeteornetwork.org/", "description": "Worldwide low-cost meteor camera network."}
+  ],
+  "international_collaboration": [
+    {"role": "Co-PI, multiwavelength survey", "location": "United States of America",
+     "start": "2020/01", "description": "Joint observing program with US collaborators."}
+  ],
+  "event_administration": [
+    {"role": "Primary Organizer", "event_type": "Conference", "event_name": "Meteoroids 2025",
+     "start": "2024/06", "event_start": "2025/06", "event_end": "2025/06"}
+  ],
+  "organizational_review": [
+    {"role": "Review Panel Member", "organization": "Natural Sciences and Engineering Research Council of Canada (NSERC)",
+     "start": "2025/04", "end": "2025/06", "description": "External review panel."}
+  ],
+  "leaves_of_absence": [
+    {"leave_type": "Other Circumstances", "start": "2020/09", "end": "2021/09",
+     "description": "Pandemic-related research disruption."}
   ]
 }

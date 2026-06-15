@@ -39,6 +39,10 @@ Rules:
   - Society/association memberships → `other_memberships`; committees/working groups → `committee_memberships`.
   - Journals you review for → `journal_reviews`; editorial board roles → `editorial_activities`.
   - Certifications/short courses → `credentials`.
+  - Organizing/chairing conferences, workshops, symposia → `event_administration`.
+  - International research partnerships/collaborations → `international_collaboration`.
+  - Sitting on external/program review panels for institutions → `organizational_review`.
+  - Career interruptions / parental or medical leave affecting research → `leaves_of_absence`.
 - Controlled-vocab values go in as **human labels** (e.g. `"Doctorate"`, `"Astronomy and
   Astrophysics"`, `"University of Toronto"`, `"Principal Supervisor"`). The resolver maps them.
   Allowed labels for each field are in `data/lov_catalog.json`; orgs/disciplines in
