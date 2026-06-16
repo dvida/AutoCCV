@@ -354,5 +354,29 @@
       {"src": "description", "ccv": "Absence and Impact Description", "kind": "bilingual", "omit_if_empty": true}
     ],
     "subsections": []
+  },
+  "affiliations": {
+    "ccv_section_label": "Affiliations",
+    "dedup_key": ["position", "organization"],
+    "fields": [
+      {"src": "position", "ccv": "Position Title", "kind": "bilingual"},
+      {"src": "organization", "ccv": "Organization", "kind": "reftable", "reftable": "Organization", "fallback_field": "Other Organization", "omit_if_empty": true},
+      {"src": "other_organization_type", "ccv": "Other Organization Type", "kind": "lov", "omit_if_empty": true},
+      {"src": "department", "ccv": "Department", "kind": "string", "omit_if_empty": true},
+      {"src": "description", "ccv": "Activity Description", "kind": "string", "omit_if_empty": true},
+      {"src": "start", "ccv": "Start Date", "kind": "yearmonth", "omit_if_empty": true},
+      {"src": "end", "ccv": "End Date", "kind": "yearmonth", "omit_if_empty": true}
+    ],
+    "subsections": []
+  },
+  "working_papers": {
+    "ccv_section_label": "Working Papers",
+    "dedup_key": ["title"],
+    "fields": [
+      {"src": "title", "ccv": "Paper Title", "kind": "string"},
+      {"src": "authors", "ccv": "Authors", "kind": "string", "omit_if_empty": true},
+      {"src": "url", "ccv": "URL", "kind": "string", "omit_if_empty": true}
+    ],
+    "subsections": []
   }
 }

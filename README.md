@@ -212,7 +212,7 @@ Student/Postdoctoral Supervision · Committee & Other Memberships · Recognition
 Editorial & Journal Review Activities · Credentials · Presentations · Journal Articles ·
 Conference Publications · Reports · Books · Book Chapters · Text & Broadcast Interviews ·
 Knowledge & Technology Translation · International Collaboration Activities · Event Administration ·
-Organizational Review Activities · Leaves of Absence and Impact on Research.
+Organizational Review Activities · Leaves of Absence and Impact on Research · Affiliations · Working Papers.
 
 Personal Information comes from your seed. Adding a new section is a JSON edit in
 `data/section_map.json` (plus a skeleton record harvested from any export that has it) — no code change.

@@ -23,6 +23,28 @@
           "value": "Atmosphere (Including Chemical Aspects)"
         }
       ],
+      "Galactic and Cosmic": [
+        {
+          "label": "Sector of Research",
+          "refOrLovId": "00000000000000000000000100003800",
+          "value": "Natural Sciences and Engineering"
+        },
+        {
+          "label": "Field",
+          "refOrLovId": "28b7043d4ec74915a90ee44bbf5ec71f",
+          "value": "Nature and Matter Interactions"
+        },
+        {
+          "label": "Subfield",
+          "refOrLovId": "1bb709ee05854387a897b8a17cfd3f0e",
+          "value": "Planets and Universe"
+        },
+        {
+          "label": "Area",
+          "refOrLovId": "75f906df893642f895b9203370e0b9a9",
+          "value": "Galactic and Cosmic"
+        }
+      ],
       "Imagery": [
         {
           "label": "Sector of Research",
@@ -65,6 +87,28 @@
           "label": "Area",
           "refOrLovId": "75f906df893642f895b9203370e0b9a9",
           "value": "Solar and Planetary Systems"
+        }
+      ],
+      "Stellar": [
+        {
+          "label": "Sector of Research",
+          "refOrLovId": "00000000000000000000000100003800",
+          "value": "Natural Sciences and Engineering"
+        },
+        {
+          "label": "Field",
+          "refOrLovId": "28b7043d4ec74915a90ee44bbf5ec71f",
+          "value": "Nature and Matter Interactions"
+        },
+        {
+          "label": "Subfield",
+          "refOrLovId": "1bb709ee05854387a897b8a17cfd3f0e",
+          "value": "Planets and Universe"
+        },
+        {
+          "label": "Area",
+          "refOrLovId": "75f906df893642f895b9203370e0b9a9",
+          "value": "Stellar"
         }
       ]
     },
@@ -130,6 +174,28 @@
   },
   "Organization": {
     "entries": {
+      "Aarhus Universitat": [
+        {
+          "label": "Country",
+          "refOrLovId": "00000000000000000000000000002000",
+          "value": "Denmark"
+        },
+        {
+          "label": "Subdivision",
+          "refOrLovId": "00000000000000000000000000100000",
+          "value": "Not Required"
+        },
+        {
+          "label": "Organization Type",
+          "refOrLovId": "00000000000000000000000000030000",
+          "value": "Academic"
+        },
+        {
+          "label": "Organization",
+          "refOrLovId": "ee597e9073b6479b94f903ca08f81903",
+          "value": "Aarhus Universitat"
+        }
+      ],
       "Australian Research Council": [
         {
           "label": "Country",
@@ -194,6 +260,50 @@
           "label": "Organization",
           "refOrLovId": "ee597e9073b6479b94f903ca08f81903",
           "value": "Czech Academy of Sciences"
+        }
+      ],
+      "Groningen University": [
+        {
+          "label": "Country",
+          "refOrLovId": "00000000000000000000000000002000",
+          "value": "Netherlands"
+        },
+        {
+          "label": "Subdivision",
+          "refOrLovId": "00000000000000000000000000100000",
+          "value": "Not Required"
+        },
+        {
+          "label": "Organization Type",
+          "refOrLovId": "00000000000000000000000000030000",
+          "value": "Academic"
+        },
+        {
+          "label": "Organization",
+          "refOrLovId": "ee597e9073b6479b94f903ca08f81903",
+          "value": "Groningen University"
+        }
+      ],
+      "Katholieke Universiteit Leuven (Dutch)": [
+        {
+          "label": "Country",
+          "refOrLovId": "00000000000000000000000000002000",
+          "value": "Belgium"
+        },
+        {
+          "label": "Subdivision",
+          "refOrLovId": "00000000000000000000000000100000",
+          "value": "Not Required"
+        },
+        {
+          "label": "Organization Type",
+          "refOrLovId": "00000000000000000000000000030000",
+          "value": "Academic"
+        },
+        {
+          "label": "Organization",
+          "refOrLovId": "ee597e9073b6479b94f903ca08f81903",
+          "value": "Katholieke Universiteit Leuven (Dutch)"
         }
       ],
       "Los Alamos National Laboratory": [
@@ -612,6 +722,28 @@
           "label": "Organization",
           "refOrLovId": "ee597e9073b6479b94f903ca08f81903",
           "value": "University of Western Ontario"
+        }
+      ],
+      "Vrije Universiteit Brussel": [
+        {
+          "label": "Country",
+          "refOrLovId": "00000000000000000000000000002000",
+          "value": "Belgium"
+        },
+        {
+          "label": "Subdivision",
+          "refOrLovId": "00000000000000000000000000100000",
+          "value": "Not Required"
+        },
+        {
+          "label": "Organization Type",
+          "refOrLovId": "00000000000000000000000000030000",
+          "value": "Academic"
+        },
+        {
+          "label": "Organization",
+          "refOrLovId": "ee597e9073b6479b94f903ca08f81903",
+          "value": "Vrije Universiteit Brussel"
         }
       ],
       "Yale University": [

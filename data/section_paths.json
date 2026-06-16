@@ -401,5 +401,18 @@
       }
     ],
     "section_id": "69084a96fc764965a8d4687dcb886504"
+  },
+  "Working Papers": {
+    "path": [
+      {
+        "id": "047ec63e32fe450e943cb678339e8102",
+        "label": "Contributions"
+      },
+      {
+        "id": "46e8f57e67db48b29d84dda77cf0ef51",
+        "label": "Publications"
+      }
+    ],
+    "section_id": "08d19f397e554a6b95f9b5de2501a5d5"
   }
 }

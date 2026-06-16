@@ -106,6 +106,12 @@
       "start": {"type": "string"}, "end": {"type": "string"}, "description": {"type": "string"}}}},
     "leaves_of_absence": {"type": "array", "items": {"type": "object", "properties": {
       "leave_type": {"type": "string"}, "organization": {"type": "string"},
-      "start": {"type": "string"}, "end": {"type": "string"}, "description": {"type": "string"}}}}
+      "start": {"type": "string"}, "end": {"type": "string"}, "description": {"type": "string"}}}},
+    "affiliations": {"type": "array", "items": {"type": "object", "properties": {
+      "position": {"type": "string"}, "organization": {"type": "string"}, "other_organization_type": {"type": "string"},
+      "department": {"type": "string"}, "description": {"type": "string"},
+      "start": {"type": "string"}, "end": {"type": "string"}}}},
+    "working_papers": {"type": "array", "items": {"type": "object", "properties": {
+      "title": {"type": "string"}, "authors": {"type": "string"}, "url": {"type": "string"}}}}
   }
 }

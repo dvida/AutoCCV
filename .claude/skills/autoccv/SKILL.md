@@ -43,6 +43,8 @@ Rules:
   - International research partnerships/collaborations → `international_collaboration`.
   - Sitting on external/program review panels for institutions → `organizational_review`.
   - Career interruptions / parental or medical leave affecting research → `leaves_of_absence`.
+  - Cross-appointments / adjunct or visiting positions at other institutions → `affiliations`.
+  - Preprints / working papers not yet formally published → `working_papers`.
 - Controlled-vocab values go in as **human labels** (e.g. `"Doctorate"`, `"Astronomy and
   Astrophysics"`, `"University of Toronto"`, `"Principal Supervisor"`). The resolver maps them.
   Allowed labels for each field are in `data/lov_catalog.json`; orgs/disciplines in

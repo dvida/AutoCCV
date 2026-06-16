@@ -46,7 +46,7 @@
         <field id="a2831f6effb64d2c8412f0ca980c0c7b" label="Research Discipline"/>
       </section>
     </section>
-    <section id="f612675840ef4ae0965c815ac1574623" label="Affiliations" recordId="2ba765aa89d2450db912055b534c67c9">
+    <section id="f612675840ef4ae0965c815ac1574623" label="Affiliations" primaryIndicator="true" recordId="2f0b5855d9b0458f8fa54f5ad4e69695">
       <field id="796ed81a4c894d7da2317ee28fd0eed1" label="Position Title">
         <value type="Bilingual"/>
         <bilingual>
@@ -71,7 +71,7 @@
         <value format="yyyy/MM" type="YearMonth"/>
       </field>
     </section>
-    <section id="4c5d725b1b654966acf50d48934beefc" label="Leaves of Absence and Impact on Research" recordId="ee6c7dd5ddea45948e0bb6a56f3f6220">
+    <section id="4c5d725b1b654966acf50d48934beefc" label="Leaves of Absence and Impact on Research" recordId="d347715de04b469191d1c1c5265155ed">
       <field id="64cbd0916c0f4b4eb0424115626b2f1a" label="Leave Type"/>
       <field id="fc1fb6a84f844798840202fe0d3f3031" label="Start Date">
         <value format="yyyy/MM" type="YearMonth"/>
@@ -85,10 +85,10 @@
       </field>
       <field id="162412c2de4d4ef7a03e27176cb86a77" label="Other Organization Type"/>
       <field id="037a5e8bcbce44d58212d00215596ff9" label="Absence and Impact Description">
-        <value type="Bilingual"/>
+        <value type="Bilingual"><b>COVID-19 pandemic</b> substantially disrupted research activities at the University of Western Ontario. Given a normal research allocation of 40% annually (20% during teaching terms, 80% during summer months), the pandemic resulted in an <b>estimated equivalent of 10 months of lost research time</b>: during March–August 2020 (6 months), research capacity was reduced to approximately 20% of normal (representing an 80% loss, or ~4.8 months equivalent); during September 2020–April 2021 (8 months), capacity remained at roughly 40% of normal (a 60% loss, or ~4.8 months equivalent). Disruptions included emergency development of online second-year physics and third-year astronomy courses during summer and fall terms normally dedicated to research, remote supervision and reduced HQP recruitment, cancellation of a VLT/MUSE observing run, postponed manuscript submissions, and cancelled invited talks.</value>
         <bilingual>
           <french/>
-          <english/>
+          <english><b>COVID-19 pandemic</b> substantially disrupted research activities at the University of Western Ontario. Given a normal research allocation of 40% annually (20% during teaching terms, 80% during summer months), the pandemic resulted in an <b>estimated equivalent of 10 months of lost research time</b>: during March–August 2020 (6 months), research capacity was reduced to approximately 20% of normal (representing an 80% loss, or ~4.8 months equivalent); during September 2020–April 2021 (8 months), capacity remained at roughly 40% of normal (a 60% loss, or ~4.8 months equivalent). Disruptions included emergency development of online second-year physics and third-year astronomy courses during summer and fall terms normally dedicated to research, remote supervision and reduced HQP recruitment, cancellation of a VLT/MUSE observing run, postponed manuscript submissions, and cancelled invited talks.</english>
         </bilingual>
       </field>
     </section>
@@ -164,7 +164,7 @@
         <value format="yyyy-MM-dd" type="Date"/>
       </field>
     </section>
-    <section id="2687e70e5d45487c93a8a02626543f64" label="Identification" recordId="bc9baed7be3e4799bc1c846e4d906ad5">
+    <section id="2687e70e5d45487c93a8a02626543f64" label="Identification" recordId="6244deb3743f4c7e86a4a9743d1d9ac3">
       <field id="ee8beaea41f049d8bcfadfbfa89ac09e" label="Title"/>
       <field id="5c6f17e8a67241e19667815a9e95d9d0" label="Family Name">
         <value type="String"/>
@@ -222,7 +222,7 @@
         <value format="yyyy-MM-dd" type="Date"/>
       </field>
     </section>
-    <section id="69084a96fc764965a8d4687dcb886504" label="Website" recordId="fcd570cb83ab4d66b80639f35f4e094b">
+    <section id="69084a96fc764965a8d4687dcb886504" label="Website" recordId="2dbc9e97fb754847a6ebd013b82e3e46">
       <field id="a4a7235b57e54c3da40de44b44af4d77" label="Website Type"/>
       <field id="3d368ce1ce0c4f92a473091888ab9445" label="URL">
         <value type="String"/>
@@ -231,7 +231,7 @@
   </section>
   <section id="047ec63e32fe450e943cb678339e8102" label="Contributions">
     <section id="46e8f57e67db48b29d84dda77cf0ef51" label="Publications">
-      <section id="fd8f2ffe3f5c43db8b5c3f72d8ffd994" label="Book Chapters" recordId="da1082879f994a3b8bf0183bd5a8475f">
+      <section id="fd8f2ffe3f5c43db8b5c3f72d8ffd994" label="Book Chapters" recordId="56cfd02b2f844800aa2237c76be3879c">
         <field id="52a699a6b0fe42a4851a7d5ae355360b" label="Chapter Title">
           <value type="String"/>
         </field>
@@ -348,7 +348,7 @@
           </bilingual>
         </field>
       </section>
-      <section id="4b9f909503cd4c8aa8d826c87d6d874d" label="Conference Publications" recordId="97188bcf3e654130a1e073002e0226fe">
+      <section id="4b9f909503cd4c8aa8d826c87d6d874d" label="Conference Publications" recordId="a4529b73c4e1495cae77b83559913b7f">
         <field id="81ef87c09ded47ae8880b8d79e83406f" label="Conference Publication Type"/>
         <field id="8e6ee535c95e42ec866b777c7472bafb" label="Publication Title">
           <value type="String"/>
@@ -410,8 +410,26 @@
             <english/>
           </bilingual>
         </field>
+        <section id="5bb69b0239f84606ad9d6081af068609" label="Funding Sources" recordId="6e15b9eef8594d429c7fb5de75b2e168">
+          <field id="a008a7ef146f4cba92e166633326ca7b" label="Funding Organization"/>
+          <field id="aceb27b506b44666b56c9a2a889ae7f7" label="Other Funding Organization">
+            <value type="String"/>
+          </field>
+          <field id="32dff3243a2544e1afd1dc871bce0e45" label="Funding Reference Number">
+            <value type="String"/>
+          </field>
+        </section>
+        <section id="5bb69b0239f84606ad9d6081af068609" label="Funding Sources" recordId="97da82869bee45afa979d4f6c5fa62e8">
+          <field id="a008a7ef146f4cba92e166633326ca7b" label="Funding Organization"/>
+          <field id="aceb27b506b44666b56c9a2a889ae7f7" label="Other Funding Organization">
+            <value type="String"/>
+          </field>
+          <field id="32dff3243a2544e1afd1dc871bce0e45" label="Funding Reference Number">
+            <value type="String"/>
+          </field>
+        </section>
       </section>
-      <section id="9a34d6b273914f18b2273e8de7c48fd6" label="Journal Articles" recordId="10087490d1524560955262e608759539">
+      <section id="9a34d6b273914f18b2273e8de7c48fd6" label="Journal Articles" recordId="faca4d33b03641019255edd10385aa5a">
         <field id="f3fd4878d47c4e83aef6959620ba4870" label="Article Title">
           <value type="String"/>
         </field>
@@ -469,6 +487,24 @@
             <english/>
           </bilingual>
         </field>
+        <section id="c272e0ad38914d868e75b08feb60a142" label="Funding Sources" recordId="cf7f65979e6c46fca248b4d89ba3e98a">
+          <field id="38f608db18724ac9a0d810b052dfb073" label="Funding Organization"/>
+          <field id="c4bec520910e4cf5a2a3f86458ce70a6" label="Other Funding Organization">
+            <value type="String"/>
+          </field>
+          <field id="7e340110fb93469c8ab46be687fe87b0" label="Funding Reference Number">
+            <value type="String"/>
+          </field>
+        </section>
+        <section id="c272e0ad38914d868e75b08feb60a142" label="Funding Sources" recordId="037cda2e44764e428ead388aeb336e5e">
+          <field id="38f608db18724ac9a0d810b052dfb073" label="Funding Organization"/>
+          <field id="c4bec520910e4cf5a2a3f86458ce70a6" label="Other Funding Organization">
+            <value type="String"/>
+          </field>
+          <field id="7e340110fb93469c8ab46be687fe87b0" label="Funding Reference Number">
+            <value type="String"/>
+          </field>
+        </section>
       </section>
       <section id="7e57525337d5498a9506fdadee098b10" label="Reports" recordId="5da88c48612b49479c6be2c37dab6747">
         <field id="dd692787647b495fbadb038b6937950d" label="Report Title">
@@ -518,9 +554,23 @@
           </bilingual>
         </field>
       </section>
+      <section id="08d19f397e554a6b95f9b5de2501a5d5" label="Working Papers" recordId="4716e7b5f0c94b929ea256a4c8482749">
+        <field id="4cce59b4934e4b6aaddcd0d108fbd55d" label="Paper Title">
+          <value type="String"/>
+        </field>
+        <field id="7f999270858b4d6ba83e3edf0fc9f6cd" label="URL">
+          <value type="String"/>
+        </field>
+        <field id="0b0dff2f2df64f08b354e259b735e722" label="Authors">
+          <value type="String"/>
+        </field>
+        <field id="5e68434787144782bd7376bcd8557ab6" label="Editors">
+          <value type="String"/>
+        </field>
+      </section>
     </section>
     <section id="ec6a032c4286497fbc2c7e5c64f02fbf" label="Interviews and Media Relations">
-      <section id="6ba8ed9d1b11499d82fc8b52ea7f2ed5" label="Broadcast Interviews" recordId="80fa96b934df44b685cebfcc4bc5f191">
+      <section id="6ba8ed9d1b11499d82fc8b52ea7f2ed5" label="Broadcast Interviews" recordId="997796828ed045d4a19ac3f0dc76bf64">
         <field id="d0e9097280af4f048bc398909b477f8b" label="Topic">
           <value type="String"/>
         </field>
@@ -672,7 +722,7 @@
         <value format="yyyy/MM" type="YearMonth"/>
       </field>
     </section>
-    <section id="cbc6f120ec5e49c79d1c50fac0e92359" label="Other Memberships" recordId="460eeb1691dc426a9183b8581664310b">
+    <section id="cbc6f120ec5e49c79d1c50fac0e92359" label="Other Memberships" recordId="848625ffc3f44478ab27f429142ed4fc">
       <field id="ee344aa665f948dc9358e8016e6caca4" label="Role">
         <value type="String"/>
       </field>
@@ -771,7 +821,7 @@
           </bilingual>
         </field>
       </section>
-      <section id="7564fc922478441c97c9857809028895" label="Event Administration" recordId="8443b6a223764e118f52a5e77a69121b">
+      <section id="7564fc922478441c97c9857809028895" label="Event Administration" recordId="c34b0dfcc1d144048856e6824755c876">
         <field id="31cdeb30328e410cb6b78fa48435be08" label="Role">
           <value type="String"/>
         </field>
@@ -833,7 +883,7 @@
         </field>
       </section>
     </section>
-    <section id="ba0553fb52024e94adff3100f8ad6b0e" label="International Collaboration Activities" recordId="276d24edfab8453f8a644fe0d8025b6a">
+    <section id="ba0553fb52024e94adff3100f8ad6b0e" label="International Collaboration Activities" recordId="60211e9f10694a2ea3c762c6db7546e6">
       <field id="fafb6f312c1b4f11b0e5261fd11c6c43" label="Role">
         <value type="String"/>
       </field>
@@ -845,10 +895,10 @@
         <value format="yyyy/MM" type="YearMonth"/>
       </field>
       <field id="ffaf2249da2b4e528ea044c40e4b1da2" label="Activity Description">
-        <value type="Bilingual"/>
+        <value type="Bilingual"><b>Probing the Chemical Evolution of the Carriers of the Aromatic Infrared Band Emission </b>(JWST GO4, ID 7965); 21 collaborators  (part of the ESSENcE collaboration). This program investigates the processes that regulate the aliphatic-to-aromatic character of the aromatic infrared band (AIB) carriers. A key goal is to establish an evolutionary link between the highly aromatic AIBs typically seen in the interstellar medium and the more aliphatic AIBs seen in circumstellar environments, and to determine the physical conditions that drive this evolution — a longstanding open question in PAH astrophysics. As PI, I wrote the proposal and technical observing strategy, coordinate regular team meetings, and lead the data analysis strategy and research dissemination. I co-supervise a PhD student conducting PAH analysis and data reduction, and a PDF leading the physical conditions analysis. Manuscripts are currently in preparation.</value>
         <bilingual>
           <french/>
-          <english/>
+          <english><b>Probing the Chemical Evolution of the Carriers of the Aromatic Infrared Band Emission </b>(JWST GO4, ID 7965); 21 collaborators  (part of the ESSENcE collaboration). This program investigates the processes that regulate the aliphatic-to-aromatic character of the aromatic infrared band (AIB) carriers. A key goal is to establish an evolutionary link between the highly aromatic AIBs typically seen in the interstellar medium and the more aliphatic AIBs seen in circumstellar environments, and to determine the physical conditions that drive this evolution — a longstanding open question in PAH astrophysics. As PI, I wrote the proposal and technical observing strategy, coordinate regular team meetings, and lead the data analysis strategy and research dissemination. I co-supervise a PhD student conducting PAH analysis and data reduction, and a PDF leading the physical conditions analysis. Manuscripts are currently in preparation.</english>
         </bilingual>
       </field>
     </section>
@@ -1424,7 +1474,7 @@
       <field id="13806a6772d248158619261afaab2fe0" label="Role"/>
     </section>
   </section>
-  <section id="5c6aca5ad9da4e3d90e5a4d4d876d2b8" label="User Profile" recordId="91cc8b75e7374d9687b92b607ad2753d">
+  <section id="5c6aca5ad9da4e3d90e5a4d4d876d2b8" label="User Profile" recordId="abbbc54e18694d3a83b9edafd1a4e920">
     <field id="96a283c7cf354879867a0787e0c1ead1" label="Researcher Status"/>
     <field id="77d7b0b6cf934ced8978232a31822c09" label="Research Career Start Date">
       <value format="yyyy-MM-dd" type="Date"/>
@@ -1451,19 +1501,31 @@
         <english/>
       </bilingual>
     </field>
-    <section id="6062975bede54fd59fcfe0785e7451a3" label="Fields of Application" recordId="de0322a3963f431a91d4d8a9e9401234">
+    <section id="6062975bede54fd59fcfe0785e7451a3" label="Fields of Application" recordId="90023020e06a4131b96c644ad7d887c1">
       <field id="9ec242f5d282450ca1dd8ff883b9f6a9" label="Order">
         <value type="Number"/>
       </field>
       <field id="595ef6787363411fa14f245f161a132e" label="Field of Application"/>
     </section>
-    <section id="f911b371f6134dfc99600e15675d5885" label="Areas of Research" recordId="dea18c094bce4229960be4d36624504f">
+    <section id="6062975bede54fd59fcfe0785e7451a3" label="Fields of Application" recordId="9bec4ebbc5944c8786380c592c561b7a">
+      <field id="9ec242f5d282450ca1dd8ff883b9f6a9" label="Order">
+        <value type="Number"/>
+      </field>
+      <field id="595ef6787363411fa14f245f161a132e" label="Field of Application"/>
+    </section>
+    <section id="f911b371f6134dfc99600e15675d5885" label="Areas of Research" recordId="61ed2c8eb3614443ad0dcdb2d8015997">
       <field id="f7b450cd341c49d786d13246b8a6c616" label="Order">
         <value type="Number"/>
       </field>
       <field id="bd32ebd68bc346b1a20de641e26be765" label="Area of Research"/>
     </section>
-    <section id="53099556bdac4ac8813be6fd62a356b1" label="Research Specialization Keywords" recordId="2da3aa2f559b4394a9299a641d43cea0">
+    <section id="f911b371f6134dfc99600e15675d5885" label="Areas of Research" recordId="54c2a7fa52c34dc197e0f6bcd9da78d8">
+      <field id="f7b450cd341c49d786d13246b8a6c616" label="Order">
+        <value type="Number"/>
+      </field>
+      <field id="bd32ebd68bc346b1a20de641e26be765" label="Area of Research"/>
+    </section>
+    <section id="53099556bdac4ac8813be6fd62a356b1" label="Research Specialization Keywords" recordId="8fccab04886543b98cc1e3a4c28aaad8">
       <field id="1e0ff4e40d544b4b87a17fed4c4c22d3" label="Order">
         <value type="Number"/>
       </field>
@@ -1474,7 +1536,7 @@
         </bilingual>
       </field>
     </section>
-    <section id="53099556bdac4ac8813be6fd62a356b1" label="Research Specialization Keywords" recordId="f9faf2e79c4246389a45d655d5f64489">
+    <section id="53099556bdac4ac8813be6fd62a356b1" label="Research Specialization Keywords" recordId="64b0b480b0c546a8926e1be644cb809d">
       <field id="1e0ff4e40d544b4b87a17fed4c4c22d3" label="Order">
         <value type="Number"/>
       </field>
@@ -1485,7 +1547,7 @@
         </bilingual>
       </field>
     </section>
-    <section id="53099556bdac4ac8813be6fd62a356b1" label="Research Specialization Keywords" recordId="6f38635d7beb454591708d8a3f4a49ec">
+    <section id="53099556bdac4ac8813be6fd62a356b1" label="Research Specialization Keywords" recordId="564316aa63104dbc831157a2cb9a7d2c">
       <field id="1e0ff4e40d544b4b87a17fed4c4c22d3" label="Order">
         <value type="Number"/>
       </field>
@@ -1496,7 +1558,7 @@
         </bilingual>
       </field>
     </section>
-    <section id="53099556bdac4ac8813be6fd62a356b1" label="Research Specialization Keywords" recordId="4f1c8b0a649243b298db85455bc1bbea">
+    <section id="53099556bdac4ac8813be6fd62a356b1" label="Research Specialization Keywords" recordId="1a74c1a465c34ff2846938e06d7dc364">
       <field id="1e0ff4e40d544b4b87a17fed4c4c22d3" label="Order">
         <value type="Number"/>
       </field>
@@ -1507,7 +1569,7 @@
         </bilingual>
       </field>
     </section>
-    <section id="53099556bdac4ac8813be6fd62a356b1" label="Research Specialization Keywords" recordId="c8fae5c680bf424ba966d3baa054a6b6">
+    <section id="53099556bdac4ac8813be6fd62a356b1" label="Research Specialization Keywords" recordId="a7317a0f908a4160900021b4a5a5fb25">
       <field id="1e0ff4e40d544b4b87a17fed4c4c22d3" label="Order">
         <value type="Number"/>
       </field>
@@ -1518,24 +1580,7 @@
         </bilingual>
       </field>
     </section>
-    <section id="53099556bdac4ac8813be6fd62a356b1" label="Research Specialization Keywords" recordId="c295fe9e641e4c5ba19f42d95cc9d107">
-      <field id="1e0ff4e40d544b4b87a17fed4c4c22d3" label="Order">
-        <value type="Number"/>
-      </field>
-      <field id="6351fbc0f45f4266b29f292fd521c67a" label="Research Specialization Keywords">
-        <value type="Bilingual"/>
-        <bilingual>
-          <english/>
-        </bilingual>
-      </field>
-    </section>
-    <section id="ffd3d352a4234f5e9b57db596c0b1d4e" label="Research Disciplines" recordId="b69686a8be044865befa1b02720b92d8">
-      <field id="5fec8904baea45608172b57cab09ddef" label="Order">
-        <value type="Number"/>
-      </field>
-      <field id="c7f852f101e64d9cbd595a7058975c73" label="Research Discipline"/>
-    </section>
-    <section id="ffd3d352a4234f5e9b57db596c0b1d4e" label="Research Disciplines" recordId="37874ff7f8234262b589709246d01637">
+    <section id="ffd3d352a4234f5e9b57db596c0b1d4e" label="Research Disciplines" recordId="6aefe5623bbb4572848c5cbefbd2fb39">
       <field id="5fec8904baea45608172b57cab09ddef" label="Order">
         <value type="Number"/>
       </field>
