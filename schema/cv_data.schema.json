@@ -43,10 +43,15 @@
       "session": {"type": "string", "description": "Fall | Winter | Spring | Summer"}, "session_year": {"type": "string"},
       "course_code": {"type": "string"}, "course_title": {"type": "string"},
       "level": {"type": "string", "description": "Undergraduate | Graduate"}, "num_students": {"type": "integer"}}}},
-    "supervision": {"type": "array", "items": {"type": "object", "properties": {
+    "supervision": {"type": "array", "description": "Only supervisions with an end date in the last 6 years are imported (no end date => kept).", "items": {"type": "object",
+      "required": ["degree_type", "student_name", "present_position", "start", "end"], "properties": {
       "role": {"type": "string", "description": "Principal Supervisor | Co-Supervisor"},
-      "student_name": {"type": "string"}, "institution": {"type": "string"},
-      "degree_name": {"type": "string"}, "start": {"type": "string"}, "end": {"type": "string"},
+      "degree_type": {"type": "string", "description": "MANDATORY. Doctorate | Master's Thesis | Master's non-Thesis | Bachelor's Honours | Postdoctoral | ..."},
+      "student_name": {"type": "string", "description": "MANDATORY"},
+      "present_position": {"type": "string", "description": "MANDATORY. The student's current position."},
+      "institution": {"type": "string"},
+      "degree_name": {"type": "string"},
+      "start": {"type": "string", "description": "MANDATORY (yyyy/MM)"}, "end": {"type": "string", "description": "MANDATORY (yyyy/MM)"},
       "thesis_title": {"type": "string"}}}},
     "committee_memberships": {"type": "array", "items": {"type": "object", "properties": {
       "role": {"type": "string"}, "committee_name": {"type": "string"},
@@ -74,20 +79,34 @@
     "journal_articles": {"type": "array", "items": {"type": "object", "properties": {
       "title": {"type": "string"}, "journal": {"type": "string"}, "volume": {"type": "string"},
       "issue": {"type": "string"}, "pages": {"type": "string"}, "year": {"type": "string"},
-      "status": {"type": "string", "description": "Published | Accepted | (blank => in review)"},
+      "status": {"type": "string", "description": "MANDATORY. Published | Accepted | In Press | Submitted | Revision Requested (in-review papers => Submitted; an article with no resolvable status is dropped and flagged)"},
       "refereed": {"type": "string", "description": "Yes | No"}, "authors": {"type": "string"},
       "doi": {"type": "string"}, "contribution": {"type": "string", "description": "0-10 | 11-20 | 21-30 | 31-40"}}}},
-    "conference_publications": {"type": "array", "items": {"type": "object", "properties": {
-      "title": {"type": "string"}, "conference": {"type": "string"}, "city": {"type": "string"},
-      "published_in": {"type": "string"}, "pages": {"type": "string"}, "year": {"type": "string"},
-      "status": {"type": "string"}, "refereed": {"type": "string"}, "authors": {"type": "string"}, "doi": {"type": "string"}}}},
-    "reports": {"type": "array", "items": {"type": "object", "properties": {
-      "title": {"type": "string"}, "other_organization": {"type": "string"}, "year": {"type": "string"}, "authors": {"type": "string"}}}},
+    "conference_publications": {"type": "array", "items": {"type": "object",
+      "required": ["title", "publication_type", "conference", "status", "year", "refereed", "invited", "authors"], "properties": {
+      "title": {"type": "string"},
+      "publication_type": {"type": "string", "description": "MANDATORY. Abstract | Paper | Poster"},
+      "conference": {"type": "string", "description": "MANDATORY. Conference name"}, "city": {"type": "string"},
+      "published_in": {"type": "string"}, "pages": {"type": "string"},
+      "year": {"type": "string", "description": "MANDATORY"},
+      "status": {"type": "string", "description": "MANDATORY. Accepted | In Press | Published | Revision Requested | Submitted"},
+      "refereed": {"type": "string", "description": "MANDATORY. Yes | No"},
+      "invited": {"type": "string", "description": "MANDATORY. Yes | No"},
+      "authors": {"type": "string", "description": "MANDATORY"}, "doi": {"type": "string"}}}},
+    "reports": {"type": "array", "description": "Only reports submitted in the last 6 years are imported.", "items": {"type": "object",
+      "required": ["title", "year", "authors"], "properties": {
+      "title": {"type": "string"}, "other_organization": {"type": "string"},
+      "other_organization_type": {"type": "string", "description": "MANDATORY when other_organization is set. Academic | Federal Government | Not for Profit | Private Sector | Provincial Government | Research"},
+      "num_pages": {"type": "number", "description": "Number of Pages (defaults to 1 if omitted)"},
+      "year": {"type": "string", "description": "MANDATORY. Year Submitted"},
+      "authors": {"type": "string", "description": "MANDATORY"}}}},
     "books": {"type": "array", "items": {"type": "object"}},
     "book_chapters": {"type": "array", "items": {"type": "object"}},
-    "text_interviews": {"type": "array", "items": {"type": "object", "properties": {
-      "topic": {"type": "string"}, "interviewer": {"type": "string"}, "forum": {"type": "string"},
-      "date": {"type": "string"}, "url": {"type": "string"}}}},
+    "text_interviews": {"type": "array", "items": {"type": "object",
+      "required": ["topic", "forum", "date"], "properties": {
+      "topic": {"type": "string", "description": "MANDATORY"}, "interviewer": {"type": "string"},
+      "forum": {"type": "string", "description": "MANDATORY"},
+      "date": {"type": "string", "description": "MANDATORY. Publication date (yyyy-MM-dd)"}, "url": {"type": "string"}}}},
     "broadcast_interviews": {"type": "array", "items": {"type": "object", "properties": {
       "topic": {"type": "string"}, "interviewer": {"type": "string"}, "program": {"type": "string"},
       "network": {"type": "string"}, "date": {"type": "string"}, "url": {"type": "string"}}}},

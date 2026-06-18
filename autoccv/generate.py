@@ -5,8 +5,10 @@ correct container depth. One driver replaces per-section hand-coded builders; ea
 described once in section_map.json.
 """
 import copy
+import datetime
 import json
 import os
+import re
 
 from . import ccvgen
 from .resolver import Catalog
@@ -17,6 +19,63 @@ FMT = {"date": "yyyy-MM-dd", "yearmonth": "yyyy/MM", "year": "yyyy", "monthday":
 
 def _norm_key(*parts):
     return "|".join((p or "").strip().lower() for p in parts)
+
+
+def _effective(fspec, data):
+    """Source value for a field, substituting the spec default when empty."""
+    val = data.get(fspec["src"])
+    if (val is None or val == "") and "default" in fspec:
+        val = fspec["default"]
+    return val
+
+
+def _year_of(value):
+    """Leading 4-digit year in a date/year/yearmonth string, or None."""
+    m = re.search(r"\d{4}", str(value or ""))
+    return int(m.group()) if m else None
+
+
+def _too_old(spec, data, this_year):
+    """True if a section with a `recency` rule has a date older than its window.
+
+    Cutoff is Jan 1 of (this_year - years): an entry is kept iff its year >= that.
+    Entries with no/undateable value are kept (presence is enforced separately by
+    the required-field check); `keep_if_empty` documents that intent.
+    """
+    rec = spec.get("recency")
+    if not rec:
+        return False
+    y = _year_of(data.get(rec["src"]))
+    if y is None:
+        return False
+    return y < this_year - rec["years"]
+
+
+def _missing_required(spec, data, catalog):
+    """CCV labels of mandatory fields that are absent (so the entry is malformed).
+
+    `required` is unconditional; `required_if: <src>` applies only when that source
+    field is non-empty. An lov field counts as present only if its value resolves to
+    a catalog value — a non-empty but unmatchable status (e.g. "In review") is treated
+    as missing so the user is asked for a valid one.
+    """
+    missing = []
+    for fspec in spec.get("fields", []):
+        req = bool(fspec.get("required"))
+        if not req and fspec.get("required_if"):
+            dep = data.get(fspec["required_if"])
+            req = dep is not None and str(dep).strip() != ""
+        if not req:
+            continue
+        val = _effective(fspec, data)
+        empty = val is None or str(val).strip() == ""
+        if fspec["kind"] == "lov" and not empty:
+            lid, _label, conf = catalog.resolve_lov(fspec["ccv"], str(val))
+            if not (lid and conf in ("exact", "fuzzy", "suggest")):
+                empty = True
+        if empty:
+            missing.append(fspec["ccv"])
+    return missing
 
 
 def _existing_keys(base_root, ccv_label, key_ccv_labels):
@@ -34,7 +93,7 @@ def _existing_keys(base_root, ccv_label, key_ccv_labels):
 
 def _apply_field(record, fspec, data, catalog, unresolved, section):
     src, ccv, kind = fspec["src"], fspec["ccv"], fspec["kind"]
-    val = data.get(src)
+    val = _effective(fspec, data)
     if (val is None or val == "") and fspec.get("omit_if_empty"):
         ccvgen.remove_field(record, ccv)
         return
@@ -96,7 +155,8 @@ def _build_subsections(record, data, spec, catalog, unresolved, section):
             record.append(sub_rec)
 
 
-def build_section(base_tree, skeleton, section_name, records, spec, catalog, section_paths, unresolved):
+def build_section(base_tree, skeleton, section_name, records, spec, catalog, section_paths,
+                  unresolved, this_year):
     label = spec["ccv_section_label"]
     template = ccvgen.find_template(skeleton, label)
     # dedup only on keys that map to an actual CCV field (so existing records can be read back)
@@ -115,6 +175,23 @@ def build_section(base_tree, skeleton, section_name, records, spec, catalog, sec
                                    "kind": "dup", "reason": "already in seed — skipped"})
                 continue
             seen.add(k)
+        if _too_old(spec, data, this_year):
+            rec_spec = spec["recency"]
+            unresolved.append({"section": section_name, "field": "(recency)",
+                               "value": str(data.get(rec_spec["src"], "")),
+                               "kind": "stale",
+                               "reason": "older than %d-year window (cutoff %d) — skipped"
+                                         % (rec_spec["years"], this_year - rec_spec["years"])})
+            continue
+        missing = _missing_required(spec, data, catalog)
+        if missing:
+            ident = data.get("title") or data.get("student_name") or data.get("topic") or "(entry)"
+            unresolved.append({"section": section_name, "field": "(incomplete)",
+                               "value": "%s — missing: %s" % (ident, ", ".join(missing)),
+                               "kind": "incomplete",
+                               "reason": "mandatory field(s) missing — skipped; ask user to supply "
+                                         "or confirm dropping the entry"})
+            continue
         rec = ccvgen.clone(template)
         if not spec.get("subsections"):
             ccvgen.strip_nested_sections(rec)
@@ -127,7 +204,9 @@ def build_section(base_tree, skeleton, section_name, records, spec, catalog, sec
     return len(built)
 
 
-def generate(cv_data, seed_path, out_path, data_dir=DATA):
+def generate(cv_data, seed_path, out_path, data_dir=DATA, this_year=None):
+    if this_year is None:
+        this_year = datetime.date.today().year
     if not isinstance(cv_data, dict):
         raise TypeError("cv_data must be a JSON object (got %s) — check cv_data.json" % type(cv_data).__name__)
     with open(os.path.join(data_dir, "section_map.json")) as f:
@@ -147,7 +226,7 @@ def generate(cv_data, seed_path, out_path, data_dir=DATA):
         if not records:
             continue
         counts[section_name] = build_section(
-            base, skeleton, section_name, records, spec, catalog, section_paths, unresolved)
+            base, skeleton, section_name, records, spec, catalog, section_paths, unresolved, this_year)
     ccvgen.serialize(base, out_path)
     return {"counts": counts, "unresolved": unresolved, "total_added": sum(counts.values())}
 

@@ -21,9 +21,11 @@
      "status": "Awarded", "start": "2026/03", "description": "Value: 339093 CAD."}
   ],
   "supervision": [
-    {"role": "Principal Supervisor", "student_name": "Sam Student", "institution": "University of Western Ontario",
-     "degree_name": "PhD", "start": "2023/01", "thesis_title": "A modelling project"},
-    {"role": "Co-Supervisor", "student_name": "Jamie Intern", "institution": "University of Exeter, UK",
+    {"role": "Principal Supervisor", "degree_type": "Doctorate", "student_name": "Sam Student",
+     "present_position": "PhD Candidate", "institution": "University of Western Ontario",
+     "degree_name": "PhD", "start": "2023/01", "end": "2027/06", "thesis_title": "A modelling project"},
+    {"role": "Co-Supervisor", "degree_type": "Bachelor’s Honours", "student_name": "Jamie Intern",
+     "present_position": "Graduate student, University of Exeter", "institution": "University of Exeter, UK",
      "degree_name": "Undergraduate final year project", "start": "2021/09", "end": "2022/05",
      "thesis_title": "A data-visualisation project"}
   ],
@@ -49,7 +51,8 @@
   ],
   "reports": [
     {"title": "Example Technical Report 1 (REF 0001)", "other_organization": "Example Reporting Bureau",
-     "year": "2010", "authors": "Roe, R., Doe, J., et al."}
+     "other_organization_type": "Research", "num_pages": 24, "year": "2024",
+     "authors": "Roe, R., Doe, J., et al."}
   ],
   "other_memberships": [
     {"role": "Member", "other_organization": "American Astronomical Society", "description": "Member since 2020."}

@@ -90,11 +90,14 @@
   "supervision": {
     "ccv_section_label": "Student/Postdoctoral Supervision",
     "dedup_key": ["student_name", "start"],
+    "recency": {"src": "end", "years": 6, "keep_if_empty": true},
     "fields": [
+      {"src": "degree_type", "ccv": "Degree Type or Postdoctoral Status", "kind": "lov", "required": true},
       {"src": "role", "ccv": "Supervision Role", "kind": "lov", "omit_if_empty": true},
-      {"src": "start", "ccv": "Supervision Start Date", "kind": "yearmonth", "omit_if_empty": true},
-      {"src": "end", "ccv": "Supervision End Date", "kind": "yearmonth", "omit_if_empty": true},
-      {"src": "student_name", "ccv": "Student Name", "kind": "string"},
+      {"src": "start", "ccv": "Supervision Start Date", "kind": "yearmonth", "required": true},
+      {"src": "end", "ccv": "Supervision End Date", "kind": "yearmonth", "required": true},
+      {"src": "student_name", "ccv": "Student Name", "kind": "string", "required": true},
+      {"src": "present_position", "ccv": "Present Position", "kind": "string", "required": true},
       {"src": "institution", "ccv": "Student Institution", "kind": "string", "omit_if_empty": true},
       {"src": "degree_name", "ccv": "Degree Name", "kind": "bilingual", "omit_if_empty": true},
       {"src": "thesis_title", "ccv": "Thesis/Project Title", "kind": "string", "omit_if_empty": true}
@@ -197,7 +200,7 @@
       {"src": "volume", "ccv": "Volume", "kind": "string", "omit_if_empty": true},
       {"src": "issue", "ccv": "Issue", "kind": "string", "omit_if_empty": true},
       {"src": "pages", "ccv": "Page Range", "kind": "string", "omit_if_empty": true},
-      {"src": "status", "ccv": "Publishing Status", "kind": "lov", "omit_if_empty": true},
+      {"src": "status", "ccv": "Publishing Status", "kind": "lov", "required": true},
       {"src": "year", "ccv": "Year", "kind": "year"},
       {"src": "refereed", "ccv": "Refereed?", "kind": "lov", "omit_if_empty": true},
       {"src": "authors", "ccv": "Authors", "kind": "string", "omit_if_empty": true},
@@ -210,15 +213,17 @@
     "ccv_section_label": "Conference Publications",
     "dedup_key": ["title", "year"],
     "fields": [
-      {"src": "title", "ccv": "Publication Title", "kind": "string"},
-      {"src": "conference", "ccv": "Conference Name", "kind": "string", "omit_if_empty": true},
+      {"src": "title", "ccv": "Publication Title", "kind": "string", "required": true},
+      {"src": "publication_type", "ccv": "Conference Publication Type", "kind": "lov", "required": true},
+      {"src": "conference", "ccv": "Conference Name", "kind": "string", "required": true},
       {"src": "city", "ccv": "City", "kind": "string", "omit_if_empty": true},
       {"src": "published_in", "ccv": "Published In", "kind": "string", "omit_if_empty": true},
       {"src": "pages", "ccv": "Page Range", "kind": "string", "omit_if_empty": true},
-      {"src": "status", "ccv": "Publishing Status", "kind": "lov", "omit_if_empty": true},
-      {"src": "year", "ccv": "Year", "kind": "year", "omit_if_empty": true},
-      {"src": "refereed", "ccv": "Refereed?", "kind": "lov", "omit_if_empty": true},
-      {"src": "authors", "ccv": "Authors", "kind": "string", "omit_if_empty": true},
+      {"src": "status", "ccv": "Publishing Status", "kind": "lov", "required": true},
+      {"src": "year", "ccv": "Year", "kind": "year", "required": true},
+      {"src": "refereed", "ccv": "Refereed?", "kind": "lov", "required": true},
+      {"src": "invited", "ccv": "Invited?", "kind": "lov", "required": true},
+      {"src": "authors", "ccv": "Authors", "kind": "string", "required": true},
       {"src": "doi", "ccv": "DOI", "kind": "string", "omit_if_empty": true}
     ],
     "subsections": []
@@ -226,11 +231,14 @@
   "reports": {
     "ccv_section_label": "Reports",
     "dedup_key": ["title", "year"],
+    "recency": {"src": "year", "years": 6},
     "fields": [
-      {"src": "title", "ccv": "Report Title", "kind": "string"},
+      {"src": "title", "ccv": "Report Title", "kind": "string", "required": true},
       {"src": "other_organization", "ccv": "Other Organization", "kind": "string", "omit_if_empty": true},
-      {"src": "year", "ccv": "Year Submitted", "kind": "year", "omit_if_empty": true},
-      {"src": "authors", "ccv": "Authors", "kind": "string", "omit_if_empty": true}
+      {"src": "other_organization_type", "ccv": "Other Organization Type", "kind": "lov", "required_if": "other_organization"},
+      {"src": "num_pages", "ccv": "Number of Pages", "kind": "number", "required": true, "default": 1},
+      {"src": "year", "ccv": "Year Submitted", "kind": "year", "required": true},
+      {"src": "authors", "ccv": "Authors", "kind": "string", "required": true}
     ],
     "subsections": []
   },
@@ -270,10 +278,10 @@
     "ccv_section_label": "Text Interviews",
     "dedup_key": ["topic", "date"],
     "fields": [
-      {"src": "topic", "ccv": "Topic", "kind": "string"},
+      {"src": "topic", "ccv": "Topic", "kind": "string", "required": true},
       {"src": "interviewer", "ccv": "Interviewer", "kind": "string", "omit_if_empty": true},
-      {"src": "forum", "ccv": "Forum", "kind": "string", "omit_if_empty": true},
-      {"src": "date", "ccv": "Publication Date", "kind": "date", "omit_if_empty": true},
+      {"src": "forum", "ccv": "Forum", "kind": "string", "required": true},
+      {"src": "date", "ccv": "Publication Date", "kind": "date", "required": true},
       {"src": "url", "ccv": "URL", "kind": "string", "omit_if_empty": true}
     ],
     "subsections": []

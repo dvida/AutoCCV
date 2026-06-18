@@ -59,6 +59,25 @@ Rules:
 - Empty/unknown → omit the key (or `null`/`""`). Do not fabricate.
 - Set `meta.seed_export` to the seed file path.
 
+**Mandatory fields (the generator DROPS an entry and flags it `incomplete` if any are missing).**
+The CCV portal rejects malformed records, so populate these for every entry in the section:
+- `journal_articles`: `status` (Publishing Status — papers under review → `Submitted`, never blank).
+- `conference_publications`: `title`, `publication_type` (Abstract/Paper/Poster), `conference`, `status`,
+  `year`, `refereed`, `invited`, `authors`.
+- `text_interviews`: `topic`, `forum`, `date`.
+- `supervision`: `degree_type`, `student_name`, `present_position` (student's current position),
+  `start`, `end`.
+- `reports`: `title`, `year`, `authors`, `num_pages` (defaults to 1 if omitted), and
+  `other_organization_type` whenever `other_organization` is set
+  (Academic/Federal Government/Not for Profit/Private Sector/Provincial Government/Research).
+A mandatory **lov** field must map to a real catalog value — a non-empty but unmatchable value
+(e.g. `"In review"`) counts as missing and the entry is dropped. Supply the missing value (or
+confirm dropping the entry) when an item is flagged `incomplete`, then regenerate.
+
+**Recency filter.** Only `reports` (by `year`) and `supervision` (by `end`) from the **last 6 years**
+are imported — cutoff is Jan 1 of (current year − 6). Older entries are skipped and flagged `stale`.
+Supervisions with no end date are kept.
+
 ### 2. Enrich DOIs (on by default)
 Run: `python3 -m autoccv.doi cv_data.json`
 It fills missing DOI/volume/issue/pages for `journal_articles` and `conference_publications` from
@@ -69,7 +88,10 @@ genuinely unclear ones into one round of questions to the user (don't ask one at
 
 ### 3. Batch clarifying questions
 Use `AskUserQuestion` (grouped, a few rounds at most) ONLY for things Python cannot decide:
-- Publication status when unclear (Published / Accepted / In review→leave blank).
+- Publication status when unclear (Published / Accepted / In Press / Submitted). Publishing Status is
+  MANDATORY for journal & conference publications — under-review papers → `Submitted` (never blank).
+- Any entry flagged `incomplete` in the unresolved report: ask the user to supply the missing
+  mandatory field(s) or to confirm dropping the entry, then apply back into `cv_data.json`.
 - Contribution-% bucket when author position is ambiguous.
 - Supervision role (Principal vs Co-Supervisor), funding role (PI vs Co-investigator).
 - Organization type for non-catalogued orgs; broadcast vs text for a media item.
@@ -82,15 +104,17 @@ python3 -m autoccv.clean    CCV-output.raw.xml -o CCV-output.xml
 python3 -m autoccv.validate CCV-output.xml
 ```
 `generate` prints per-section counts and writes `CCV-output.raw.xml.unresolved.json` (controlled-vocab
-misses, free-text org fallbacks, in-review statuses, deduped items). `clean` makes it import-safe
+misses, free-text org fallbacks, deduped items, `incomplete` entries dropped for a missing mandatory
+field, and `stale` entries dropped by the 6-year recency filter). `clean` makes it import-safe
 (ASCII, single-line — the ccv-cvc.ca importer hangs otherwise). `validate` must print
 `OK — valid and import-safe`; if not, fix and re-run.
 
 ### 5. Write NOTES.md
 Summarize for the user: per-section counts; every entry in `unresolved.json` rephrased as an action
-("set Publishing Status to *In review* for …", "pick an Organization for *University of Osijek* in
-the UI", "verify Contribution % on first-author papers — capped at 31-40"); any items you skipped or
-deduped; and the import instructions (CCV portal → Utilities → Import; keep the original export as a
+("pick an Organization for *University of Osijek* in the UI", "verify Contribution % on first-author
+papers — capped at 31-40"); call out every `incomplete` entry (dropped for a missing mandatory field —
+list which field and the entry, so the user can add it and re-run) and every `stale` entry (dropped by
+the 6-year recency filter); any other items you skipped or deduped; and the import instructions (CCV portal → Utilities → Import; keep the original export as a
 backup). Use the tone/structure of a concise action list.
 
 ### 6. Hand off
