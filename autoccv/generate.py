@@ -199,6 +199,18 @@ def build_section(base_tree, skeleton, section_name, records, spec, catalog, sec
             _apply_field(rec, fspec, data, catalog, unresolved, section_name)
         if spec.get("subsections"):
             _build_subsections(rec, data, spec, catalog, unresolved, section_name)
+            # a subsection marked required must yield >=1 item, else the record is
+            # malformed for the portal (e.g. a grant with no Funding Source). Keep the
+            # record but flag it so the user supplies the missing data and regenerates.
+            for sub in spec["subsections"]:
+                if sub.get("required") and not (data.get(sub["src"]) or []):
+                    ident = (data.get("funding_title") or data.get("title")
+                             or data.get("student_name") or "(entry)")
+                    unresolved.append({"section": section_name, "field": "(incomplete)",
+                                       "value": "%s — missing required %s" % (ident, sub["ccv"]),
+                                       "kind": "incomplete",
+                                       "reason": "required sub-record missing — supply it (ask the "
+                                                 "user) and regenerate, or the CCV will not submit"})
         built.append(rec)
     ccvgen.insert_records(base_tree, label, built, section_paths)
     return len(built)
@@ -227,6 +239,17 @@ def generate(cv_data, seed_path, out_path, data_dir=DATA, this_year=None):
             continue
         counts[section_name] = build_section(
             base, skeleton, section_name, records, spec, catalog, section_paths, unresolved, this_year)
+
+    # User Profile + >=1 Research Specialization Keyword is mandatory for portal submit. If the
+    # section is absent entirely (so build_section never ran), flag it here so it reaches NOTES.
+    up = cv_data.get("user_profile") or []
+    if not any((rec.get("research_keywords") or []) for rec in up if isinstance(rec, dict)):
+        unresolved.append({"section": "user_profile", "field": "(incomplete)",
+                           "value": "User Profile — no Research Specialization Keywords",
+                           "kind": "incomplete",
+                           "reason": "required to submit — ask the user for keywords (suggest some "
+                                     "from their research areas), add to cv_data.json, regenerate"})
+
     ccvgen.serialize(base, out_path)
     return {"counts": counts, "unresolved": unresolved, "total_added": sum(counts.values())}
 

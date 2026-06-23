@@ -16,9 +16,18 @@
   ],
   "research_funding": [
     {"funding_type": "Grant", "funding_title": "Sample Catalyst Grant", "role": "Principal Investigator",
-     "status": "Awarded", "start": "2025/02", "description": "Value: 24000 CAD."},
+     "status": "Awarded", "start": "2025/02", "description": "Value: 24000 CAD.",
+     "funding_sources": [
+       {"funding_organization": "Natural Sciences and Engineering Research Council of Canada (NSERC)",
+        "program_name": "Discovery Grant", "total_funding": 24000, "currency_total": "Canadian dollar",
+        "portion_received": 24000, "competitive": "Yes"}
+     ]},
     {"funding_type": "Contract", "funding_title": "Sample industry contract", "role": "Co-investigator",
-     "status": "Awarded", "start": "2026/03", "description": "Value: 339093 CAD."}
+     "status": "Awarded", "start": "2026/03", "description": "Value: 339093 CAD.",
+     "funding_sources": [
+       {"other_funding_organization": "Sample Industry Partner Inc.", "total_funding": 339093,
+        "portion_received": 50000, "competitive": "No"}
+     ]}
   ],
   "supervision": [
     {"role": "Principal Supervisor", "degree_type": "Doctorate", "student_name": "Sam Student",
@@ -87,5 +96,8 @@
   ],
   "working_papers": [
     {"title": "An example working paper", "authors": "Doe, J; Roe, R"}
+  ],
+  "user_profile": [
+    {"research_keywords": ["Meteor physics", "Planetary science", "Space situational awareness"]}
   ]
 }

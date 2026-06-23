@@ -45,6 +45,13 @@ Rules:
   - Career interruptions / parental or medical leave affecting research → `leaves_of_absence`.
   - Cross-appointments / adjunct or visiting positions at other institutions → `affiliations`.
   - Preprints / working papers not yet formally published → `working_papers`.
+  - Research keywords / areas of specialization → `user_profile.research_keywords` (a single
+    `user_profile` object in a one-element array). If the CV has no explicit keyword list, leave
+    this for the clarifying-question round (don't fabricate).
+  - For **every** `research_funding` entry, add a `funding_sources` array (≥1 source). Funder →
+    `funding_organization` when it's a catalog agency (`data/lov_catalog.json` "Funding
+    Organization"), else `other_funding_organization` (free text). Add `total_funding`,
+    `program_name`, `portion_received`, `competitive` (Yes/No) when stated.
 - Controlled-vocab values go in as **human labels** (e.g. `"Doctorate"`, `"Astronomy and
   Astrophysics"`, `"University of Toronto"`, `"Principal Supervisor"`). The resolver maps them.
   Allowed labels for each field are in `data/lov_catalog.json`; orgs/disciplines in
@@ -70,6 +77,11 @@ The CCV portal rejects malformed records, so populate these for every entry in t
 - `reports`: `title`, `year`, `authors`, `num_pages` (defaults to 1 if omitted), and
   `other_organization_type` whenever `other_organization` is set
   (Academic/Federal Government/Not for Profit/Private Sector/Provincial Government/Research).
+- `user_profile`: ≥1 `research_keywords` entry — the portal will not submit without the User
+  Profile section + a Research Specialization Keyword.
+- `research_funding`: every entry needs ≥1 `funding_sources` item with a funder
+  (`funding_organization` or `other_funding_organization`) — the portal will not submit a grant
+  with no funding source. A grant left without one is flagged `incomplete`; `validate` also fails.
 A mandatory **lov** field must map to a real catalog value — a non-empty but unmatchable value
 (e.g. `"In review"`) counts as missing and the entry is dropped. Supply the missing value (or
 confirm dropping the entry) when an item is flagged `incomplete`, then regenerate.
@@ -95,6 +107,10 @@ Use `AskUserQuestion` (grouped, a few rounds at most) ONLY for things Python can
 - Contribution-% bucket when author position is ambiguous.
 - Supervision role (Principal vs Co-Supervisor), funding role (PI vs Co-investigator).
 - Organization type for non-catalogued orgs; broadcast vs text for a media item.
+- **Research Specialization Keywords** when the CV lists none: ask the user to confirm/supply them
+  (offer a few suggestions derived from their research areas/disciplines). Required to submit.
+- A grant's **funder and/or amount** when its Funding Source can't be determined from the CV: ask
+  rather than guessing or dropping the grant.
 Apply answers back into `cv_data.json`.
 
 ### 4. Generate, clean, validate
