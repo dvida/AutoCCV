@@ -37,7 +37,15 @@
       "start": {"type": "string"}, "end": {"type": "string"},
       "role": {"type": "string", "description": "Principal Investigator | Co-investigator"},
       "status": {"type": "string", "description": "Awarded | Completed"},
-      "clinical": {"type": "string"}, "description": {"type": "string"}}}},
+      "clinical": {"type": "string"}, "description": {"type": "string"},
+      "funding_sources": {"type": "array", "description": "MANDATORY: >=1 per grant, each with a funder (funding_organization OR other_funding_organization). The CCV portal will not submit a grant with no funding source.", "items": {"type": "object", "properties": {
+        "funding_organization": {"type": "string", "description": "Funding agency as a catalog LOV label (data/lov_catalog.json 'Funding Organization'); if not a listed agency, leave blank and use other_funding_organization."},
+        "other_funding_organization": {"type": "string", "description": "Free-text funder name when not a catalog agency."},
+        "program_name": {"type": "string"},
+        "total_funding": {"type": "number"},
+        "currency_total": {"type": "string", "description": "Currency of Total Funding, e.g. CAD | USD"},
+        "portion_received": {"type": "number", "description": "Portion of Funding Received by this researcher."},
+        "competitive": {"type": "string", "description": "Funding Competitive? Yes | No"}}}}}}},
     "courses_taught": {"type": "array", "items": {"type": "object", "properties": {
       "role": {"type": "string"}, "organization": {"type": "string"}, "department": {"type": "string"},
       "session": {"type": "string", "description": "Fall | Winter | Spring | Summer"}, "session_year": {"type": "string"},
@@ -131,6 +139,9 @@
       "department": {"type": "string"}, "description": {"type": "string"},
       "start": {"type": "string"}, "end": {"type": "string"}}}},
     "working_papers": {"type": "array", "items": {"type": "object", "properties": {
-      "title": {"type": "string"}, "authors": {"type": "string"}, "url": {"type": "string"}}}}
+      "title": {"type": "string"}, "authors": {"type": "string"}, "url": {"type": "string"}}}},
+    "user_profile": {"type": "array", "description": "MANDATORY. Single object in a one-element array. The CCV portal requires the User Profile section with >=1 Research Specialization Keyword to submit.", "items": {"type": "object",
+      "required": ["research_keywords"], "properties": {
+      "research_keywords": {"type": "array", "description": "MANDATORY: >=1 keyword. If the CV lists no explicit keywords, ask the user (suggest some derived from research areas/disciplines) rather than fabricating.", "items": {"type": "string"}}}}}
   }
 }

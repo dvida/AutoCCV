@@ -87,6 +87,73 @@ def test_recency_filter_drops_old_entries(tmp_path):
     assert len(stale) == 1 and "2015" in stale[0]["value"]
 
 
+def test_user_profile_and_funding_sources_emitted(tmp_path):
+    """Portal-mandatory structures are produced: User Profile keywords + a Funding Source per grant."""
+    from lxml import etree
+    with open(os.path.join(REPO, "examples", "sample_cv_data.json")) as f:
+        cv = json.load(f)
+    seed = os.path.join(REPO, "examples", "seed_minimal.xml")
+    raw = tmp_path / "gen.xml"
+    res = generate.generate(cv, seed, str(raw), this_year=2026)
+    tree = etree.parse(str(raw))
+
+    # exactly one User Profile, carrying one keyword sub-record per supplied keyword
+    ups = [s for s in tree.iter("section")
+           if s.get("label") == "User Profile" and s.get("recordId")]
+    assert len(ups) == 1
+    kws = [c for c in ups[0].findall("section")
+           if c.get("label") == "Research Specialization Keywords"]
+    assert len(kws) == len(cv["user_profile"][0]["research_keywords"])
+    assert kws[0].find("field[@label='Research Specialization Keywords']/value").text == "Meteor physics"
+
+    # every grant has a Funding Source; the catalog funder resolved to an <lov>, the other to free text
+    rfh = [s for s in tree.iter("section")
+           if s.get("label") == "Research Funding History" and s.get("recordId")]
+    assert len(rfh) == 2
+    for g in rfh:
+        srcs = [c for c in g.findall("section") if c.get("label") == "Funding Sources"]
+        assert len(srcs) == 1
+    assert tree.findall(".//section[@label='Funding Sources']"
+                        "/field[@label='Funding Organization']/lov")
+    assert tree.findall(".//section[@label='Funding Sources']"
+                        "/field[@label='Other Funding Organization']/value")
+
+    # with both structures present the file is import-valid
+    assert validate_file(str(raw), import_safe=False) == []
+
+
+def test_missing_funding_source_flagged_and_invalid(tmp_path):
+    """A grant with no funding_sources is emitted but flagged incomplete, and validate rejects it."""
+    seed = os.path.join(REPO, "examples", "seed_minimal.xml")
+    cv = {
+        "research_funding": [
+            {"funding_type": "Grant", "funding_title": "Sourceless grant",
+             "role": "Principal Investigator", "status": "Awarded", "start": "2025/02"}
+        ],
+        "user_profile": [{"research_keywords": ["Astronomy"]}],
+    }
+    raw = tmp_path / "gen.xml"
+    res = generate.generate(cv, seed, str(raw), this_year=2026)
+    assert res["counts"]["research_funding"] == 1            # kept, not dropped
+    inc = [u for u in res["unresolved"]
+           if u["section"] == "research_funding" and u["kind"] == "incomplete"]
+    assert inc and "Funding Sources" in inc[0]["value"]
+    probs = validate_file(str(raw), import_safe=False)
+    assert any("Funding Source" in p for p in probs)
+
+
+def test_missing_user_profile_flagged_and_invalid(tmp_path):
+    """No User Profile keywords -> unresolved note + validate rejects the file."""
+    seed = os.path.join(REPO, "examples", "seed_minimal.xml")
+    cv = {"presentations": [{"title": "Talk", "year": "2024"}]}
+    raw = tmp_path / "gen.xml"
+    res = generate.generate(cv, seed, str(raw), this_year=2026)
+    assert any(u["section"] == "user_profile" and u["kind"] == "incomplete"
+               for u in res["unresolved"])
+    probs = validate_file(str(raw), import_safe=False)
+    assert any("User Profile" in p for p in probs)
+
+
 def test_report_number_of_pages_defaults_to_one(tmp_path):
     seed = os.path.join(REPO, "examples", "seed_minimal.xml")
     cv = {"reports": [{"title": "No-page report", "year": "2024", "authors": "Doe, J"}]}

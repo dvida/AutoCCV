@@ -70,7 +70,26 @@
       {"src": "status", "ccv": "Funding Status", "kind": "lov", "omit_if_empty": true},
       {"src": "role", "ccv": "Funding Role", "kind": "lov", "omit_if_empty": true}
     ],
-    "subsections": []
+    "subsections": [
+      {"src": "funding_sources", "ccv": "Funding Sources", "required": true, "fields": [
+        {"src": "funding_organization", "ccv": "Funding Organization", "kind": "lov", "omit_if_empty": true},
+        {"src": "other_funding_organization", "ccv": "Other Funding Organization", "kind": "string", "omit_if_empty": true},
+        {"src": "program_name", "ccv": "Program Name", "kind": "string", "omit_if_empty": true},
+        {"src": "total_funding", "ccv": "Total Funding", "kind": "number", "omit_if_empty": true},
+        {"src": "currency_total", "ccv": "Currency of Total Funding", "kind": "lov", "omit_if_empty": true},
+        {"src": "portion_received", "ccv": "Portion of Funding Received", "kind": "number", "omit_if_empty": true},
+        {"src": "competitive", "ccv": "Funding Competitive?", "kind": "lov", "omit_if_empty": true}
+      ]}
+    ]
+  },
+  "user_profile": {
+    "ccv_section_label": "User Profile",
+    "fields": [],
+    "subsections": [
+      {"src": "research_keywords", "ccv": "Research Specialization Keywords", "required": true, "repeat_scalar": true, "fields": [
+        {"src": "_value", "ccv": "Research Specialization Keywords", "kind": "bilingual"}
+      ]}
+    ]
   },
   "courses_taught": {
     "ccv_section_label": "Courses Taught",

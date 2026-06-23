@@ -23,7 +23,8 @@ def test_clean_makes_ascii_singleline(tmp_path):
     assert all(ord(c) < 128 for c in raw)            # pure ASCII
     assert "Borovicka" in raw and "Segon" in raw     # transliterated
     assert "second line" in raw and "\n\nsecond" not in raw
-    assert validate_file(str(out), import_safe=True) == []
+    # a fragment, not a full CV: check import-safety only, not portal submit-readiness
+    assert validate_file(str(out), import_safe=True, submit_ready=False) == []
 
 
 def test_to_ascii_map():
